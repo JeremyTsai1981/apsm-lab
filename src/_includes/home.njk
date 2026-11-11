@@ -2,16 +2,7 @@
 layout: base.njk
 ---
 <section class="hero" id="top">
-  <div class="hero__sim">
-    <canvas id="blast" role="img" aria-label="{{ i18n.hero.sim.aria | l(lang) }}"></canvas>
-    <div class="hud" aria-hidden="true">
-      <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.hero.sim.tag | l(lang) }}</span>
-      <span class="hud__row"><span>{{ i18n.hero.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
-      <span class="hud__row"><span>{{ i18n.hero.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
-      <span class="hud__row"><span>{{ i18n.hero.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
-      <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.hero.sim.legend | l(lang) }}</span></span>
-    </div>
-  </div>
+  <img class="hero__photo" src="{{ root }}assets/img/hero-blast.jpg" alt="{{ i18n.hero.photoCap | l(lang) }}">
   <div class="wrap hero__in">
     <div class="hero__copy">
       <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
@@ -23,7 +14,7 @@ layout: base.njk
       </div>
     </div>
   </div>
-  <p class="wrap hero__note">{{ i18n.hero.sim.note | l(lang) }}</p>
+  <p class="hero__cap">{{ i18n.hero.photoCap | l(lang) }}</p>
 </section>
 
 <section class="partners" aria-label="{{ i18n.partners.label | l(lang) }}">
@@ -45,15 +36,49 @@ layout: base.njk
   <div class="wrap">
     <p class="eyebrow eyebrow--cyan">{{ i18n.highlights.eyebrow | l(lang) }}</p>
     <h2 id="hl-h">{{ i18n.highlights.title | l(lang) }}</h2>
-    <div class="gallery">
+    <div class="renders">
       {% for h in highlights %}
-      <figure class="shot"><div class="shot__img"><img src="{{ root }}{{ h.img }}" alt="{{ h.alt | l(lang) }}" loading="lazy"></div><figcaption>{{ h.cap | l(lang) }}</figcaption></figure>
+      <figure class="render{% if loop.first %} render--big{% endif %}"><img src="{{ root }}{{ h.img }}" alt="{{ h.alt | l(lang) }}" ><figcaption>{{ h.cap | l(lang) }}</figcaption></figure>
+      {% endfor %}
+    </div>
+    <p class="renders__note">{{ i18n.highlights.note | l(lang) }}</p>
+  </div>
+</section>
+
+<section class="sim" aria-labelledby="sim-h">
+  <div class="wrap sim__in">
+    <div class="sim__txt">
+      <p class="eyebrow eyebrow--cyan">{{ i18n.sim.eyebrow | l(lang) }}</p>
+      <h2 id="sim-h">{{ i18n.sim.title | l(lang) }}</h2>
+      <p>{{ i18n.sim.lead | l(lang) }}</p>
+    </div>
+    <div class="sim__stage">
+      <canvas id="blast" role="img" aria-label="{{ i18n.hero.sim.aria | l(lang) }}"></canvas>
+      <div class="hud" aria-hidden="true">
+        <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.hero.sim.tag | l(lang) }}</span>
+        <span class="hud__row"><span>{{ i18n.hero.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
+        <span class="hud__row"><span>{{ i18n.hero.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
+        <span class="hud__row"><span>{{ i18n.hero.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
+        <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.hero.sim.legend | l(lang) }}</span></span>
+      </div>
+    </div>
+    <p class="sim__note">{{ i18n.hero.sim.note | l(lang) }}</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="field-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--orange">{{ i18n.field.eyebrow | l(lang) }}</p>
+    <h2 id="field-h">{{ i18n.field.title | l(lang) }}</h2>
+    <div class="field">
+      {% for f in fieldwork %}
+      <figure class="field__i{% if f.wide %} field__i--wide{% endif %}"><img src="{{ root }}{{ f.img }}" alt="{{ f.cap | l(lang) }}" ><figcaption>{{ f.cap | l(lang) }}</figcaption></figure>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="students-h">
+<section class="section section--alt" aria-labelledby="students-h">
   <div class="wrap">
     <p class="eyebrow eyebrow--orange">{{ i18n.students.eyebrow | l(lang) }}</p>
     <h2 id="students-h">{{ i18n.students.title | l(lang) }}</h2>
@@ -69,7 +94,7 @@ layout: base.njk
   </div>
 </section>
 
-<section class="section section--alt" id="research" aria-labelledby="research-h">
+<section class="section" id="research" aria-labelledby="research-h">
   <div class="wrap">
     <div class="sechead">
       <div><p class="eyebrow eyebrow--navy">{{ i18n.research.eyebrow | l(lang) }}</p><h2 id="research-h">{{ i18n.research.title | l(lang) }}</h2></div>

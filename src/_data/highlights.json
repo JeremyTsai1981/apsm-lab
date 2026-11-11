@@ -1,5 +1,35 @@
 [
-  { "img": "assets/img/sim-spalling.jpg", "alt": { "zh": "RC 構件受爆炸後背面剝落的 LS-DYNA 損傷雲圖", "en": "LS-DYNA damage contour showing spalling of an RC member after blast" }, "cap": { "zh": "RC 構件爆炸後的背面剝落", "en": "Spalling of an RC member after blast" } },
-  { "img": "assets/img/sim-perforation.jpg", "alt": { "zh": "版構件受接觸爆炸穿孔的 LS-DYNA 損傷雲圖", "en": "LS-DYNA damage contour showing perforation of a slab under contact explosion" }, "cap": { "zh": "版構件受接觸爆炸穿孔", "en": "Slab perforation under contact explosion" } },
-  { "img": "assets/img/sim-penetration.jpg", "alt": { "zh": "彈體貫穿多層防護結構的數值模擬", "en": "Simulation of a projectile penetrating a layered protective structure" }, "cap": { "zh": "彈體貫穿多層防護結構", "en": "Projectile penetration into layered protection" } }
+  {
+    "img": "assets/img/render-city.jpg",
+    "alt": {
+      "zh": "城市街廓受 500 kg TNT 道路側爆炸的建物與地面峰值超壓分布 3D 示意圖",
+      "en": "3D illustration of peak overpressure on buildings and ground from a 500 kg TNT roadside explosion"
+    },
+    "cap": {
+      "zh": "城市街廓爆炸風險評估：建物迎爆面超壓分布",
+      "en": "Urban blast risk: overpressure on building facades"
+    }
+  },
+  {
+    "img": "assets/img/render-slab.jpg",
+    "alt": {
+      "zh": "RC 版受接觸爆炸後的穿孔、背面剝落與降伏線損傷示意圖",
+      "en": "Illustration of perforation, spalling and yield lines in an RC slab under contact explosion"
+    },
+    "cap": {
+      "zh": "構件層級：RC 版接觸爆炸穿孔與降伏線",
+      "en": "Member level: RC slab perforation and yield lines"
+    }
+  },
+  {
+    "img": "assets/img/render-bess.jpg",
+    "alt": {
+      "zh": "儲能櫃熱失控爆炸與防爆牆遮蔽效果的超壓分布示意圖",
+      "en": "Overpressure map showing a blast wall shielding buildings from a battery energy storage explosion"
+    },
+    "cap": {
+      "zh": "產業應用：儲能櫃爆炸與防爆牆遮蔽",
+      "en": "Industry: battery storage explosion and blast-wall shielding"
+    }
+  }
 ]

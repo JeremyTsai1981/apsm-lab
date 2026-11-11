@@ -103,6 +103,10 @@
         "zh": "爆炸波從爆心向外傳遞、撞擊建築物並反射的壓力場動畫",
         "en": "Animation of a blast wave expanding from the charge, striking a building and reflecting"
       }
+    },
+    "photoCap": {
+      "zh": "實驗室試驗：聚脲塗層試體受接觸爆炸後的破口",
+      "en": "Lab test: breach in a polyurea-coated specimen after a contact explosion"
     }
   },
   "students": {
@@ -325,8 +329,12 @@
       "en": "Highlights"
     },
     "title": {
-      "zh": "從爆炸荷載，算到結構怎麼壞",
-      "en": "From the blast load to how the structure fails"
+      "zh": "從城市、設施到構件的爆炸情境模擬",
+      "en": "Blast scenarios from city blocks to members"
+    },
+    "note": {
+      "zh": "以 Kinney–Graham 經驗式及簡化損傷模型計算之示意圖，非特定專案成果。",
+      "en": "Illustrations computed from the Kinney–Graham relations and simplified damage models; not results of a specific project."
     }
   },
   "cases": {
@@ -361,5 +369,29 @@
         "en": "Scaled field blast tests"
       }
     ]
+  },
+  "sim": {
+    "eyebrow": {
+      "zh": "即時模擬",
+      "en": "Live simulation"
+    },
+    "title": {
+      "zh": "爆炸波撞上建築物的那 30 毫秒",
+      "en": "The 30 milliseconds when a blast wave hits a building"
+    },
+    "lead": {
+      "zh": "下面的動畫在你的瀏覽器裡即時計算：100 kg TNT 在距建築物 15 m 處爆炸，入射波與牆面反射波的超壓場。這正是我們評估抗爆設計時的第一步。",
+      "en": "Computed live in your browser: incident and reflected overpressure from 100 kg of TNT detonated 15 m from a building, the first step in every blast design we do."
+    }
+  },
+  "field": {
+    "eyebrow": {
+      "zh": "試驗現場",
+      "en": "In the field"
+    },
+    "title": {
+      "zh": "真的炸過，才知道結構怎麼壞",
+      "en": "We test with real explosives"
+    }
   }
 }
