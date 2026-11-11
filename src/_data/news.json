@@ -1,0 +1,5 @@
+[
+  { "date": "", "title": { "zh": "[待補：論文發表或獲獎消息]", "en": "[To add: publication or award]" }, "placeholder": true },
+  { "date": "", "title": { "zh": "[待補：試驗紀錄或學生口試]", "en": "[To add: test campaign or thesis defense]" }, "placeholder": true },
+  { "date": "", "title": { "zh": "[待補：技術文章，例如儲能案場的爆炸安全距離]", "en": "[To add: technical note, e.g. blast safety distances for energy storage sites]" }, "placeholder": true }
+]

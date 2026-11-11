@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "research": {
+      "zh": "研究",
+      "en": "Research"
+    },
+    "outputs": {
+      "zh": "成果",
+      "en": "Publications"
+    },
+    "industry": {
+      "zh": "產學合作",
+      "en": "Industry"
+    },
+    "team": {
+      "zh": "團隊",
+      "en": "Team"
+    },
+    "news": {
+      "zh": "最新消息",
+      "en": "News"
+    },
+    "join": {
+      "zh": "加入我們",
+      "en": "Join us"
+    },
+    "switch": {
+      "zh": "EN",
+      "en": "中文"
+    },
+    "menu": {
+      "zh": "選單",
+      "en": "Menu"
+    }
+  },
+  "hero": {
+    "eyebrow": {
+      "zh": "陽明交大土木系 · 防護工程",
+      "en": "NYCU Civil Engineering · Protective Engineering"
+    },
+    "title": {
+      "zh": "<span class=\"nw\">讓結構在爆炸與衝擊下，</span><span class=\"nw\">依然站得住。</span>",
+      "en": "Keeping structures standing through blast and impact."
+    },
+    "lead": {
+      "zh": "我們結合爆炸試驗、數值模擬與先進防護材料，為關鍵基礎設施、國防設施與產業廠房，提供抗爆評估、防護設計與快速修復方案。",
+      "en": "We combine explosive testing, numerical simulation and advanced protective materials to assess, protect and rapidly repair critical infrastructure, defense facilities and industrial plants."
+    },
+    "ctaJoin": {
+      "zh": "加入研究團隊",
+      "en": "Join the lab"
+    },
+    "ctaIndustry": {
+      "zh": "產學合作洽詢",
+      "en": "Work with us"
+    },
+    "figCaption": {
+      "zh": "Friedlander 爆炸波形：我們從荷載開始，一路算到結構會不會倒。",
+      "en": "The Friedlander blast wave: we follow the load all the way to whether the structure survives."
+    },
+    "figAria": {
+      "zh": "爆炸超壓與時間的關係圖，顯示峰值超壓、正壓相與負壓相",
+      "en": "Blast overpressure versus time, showing peak overpressure, positive phase and negative phase"
+    },
+    "peak": {
+      "zh": "P_so 峰值超壓",
+      "en": "P_so peak overpressure"
+    },
+    "pos": {
+      "zh": "t_d 正壓相",
+      "en": "t_d positive phase"
+    },
+    "neg": {
+      "zh": "負壓相",
+      "en": "negative phase"
+    }
+  },
+  "students": {
+    "eyebrow": {
+      "zh": "給未來的研究生",
+      "en": "For future students"
+    },
+    "title": {
+      "zh": "你會在這裡做什麼",
+      "en": "What you will do here"
+    },
+    "items": [
+      {
+        "title": {
+          "zh": "動手做試驗",
+          "en": "Run real tests"
+        },
+        "desc": {
+          "zh": "從材料抗壓、衝擊試驗，到真正的縮尺爆炸試驗，親眼看結構怎麼破壞。",
+          "en": "From material and impact tests to scaled explosive tests: see with your own eyes how structures fail."
+        }
+      },
+      {
+        "title": {
+          "zh": "學會數值模擬",
+          "en": "Master simulation"
+        },
+        "desc": {
+          "zh": "LS-DYNA、BlastFoam 等業界與國防單位使用的軟體，畢業前就能獨立建模。",
+          "en": "Learn LS-DYNA, BlastFoam and other tools used by industry and defense agencies, and build your own models."
+        }
+      },
+      {
+        "title": {
+          "zh": "參與真實計畫",
+          "en": "Work on real projects"
+        },
+        "desc": {
+          "zh": "研究題目來自國科會、國防與產業計畫，做出來的東西會被真正用上。",
+          "en": "Topics come from NSTC, defense and industry projects, so your results are put to real use."
+        }
+      }
+    ]
+  },
+  "research": {
+    "eyebrow": {
+      "zh": "研究",
+      "en": "Research"
+    },
+    "title": {
+      "zh": "五大研究主軸",
+      "en": "Five research themes"
+    },
+    "lead": {
+      "zh": "從威脅情境、材料研發、力學與爆炸試驗、數值模擬，到工程應用與驗證，建立完整的研究鏈。",
+      "en": "A complete chain from threat scenarios, material development and testing to simulation, engineering application and validation."
+    }
+  },
+  "industry": {
+    "eyebrow": {
+      "zh": "產學合作與技術服務",
+      "en": "Industry and consulting"
+    },
+    "title": {
+      "zh": "把爆炸風險，變成可以計算、可以驗證的工程問題。",
+      "en": "Turning blast risk into an engineering problem you can calculate and verify."
+    },
+    "lead": {
+      "zh": "透過國立陽明交通大學產學合作與技術服務機制簽約執行。",
+      "en": "Contracts are executed through NYCU's industry collaboration and technical service programs."
+    },
+    "clientsLabel": {
+      "zh": "服務對象",
+      "en": "We work with"
+    },
+    "clients": [
+      {
+        "zh": "政府與國防單位",
+        "en": "Government and defense"
+      },
+      {
+        "zh": "工程顧問與營造",
+        "en": "Engineering firms and contractors"
+      },
+      {
+        "zh": "科技廠、能源與儲能",
+        "en": "Tech, energy and storage sites"
+      },
+      {
+        "zh": "材料廠商",
+        "en": "Material manufacturers"
+      }
+    ],
+    "cta": {
+      "zh": "填寫合作需求",
+      "en": "Tell us about your project"
+    }
+  },
+  "team": {
+    "eyebrow": {
+      "zh": "團隊",
+      "en": "Team"
+    },
+    "pi": {
+      "zh": "主持人",
+      "en": "Principal Investigator"
+    },
+    "members": {
+      "zh": "研究團隊",
+      "en": "Lab members"
+    },
+    "photo": {
+      "zh": "照片",
+      "en": "Photo"
+    }
+  },
+  "outputs": {
+    "title": {
+      "zh": "代表著作",
+      "en": "Selected publications"
+    },
+    "all": {
+      "zh": "全部著作與計畫",
+      "en": "All publications and projects"
+    }
+  },
+  "news": {
+    "title": {
+      "zh": "最新消息",
+      "en": "News"
+    }
+  },
+  "join": {
+    "title": {
+      "zh": "想聊聊研究題目？",
+      "en": "Want to talk about a research topic?"
+    },
+    "lead": {
+      "zh": "歡迎大學部專題生、碩士班與博士班同學來信，或直接到工程二館 321 室找我們。",
+      "en": "Undergraduate, master's and Ph.D. applicants are welcome to email us or visit Room 321, Engineering Building II."
+    },
+    "email": {
+      "zh": "寫信給老師",
+      "en": "Email Prof. Tsai"
+    }
+  },
+  "footer": {
+    "contact": {
+      "zh": "聯絡",
+      "en": "Contact"
+    },
+    "links": {
+      "zh": "學術連結",
+      "en": "Academic links"
+    },
+    "deptPage": {
+      "zh": "陽明交大土木系 教師頁",
+      "en": "NYCU faculty page"
+    },
+    "pending": {
+      "zh": "（待補）",
+      "en": "(coming soon)"
+    }
+  }
+}

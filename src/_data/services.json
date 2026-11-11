@@ -1,0 +1,34 @@
+[
+  {
+    "title": { "zh": "爆炸荷載與安全距離評估", "en": "Blast Load and Safety Distance Assessment" },
+    "desc": {
+      "zh": "廠區、儲能設施、彈藥庫或關鍵設施的爆炸情境分析，評估超壓分布與安全量距。",
+      "en": "Explosion scenario analysis for plants, energy storage sites, magazines and critical facilities: overpressure maps and safe separation distances."
+    },
+    "deliver": { "zh": "交付：評估報告、風險分區圖", "en": "Deliverables: assessment report, hazard zoning map" }
+  },
+  {
+    "title": { "zh": "抗爆設計檢核與補強建議", "en": "Blast Design Review and Retrofit" },
+    "desc": {
+      "zh": "依 UFC 3-340-02 等國際規範，檢核構件與結構的抗爆能力並提出補強方案。",
+      "en": "Checking members and structures against UFC 3-340-02 and other standards, with retrofit recommendations."
+    },
+    "deliver": { "zh": "交付：檢核計算書、補強設計建議", "en": "Deliverables: calculation package, retrofit design" }
+  },
+  {
+    "title": { "zh": "防護材料性能驗證", "en": "Protective Material Qualification" },
+    "desc": {
+      "zh": "為塗料、纖維、混凝土與複合材料廠商進行靜態、衝擊與爆炸試驗，取得可對外引用的性能數據。",
+      "en": "Static, impact and explosive testing for coating, fiber, concrete and composite manufacturers, producing citable performance data."
+    },
+    "deliver": { "zh": "交付：試驗報告、數值模型參數", "en": "Deliverables: test report, numerical model parameters" }
+  },
+  {
+    "title": { "zh": "工程審查、顧問與教育訓練", "en": "Design Review, Consulting and Training" },
+    "desc": {
+      "zh": "防護設施基本與細部設計審查、技術諮詢，以及抗爆設計與爆炸模擬的專業研習課程。",
+      "en": "Design reviews for protective facilities, technical consulting, and professional courses on blast design and simulation."
+    },
+    "deliver": { "zh": "交付：審查意見、顧問報告、課程", "en": "Deliverables: review comments, consulting reports, courses" }
+  }
+]

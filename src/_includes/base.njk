@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ 'zh-Hant' if lang == 'zh' else 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDesc }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDesc }}">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="zh-Hant" href="{{ root }}index.html">
+<link rel="alternate" hreflang="en" href="{{ root }}en/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16' fill='%2314233A'/%3E%3Ccircle cx='18' cy='18' r='9' fill='none' stroke='%233FC1D9' stroke-width='2'/%3E%3Ccircle cx='18' cy='18' r='3.5' fill='%233FC1D9'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "{{ site.name.en }}",
+  "alternateName": ["{{ site.name.zh }}", "APSM Lab"],
+  "parentOrganization": { "@type": "CollegeOrUniversity", "name": "National Yang Ming Chiao Tung University" },
+  "email": "{{ site.contact.email }}",
+  "telephone": "+886-3-5712121",
+  "address": { "@type": "PostalAddress", "streetAddress": "1001 University Rd.", "addressLocality": "Hsinchu", "postalCode": "300", "addressCountry": "TW" },
+  "founder": { "@type": "Person", "name": "Ying-Kuan Tsai", "alternateName": "蔡營寬", "jobTitle": "Associate Professor" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ '跳到主要內容' if lang == 'zh' else 'Skip to content' }}</a>
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a class="brand" href="{{ root }}{{ 'index.html' if lang == 'zh' else 'en/index.html' }}">
+      <svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="#14233A"/><circle cx="18" cy="18" r="9" fill="none" stroke="#3FC1D9" stroke-width="2"/><circle cx="18" cy="18" r="3.5" fill="#3FC1D9"/></svg>
+      <span class="brand__txt"><span class="brand__name">APSM Lab</span><span class="brand__sub">{{ site.name | l(lang) }}</span></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n.nav.menu | l(lang) }}"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h16M3 11h16M3 16h16"/></svg></button>
+    <nav id="site-nav" aria-label="{{ i18n.nav.menu | l(lang) }}" class="nav">
+      <a href="#research">{{ i18n.nav.research | l(lang) }}</a>
+      <a href="#outputs">{{ i18n.nav.outputs | l(lang) }}</a>
+      <a href="#industry">{{ i18n.nav.industry | l(lang) }}</a>
+      <a href="#team">{{ i18n.nav.team | l(lang) }}</a>
+      <a href="#news">{{ i18n.nav.news | l(lang) }}</a>
+      <a class="nav__lang" href="{{ other }}" hreflang="{{ 'en' if lang == 'zh' else 'zh-Hant' }}">{{ i18n.nav.switch | l(lang) }}</a>
+      <a class="btn btn--orange btn--sm" href="#join">{{ i18n.nav.join | l(lang) }}</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer class="footer" id="contact">
+  <div class="wrap footer__grid">
+    <div class="footer__col">
+      <span class="footer__brand">APSM Lab</span>
+      <span>{{ site.dept | l(lang) }}</span>
+      <span>{{ site.name | l(lang) }}</span>
+    </div>
+    <div class="footer__col">
+      <span class="footer__h">{{ i18n.footer.contact | l(lang) }}</span>
+      <span>{{ site.contact.office | l(lang) }}</span>
+      <span>{{ site.contact.address | l(lang) }}</span>
+      <span>{{ site.contact.phone }}</span>
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__h">{{ i18n.footer.links | l(lang) }}</span>
+      {% if site.links.orcid %}<a href="{{ site.links.orcid }}">ORCID</a>{% else %}<span>ORCID {{ i18n.footer.pending | l(lang) }}</span>{% endif %}
+      {% if site.links.scholar %}<a href="{{ site.links.scholar }}">Google Scholar</a>{% else %}<span>Google Scholar {{ i18n.footer.pending | l(lang) }}</span>{% endif %}
+      <a href="{{ site.links.dept }}">{{ i18n.footer.deptPage | l(lang) }}</a>
+    </div>
+  </div>
+  <div class="wrap footer__legal">© APSM Lab, NYCU</div>
+</footer>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('site-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('is-open');b.setAttribute('aria-expanded',o?'true':'false');});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
+</script>
+</body>
+</html>

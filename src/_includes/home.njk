@@ -1,0 +1,159 @@
+---
+layout: base.njk
+---
+<section class="hero" id="top">
+  <svg class="hero__rings" aria-hidden="true" viewBox="0 0 900 900"><circle cx="450" cy="450" r="120"/><circle cx="450" cy="450" r="210" opacity=".7"/><circle cx="450" cy="450" r="300" opacity=".45"/><circle cx="450" cy="450" r="390" opacity=".25"/></svg>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
+      <h1>{{ i18n.hero.title | l(lang) | safe }}</h1>
+      <p class="hero__lead">{{ i18n.hero.lead | l(lang) }}</p>
+      <div class="btns">
+        <a class="btn btn--orange" href="#join">{{ i18n.hero.ctaJoin | l(lang) }}</a>
+        <a class="btn btn--cyan-outline" href="#industry">{{ i18n.hero.ctaIndustry | l(lang) }}</a>
+      </div>
+    </div>
+    <figure class="wavefig">
+      <svg role="img" aria-label="{{ i18n.hero.figAria | l(lang) }}" viewBox="0 0 520 240">
+        <line x1="40" y1="20" x2="40" y2="210" class="ax"/>
+        <line x1="40" y1="176" x2="505" y2="176" class="ax"/>
+        <path d="{% include 'wave-path.njk' %}" class="wave"/>
+        <line x1="86" y1="52" x2="250" y2="52" class="dash"/>
+        <text x="256" y="56" class="lbl">{{ i18n.hero.peak | l(lang) }}</text>
+        <line x1="86" y1="196" x2="233" y2="196" class="ax"/>
+        <text x="160" y="214" class="lbl" text-anchor="middle">{{ i18n.hero.pos | l(lang) }}</text>
+        <text x="330" y="168" class="lbl lbl--q">{{ i18n.hero.neg | l(lang) }}</text>
+        <text x="48" y="30" class="lbl lbl--q">P(t)</text>
+        <text x="500" y="196" class="lbl lbl--q" text-anchor="end">t</text>
+      </svg>
+      <figcaption>{{ i18n.hero.figCaption | l(lang) }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="stats" aria-label="{{ 'Lab in numbers' if lang == 'en' else '實驗室數字' }}">
+  <div class="wrap stats__grid">
+    {% for s in stats %}
+    <div class="stat"><span class="stat__v">{{ s.value }}</span><span class="stat__l">{{ s.label | l(lang) }}</span></div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="students-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--orange">{{ i18n.students.eyebrow | l(lang) }}</p>
+    <h2 id="students-h">{{ i18n.students.title | l(lang) }}</h2>
+    <div class="cards3">
+      {% for it in i18n.students.items %}
+      <div class="card">
+        <span class="card__num">0{{ loop.index }}</span>
+        <h3>{{ it.title | l(lang) }}</h3>
+        <p>{{ it.desc | l(lang) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="research" aria-labelledby="research-h">
+  <div class="wrap">
+    <div class="sechead">
+      <div><p class="eyebrow eyebrow--navy">{{ i18n.research.eyebrow | l(lang) }}</p><h2 id="research-h">{{ i18n.research.title | l(lang) }}</h2></div>
+      <p class="sechead__lead">{{ i18n.research.lead | l(lang) }}</p>
+    </div>
+    <ol class="themes">
+      {% for r in research %}
+      <li class="theme" id="r-{{ r.id }}">
+        <div class="theme__head"><span class="theme__num">0{{ loop.index }}</span><h3>{{ r.title | l(lang) }}</h3></div>
+        <div class="theme__body"><p>{{ r.desc | l(lang) }}</p><p class="theme__tags">{{ r.tags }}</p></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="industry" id="industry" aria-labelledby="industry-h">
+  <div class="wrap">
+    <div class="industry__head">
+      <div><p class="eyebrow eyebrow--cyan">{{ i18n.industry.eyebrow | l(lang) }}</p><h2 id="industry-h">{{ i18n.industry.title | l(lang) }}</h2></div>
+      <p class="industry__lead">{{ i18n.industry.lead | l(lang) }}</p>
+    </div>
+    <div class="svc-grid">
+      {% for s in services %}
+      <div class="svc">
+        <h3>{{ s.title | l(lang) }}</h3>
+        <p>{{ s.desc | l(lang) }}</p>
+        <p class="svc__deliver">{{ s.deliver | l(lang) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="industry__foot">
+      <div class="chips"><span class="chips__label">{{ i18n.industry.clientsLabel | l(lang) }}</span>{% for c in i18n.industry.clients %}<span class="chip">{{ c | l(lang) }}</span>{% endfor %}</div>
+      <a class="btn btn--cyan" href="mailto:{{ site.contact.email }}">{{ i18n.industry.cta | l(lang) }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team" aria-labelledby="team-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--navy">{{ i18n.team.eyebrow | l(lang) }}</p>
+    <div class="pi">
+      <div class="pi__photo" role="img" aria-label="{{ i18n.team.photo | l(lang) }}">{{ i18n.team.photo | l(lang) }}</div>
+      <div class="pi__txt">
+        <span class="pi__role">{{ i18n.team.pi | l(lang) }}</span>
+        <h2 id="team-h">{{ site.pi.name | l(lang) }}</h2>
+        <span class="pi__alt">{{ site.pi.nameAlt | l(lang) }}</span>
+        <p>{{ site.pi.bio | l(lang) }}</p>
+      </div>
+    </div>
+    <h3 class="sub-h">{{ i18n.team.members | l(lang) }}</h3>
+    <ul class="members">
+      {% for m in members %}
+      <li class="member">
+        <div class="member__photo" aria-hidden="true"></div>
+        <span class="member__name">{{ m.name | l(lang) }}</span>
+        <span class="member__role">{{ m.role | l(lang) }}</span>
+        <span class="member__topic">{{ m.topic | l(lang) }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--alt" id="outputs">
+  <div class="wrap two">
+    <div>
+      <h2>{{ i18n.outputs.title | l(lang) }}</h2>
+      <ul class="pubs">
+        {% for p in publications %}{% if p.selected %}
+        <li class="pub">
+          {% if p.doi %}<a class="pub__t" href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}<span class="pub__t">{{ p.title }}</span>{% endif %}
+          <span class="pub__a">{{ p.authors }}</span>
+          <span class="pub__v">{{ p.venue }} · {{ p.year }}</span>
+        </li>
+        {% endif %}{% endfor %}
+      </ul>
+      <a class="more" href="{{ site.links.dept }}">{{ i18n.outputs.all | l(lang) }} →</a>
+    </div>
+    <div id="news">
+      <h2>{{ i18n.news.title | l(lang) }}</h2>
+      <ul class="news">
+        {% for n in news | take(3) %}
+        <li class="news__i{% if n.placeholder %} news__i--ph{% endif %}"><span class="news__d">{{ n.date or '—' }}</span><span>{{ n.title | l(lang) }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="join">
+  <div class="wrap">
+    <div class="joinbox">
+      <div><h2>{{ i18n.join.title | l(lang) }}</h2><p>{{ i18n.join.lead | l(lang) }}</p></div>
+      <div class="joinbox__act">
+        <a class="btn btn--white" href="mailto:{{ site.contact.email }}">{{ i18n.join.email | l(lang) }}</a>
+        <span class="joinbox__mail">{{ site.contact.email }}</span>
+      </div>
+    </div>
+  </div>
+</section>
