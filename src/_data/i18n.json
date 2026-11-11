@@ -73,6 +73,36 @@
     "neg": {
       "zh": "負壓相",
       "en": "negative phase"
+    },
+    "sim": {
+      "tag": {
+        "zh": "即時計算",
+        "en": "Live calculation"
+      },
+      "t": {
+        "zh": "模擬時間",
+        "en": "Time"
+      },
+      "ps": {
+        "zh": "入射超壓 P_so",
+        "en": "Incident P_so"
+      },
+      "pr": {
+        "zh": "牆面反射超壓 P_r",
+        "en": "Reflected P_r"
+      },
+      "legend": {
+        "zh": "超壓 (kPa)",
+        "en": "Overpressure (kPa)"
+      },
+      "note": {
+        "zh": "100 kg TNT、爆心離地 1 m、距建築物 15 m；以 Kinney–Graham 經驗式計算入射與反射超壓場（示意，未含繞射與 Mach 波細節）。",
+        "en": "100 kg TNT, 1 m above ground, 15 m from the building. Incident and reflected overpressure from the Kinney–Graham relations (illustrative; diffraction and Mach-stem details omitted)."
+      },
+      "aria": {
+        "zh": "爆炸波從爆心向外傳遞、撞擊建築物並反射的壓力場動畫",
+        "en": "Animation of a blast wave expanding from the charge, striking a building and reflecting"
+      }
     }
   },
   "students": {
@@ -169,7 +199,53 @@
     "cta": {
       "zh": "填寫合作需求",
       "en": "Tell us about your project"
-    }
+    },
+    "sectorsTitle": {
+      "zh": "依產業找到你需要的服務",
+      "en": "Find the service for your sector"
+    },
+    "sectors": [
+      {
+        "name": {
+          "zh": "政府與國防",
+          "en": "Government and defense"
+        },
+        "need": {
+          "zh": "設施防護設計審查、戰損評估與快速修復",
+          "en": "Protective design review, damage assessment and rapid repair"
+        }
+      },
+      {
+        "name": {
+          "zh": "工程顧問與營造",
+          "en": "Engineering firms and contractors"
+        },
+        "need": {
+          "zh": "抗爆設計檢核、補強方案與第三方審查",
+          "en": "Blast design checks, retrofit schemes and third-party review"
+        }
+      },
+      {
+        "name": {
+          "zh": "科技廠、能源與儲能",
+          "en": "Tech, energy and storage sites"
+        },
+        "need": {
+          "zh": "爆炸情境模擬、超壓分布與安全距離評估",
+          "en": "Explosion scenarios, overpressure maps and safety distances"
+        }
+      },
+      {
+        "name": {
+          "zh": "材料廠商",
+          "en": "Material manufacturers"
+        },
+        "need": {
+          "zh": "抗衝擊與抗爆性能驗證試驗，取得可引用數據",
+          "en": "Impact and blast qualification tests with citable data"
+        }
+      }
+    ]
   },
   "team": {
     "eyebrow": {
@@ -236,5 +312,54 @@
       "zh": "（待補）",
       "en": "(coming soon)"
     }
+  },
+  "partners": {
+    "label": {
+      "zh": "研究計畫委託與補助單位",
+      "en": "Our research has been funded and commissioned by"
+    }
+  },
+  "highlights": {
+    "eyebrow": {
+      "zh": "研究亮點",
+      "en": "Highlights"
+    },
+    "title": {
+      "zh": "從爆炸荷載，算到結構怎麼壞",
+      "en": "From the blast load to how the structure fails"
+    }
+  },
+  "cases": {
+    "eyebrow": {
+      "zh": "代表案例",
+      "en": "Selected projects"
+    },
+    "title": {
+      "zh": "做過的事，比說的更有說服力",
+      "en": "What we have delivered"
+    },
+    "all": {
+      "zh": "全部計畫",
+      "en": "All projects"
+    }
+  },
+  "standards": {
+    "label": {
+      "zh": "依循規範與分析工具",
+      "en": "Standards and tools we work with"
+    },
+    "items": [
+      "UFC 3-340-01",
+      "UFC 3-340-02",
+      "USACE",
+      "DoD 4145.26-M",
+      "LS-DYNA",
+      "BREEZE ExDAM",
+      "BlastFoam",
+      {
+        "zh": "現地縮尺爆炸試驗",
+        "en": "Scaled field blast tests"
+      }
+    ]
   }
 }

@@ -2,8 +2,17 @@
 layout: base.njk
 ---
 <section class="hero" id="top">
-  <svg class="hero__rings" aria-hidden="true" viewBox="0 0 900 900"><circle cx="450" cy="450" r="120"/><circle cx="450" cy="450" r="210" opacity=".7"/><circle cx="450" cy="450" r="300" opacity=".45"/><circle cx="450" cy="450" r="390" opacity=".25"/></svg>
-  <div class="wrap hero__grid">
+  <div class="hero__sim">
+    <canvas id="blast" role="img" aria-label="{{ i18n.hero.sim.aria | l(lang) }}"></canvas>
+    <div class="hud" aria-hidden="true">
+      <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.hero.sim.tag | l(lang) }}</span>
+      <span class="hud__row"><span>{{ i18n.hero.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
+      <span class="hud__row"><span>{{ i18n.hero.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
+      <span class="hud__row"><span>{{ i18n.hero.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
+      <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.hero.sim.legend | l(lang) }}</span></span>
+    </div>
+  </div>
+  <div class="wrap hero__in">
     <div class="hero__copy">
       <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
       <h1>{{ i18n.hero.title | l(lang) | safe }}</h1>
@@ -13,21 +22,14 @@ layout: base.njk
         <a class="btn btn--cyan-outline" href="#industry">{{ i18n.hero.ctaIndustry | l(lang) }}</a>
       </div>
     </div>
-    <figure class="wavefig">
-      <svg role="img" aria-label="{{ i18n.hero.figAria | l(lang) }}" viewBox="0 0 520 240">
-        <line x1="40" y1="20" x2="40" y2="210" class="ax"/>
-        <line x1="40" y1="176" x2="505" y2="176" class="ax"/>
-        <path d="{% include 'wave-path.njk' %}" class="wave"/>
-        <line x1="86" y1="52" x2="250" y2="52" class="dash"/>
-        <text x="256" y="56" class="lbl">{{ i18n.hero.peak | l(lang) }}</text>
-        <line x1="86" y1="196" x2="233" y2="196" class="ax"/>
-        <text x="160" y="214" class="lbl" text-anchor="middle">{{ i18n.hero.pos | l(lang) }}</text>
-        <text x="330" y="168" class="lbl lbl--q">{{ i18n.hero.neg | l(lang) }}</text>
-        <text x="48" y="30" class="lbl lbl--q">P(t)</text>
-        <text x="500" y="196" class="lbl lbl--q" text-anchor="end">t</text>
-      </svg>
-      <figcaption>{{ i18n.hero.figCaption | l(lang) }}</figcaption>
-    </figure>
+  </div>
+  <p class="wrap hero__note">{{ i18n.hero.sim.note | l(lang) }}</p>
+</section>
+
+<section class="partners" aria-label="{{ i18n.partners.label | l(lang) }}">
+  <div class="wrap partners__in">
+    <span class="partners__lbl">{{ i18n.partners.label | l(lang) }}</span>
+    <ul class="partners__list">{% for p in partners %}<li>{{ p | l(lang) }}</li>{% endfor %}</ul>
   </div>
 </section>
 
@@ -36,6 +38,18 @@ layout: base.njk
     {% for s in stats %}
     <div class="stat"><span class="stat__v">{{ s.value }}</span><span class="stat__l">{{ s.label | l(lang) }}</span></div>
     {% endfor %}
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="hl-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--cyan">{{ i18n.highlights.eyebrow | l(lang) }}</p>
+    <h2 id="hl-h">{{ i18n.highlights.title | l(lang) }}</h2>
+    <div class="gallery">
+      {% for h in highlights %}
+      <figure class="shot"><div class="shot__img"><img src="{{ root }}{{ h.img }}" alt="{{ h.alt | l(lang) }}" loading="lazy"></div><figcaption>{{ h.cap | l(lang) }}</figcaption></figure>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
@@ -87,14 +101,36 @@ layout: base.njk
       </div>
       {% endfor %}
     </div>
+    <h3 class="sectors__h">{{ i18n.industry.sectorsTitle | l(lang) }}</h3>
+    <div class="sectors">
+      {% for sc in i18n.industry.sectors %}
+      <div class="sector"><span class="sector__n">{{ sc.name | l(lang) }}</span><span class="sector__d">{{ sc.need | l(lang) }}</span></div>
+      {% endfor %}
+    </div>
     <div class="industry__foot">
-      <div class="chips"><span class="chips__label">{{ i18n.industry.clientsLabel | l(lang) }}</span>{% for c in i18n.industry.clients %}<span class="chip">{{ c | l(lang) }}</span>{% endfor %}</div>
+      <div class="chips"><span class="chips__label">{{ i18n.standards.label | l(lang) }}</span>{% for it in i18n.standards.items %}<span class="chip">{{ it | l(lang) }}</span>{% endfor %}</div>
       <a class="btn btn--cyan" href="mailto:{{ site.contact.email }}">{{ i18n.industry.cta | l(lang) }}</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="team" aria-labelledby="team-h">
+<section class="section" id="cases" aria-labelledby="cases-h">
+  <div class="wrap">
+    <div class="sechead"><div><p class="eyebrow eyebrow--navy">{{ i18n.cases.eyebrow | l(lang) }}</p><h2 id="cases-h">{{ i18n.cases.title | l(lang) }}</h2></div><a class="more" href="{{ site.links.dept }}">{{ i18n.cases.all | l(lang) }} →</a></div>
+    <div class="cases">
+      {% for c in cases %}
+      <article class="case">
+        <span class="case__meta">{{ c.client | l(lang) }} · {{ c.years }}</span>
+        <h3>{{ c.title | l(lang) }}</h3>
+        <p>{{ c.desc | l(lang) }}</p>
+        <span class="case__role">{{ c.role | l(lang) }}</span>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="team" aria-labelledby="team-h">
   <div class="wrap">
     <p class="eyebrow eyebrow--navy">{{ i18n.team.eyebrow | l(lang) }}</p>
     <div class="pi">
@@ -120,7 +156,7 @@ layout: base.njk
   </div>
 </section>
 
-<section class="section section--alt" id="outputs">
+<section class="section" id="outputs">
   <div class="wrap two">
     <div>
       <h2>{{ i18n.outputs.title | l(lang) }}</h2>

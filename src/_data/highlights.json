@@ -1,0 +1,5 @@
+[
+  { "img": "assets/img/sim-spalling.jpg", "alt": { "zh": "RC 構件受爆炸後背面剝落的 LS-DYNA 損傷雲圖", "en": "LS-DYNA damage contour showing spalling of an RC member after blast" }, "cap": { "zh": "RC 構件爆炸後的背面剝落", "en": "Spalling of an RC member after blast" } },
+  { "img": "assets/img/sim-perforation.jpg", "alt": { "zh": "版構件受接觸爆炸穿孔的 LS-DYNA 損傷雲圖", "en": "LS-DYNA damage contour showing perforation of a slab under contact explosion" }, "cap": { "zh": "版構件受接觸爆炸穿孔", "en": "Slab perforation under contact explosion" } },
+  { "img": "assets/img/sim-penetration.jpg", "alt": { "zh": "彈體貫穿多層防護結構的數值模擬", "en": "Simulation of a projectile penetrating a layered protective structure" }, "cap": { "zh": "彈體貫穿多層防護結構", "en": "Projectile penetration into layered protection" } }
+]
