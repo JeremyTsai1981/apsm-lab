@@ -1,35 +1,35 @@
 [
   {
-    "img": "render-city",
+    "img": "twin-still",
     "alt": {
-      "zh": "城市街廓受 500 kg TNT 道路側爆炸的建物與地面峰值超壓分布 3D 示意圖",
-      "en": "3D illustration of peak overpressure on buildings and ground from a 500 kg TNT roadside explosion"
+      "zh": "園區數位孿生中的爆炸波傳遞與建物受壓分布",
+      "en": "Blast wave and building loading in a site digital twin"
     },
     "cap": {
-      "zh": "城市街廓爆炸風險評估：建物迎爆面超壓分布",
-      "en": "Urban blast risk: overpressure on building facades"
+      "zh": "數位孿生：園區爆炸情境與感測節點",
+      "en": "Digital twin: site explosion scenario and sensor nodes"
     }
   },
   {
-    "img": "render-slab",
+    "img": "head-still",
     "alt": {
-      "zh": "RC 版受接觸爆炸後的穿孔、背面剝落與降伏線損傷示意圖",
-      "en": "Illustration of perforation, spalling and yield lines in an RC slab under contact explosion"
+      "zh": "爆震波通過頭部模型時的腦部應變分布示意",
+      "en": "Brain strain distribution as a blast wave passes a head model"
     },
     "cap": {
-      "zh": "構件層級：RC 版接觸爆炸穿孔與降伏線",
-      "en": "Member level: RC slab perforation and yield lines"
+      "zh": "人體防護：爆震波下的腦部應變分布",
+      "en": "Human protection: brain strain under blast"
     }
   },
   {
     "img": "render-bess",
     "alt": {
-      "zh": "儲能櫃熱失控爆炸與防爆牆遮蔽效果的超壓分布示意圖",
-      "en": "Overpressure map showing a blast wall shielding buildings from a battery energy storage explosion"
+      "zh": "儲能櫃爆炸情境與防爆牆遮蔽效果",
+      "en": "Battery storage explosion scenario and blast-wall shielding"
     },
     "cap": {
-      "zh": "產業應用：儲能櫃爆炸與防爆牆遮蔽",
-      "en": "Industry: battery storage explosion and blast-wall shielding"
+      "zh": "風險評估：儲能設施爆炸與防爆牆遮蔽",
+      "en": "Risk assessment: battery storage explosion and blast wall"
     }
   }
 ]

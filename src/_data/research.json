@@ -1,47 +1,62 @@
 [
   {
-    "id": "structures",
-    "title": { "zh": "抗爆防護結構", "en": "Blast-Resistant Protective Structures" },
-    "desc": {
-      "zh": "掩體、橋梁、隧道與關鍵設施在爆炸荷載下的動態反應、破壞模式與補強設計。",
-      "en": "Dynamic response, failure modes and retrofit design of shelters, bridges, tunnels and critical facilities under blast loading."
+    "id": "twin",
+    "title": {
+      "zh": "數位孿生與韌性平台",
+      "en": "Digital twins for resilience"
     },
-    "tags": "UFC 3-340-02 · P-I diagrams · energy methods"
+    "desc": {
+      "zh": "為關鍵基礎設施、科技園區、資料中心與能源設施建立數位孿生，整合感測、爆炸模擬與損傷評估，支援戰災與意外爆炸情境的預防、監測與方案比較。",
+      "en": "Digital twins of critical infrastructure, science parks, data centers and energy facilities that combine sensing, blast simulation and damage assessment to prevent, monitor and compare responses to wartime and accidental explosions."
+    },
+    "tags": "Digital twin · scenario engine · decision support"
   },
   {
-    "id": "materials",
-    "title": { "zh": "先進防護材料", "en": "Advanced Protective Materials" },
-    "desc": {
-      "zh": "纖維混凝土、UHPC、聚脲彈性塗層、無機聚合物與 3D 列印材料的靜態與高應變率性能。",
-      "en": "Static and high-strain-rate behavior of fiber-reinforced concrete, UHPC, polyurea coatings, geopolymers and 3D-printed materials."
+    "id": "human",
+    "title": {
+      "zh": "人體爆炸損傷與防護",
+      "en": "Human blast injury and protection"
     },
-    "tags": "High strain rate · impact testing · material qualification"
+    "desc": {
+      "zh": "以人體有限元素模型分析爆震波下的顱內壓與腦組織應變，評估爆炸性腦損傷風險；並研究衝擊式噪音對聽力的影響與頭盔等個人防護效能。",
+      "en": "Finite-element human body models to analyse intracranial pressure and brain tissue strain under blast, assess blast-induced brain injury risk, and study impulse-noise effects on hearing and the performance of helmets and other personal protection."
+    },
+    "tags": "GHBMC · bTBI · impulse noise"
   },
   {
     "id": "simulation",
-    "title": { "zh": "爆炸模擬與試驗", "en": "Blast Simulation and Testing" },
+    "title": {
+      "zh": "爆炸模擬與風險評估",
+      "en": "Blast simulation and risk assessment"
+    },
     "desc": {
-      "zh": "以 LS-DYNA、ExDAM、blastFoam 重現極端情境，再用縮尺與現地爆炸試驗驗證模型。",
-      "en": "Reproducing extreme events with LS-DYNA, ExDAM and blastFoam, validated by scaled and field explosive tests."
+      "zh": "以 LS-DYNA、ExDAM 與 blastFoam 重現廠區、儲能與危險物設施的爆炸情境，計算超壓分布、安全距離與人員傷害範圍。",
+      "en": "LS-DYNA, ExDAM and blastFoam models of explosions at plants, battery storage and hazardous-material sites, giving overpressure maps, safety distances and injury ranges."
     },
     "tags": "LS-DYNA · ExDAM · blastFoam"
   },
   {
-    "id": "repair",
-    "title": { "zh": "戰損評估與快速修復", "en": "Damage Assessment and Rapid Repair" },
-    "desc": {
-      "zh": "機場跑道、橋梁與設施的損傷評估、快速搶修工法，以及高早強無機聚合修補材料。",
-      "en": "Damage assessment and rapid repair of runways, bridges and facilities, including high-early-strength geopolymer repair materials."
+    "id": "structures",
+    "title": {
+      "zh": "抗爆結構與先進防護材料",
+      "en": "Blast-resistant structures and materials"
     },
-    "tags": "Damage assessment · rapid repair · repair materials"
+    "desc": {
+      "zh": "掩體、隧道、橋梁與廠房在爆炸荷載下的動態反應與補強設計；纖維混凝土、UHPC、聚脲塗層、無機聚合物與 3D 列印材料的高應變率性能。",
+      "en": "Dynamic response and retrofit of shelters, tunnels, bridges and plants under blast; high-strain-rate behaviour of fibre concrete, UHPC, polyurea coatings, geopolymers and 3D-printed materials."
+    },
+    "tags": "UFC 3-340-02 · P-I diagrams · high strain rate"
   },
   {
-    "id": "human",
-    "title": { "zh": "人體爆炸防護", "en": "Human Protection against Blast" },
-    "desc": {
-      "zh": "爆炸波、衝擊加速度與高強度噪音造成的腦部、頸椎與聽力損傷評估，以及個人防護技術。",
-      "en": "Brain, cervical spine and hearing injury from blast waves, impact acceleration and impulse noise, and personal protection."
+    "id": "repair",
+    "title": {
+      "zh": "戰損評估與快速修復",
+      "en": "Damage assessment and rapid repair"
     },
-    "tags": "Head models · hearing protection · biomaterials"
+    "desc": {
+      "zh": "機場跑道、橋梁與關鍵設施的損傷評估、快速搶修工法，以及高早強修補材料。",
+      "en": "Damage assessment and rapid repair methods for runways, bridges and critical facilities, with high-early-strength repair materials."
+    },
+    "tags": "Damage assessment · rapid repair"
   }
 ]

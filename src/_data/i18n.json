@@ -43,12 +43,12 @@
       "en": "Advanced Protective Structures and Materials Lab (APSM)"
     },
     "title": {
-      "zh": "<span class=\"nw\">讓結構在爆炸與衝擊下，</span><span class=\"nw\">依然站得住。</span>",
-      "en": "Keeping structures standing through blast and impact."
+      "zh": "<span class=\"nw\">以模擬與數位孿生，</span><span class=\"nw\">預測並降低爆炸風險。</span>",
+      "en": "Predicting and reducing blast risk with simulation and digital twins."
     },
     "lead": {
-      "zh": "我們結合爆炸試驗、數值模擬與先進防護材料，為關鍵基礎設施、國防設施與產業廠房，提供抗爆評估、防護設計與快速修復方案。",
-      "en": "We combine explosive testing, numerical simulation and advanced protective materials to assess, protect and rapidly repair critical infrastructure, defense facilities and industrial plants."
+      "zh": "我們結合爆炸數值模擬、人體損傷分析、數位孿生與試驗驗證，為關鍵基礎設施、科技園區、資料中心與能源設施提供風險評估、防護設計與決策支援。",
+      "en": "We combine blast simulation, human injury analysis, digital twins and experimental validation to deliver risk assessment, protective design and decision support for critical infrastructure, science parks, data centers and energy facilities."
     },
     "ctaStudent": {
       "zh": "我是學生：加入研究團隊",
@@ -59,8 +59,8 @@
       "en": "Industry and agencies: work with us"
     },
     "photoCap": {
-      "zh": "實驗室試驗：聚脲塗層試體受接觸爆炸後的破口",
-      "en": "Lab test: breach in a polyurea-coated specimen after a contact explosion"
+      "zh": "數位孿生情境示意動畫（實驗室自製）",
+      "en": "Digital-twin scenario animation (made by the lab)"
     }
   },
   "trust": {
@@ -84,21 +84,21 @@
         "en": "For future students"
       },
       "title": {
-        "zh": "在這裡，你會做真正的試驗與模擬",
-        "en": "Real tests, real simulations, real projects"
+        "zh": "在這裡，你會學模擬、做數位孿生，也做試驗",
+        "en": "Simulation, digital twins and real tests"
       },
       "items": [
         {
-          "zh": "參與材料、衝擊與縮尺爆炸試驗，觀察結構的破壞過程",
-          "en": "Take part in material, impact and scaled explosive tests and watch how structures fail"
+          "zh": "學習 LS-DYNA、人體有限元素模型與爆炸模擬，從建模到結果判讀",
+          "en": "Learn LS-DYNA, human body models and blast simulation, from modelling to interpreting results"
         },
         {
-          "zh": "學習 LS-DYNA 等防護工程常用軟體，從建模到結果判讀",
-          "en": "Learn LS-DYNA and other protective-engineering tools, from modelling to interpreting results"
+          "zh": "參與數位孿生平台開發，結合程式、感測資料與工程分析",
+          "en": "Help build digital-twin platforms that combine code, sensor data and engineering analysis"
         },
         {
-          "zh": "題目來自國科會、國防與產業計畫，成果回饋實際工程",
-          "en": "Topics come from NSTC, defense and industry projects, and feed back into practice"
+          "zh": "題目來自國科會、國防與產業計畫，並以材料與爆炸試驗驗證",
+          "en": "Topics come from NSTC, defense and industry projects, validated by material and explosive tests"
         }
       ],
       "link": {
@@ -117,16 +117,16 @@
       },
       "items": [
         {
-          "zh": "爆炸荷載與安全距離評估",
-          "en": "Blast load and safety distance assessment"
+          "zh": "廠區、資料中心與能源設施的爆炸風險評估",
+          "en": "Explosion risk assessment for plants, data centers and energy sites"
         },
         {
-          "zh": "抗爆設計檢核與補強建議",
-          "en": "Blast design review and retrofit"
+          "zh": "數位孿生平台：預防、監測與方案評估",
+          "en": "Digital-twin platforms for prevention, monitoring and option studies"
         },
         {
-          "zh": "防護材料性能驗證試驗",
-          "en": "Protective material qualification tests"
+          "zh": "抗爆設計檢核與防護材料驗證",
+          "en": "Blast design review and material qualification"
         },
         {
           "zh": "工程審查、顧問與教育訓練",
@@ -145,16 +145,16 @@
       "en": "Research"
     },
     "title": {
-      "zh": "從城市、設施到構件的爆炸防護研究",
-      "en": "Blast protection from city blocks to structural members"
+      "zh": "從人體、設施到城市的爆炸防護研究",
+      "en": "Blast protection from the human body to facilities and cities"
     },
     "lead": {
-      "zh": "從威脅情境、材料研發、力學與爆炸試驗、數值模擬，到工程應用與驗證，建立完整的研究鏈。",
-      "en": "A complete chain from threat scenarios, material development and testing to simulation, engineering application and validation."
+      "zh": "以數值模擬為核心，向上整合成數位孿生平台，向下以材料與爆炸試驗驗證。",
+      "en": "Numerical simulation at the core, integrated upward into digital-twin platforms and validated downward by material and explosive tests."
     },
     "note": {
-      "zh": "上方三張為以 Kinney–Graham 經驗式及簡化損傷模型繪製的情境分析示意圖，非特定專案成果。",
-      "en": "The three images above are illustrative scenarios computed from the Kinney–Graham relations and simplified damage models; they are not results of a specific project."
+      "zh": "以上為實驗室自製的情境示意圖，以經驗式與程序化模型繪製，非特定專案成果。",
+      "en": "Illustrations made by the lab from empirical relations and procedural models; not results of a specific project."
     }
   },
   "sim": {
@@ -217,8 +217,8 @@
       "en": "In the field"
     },
     "title": {
-      "zh": "用試驗驗證每一個模型",
-      "en": "Every model checked against a test"
+      "zh": "模擬結果，以試驗驗證",
+      "en": "Simulations validated by testing"
     }
   },
   "cases": {
@@ -620,6 +620,158 @@
     "back": {
       "zh": "回到首頁",
       "en": "Back to home"
+    }
+  },
+  "twin": {
+    "eyebrow": {
+      "zh": "數位孿生",
+      "en": "Digital twin"
+    },
+    "title": {
+      "zh": "把廠區搬進電腦，在災害發生前先演練",
+      "en": "Rehearse the incident before it happens"
+    },
+    "lead": {
+      "zh": "我們正在開發結合設施模型、感測資料與爆炸模擬的數位孿生平台，用於兩類情境：",
+      "en": "We are developing digital-twin platforms that combine facility models, sensor data and blast simulation for two kinds of scenarios:"
+    },
+    "uses": [
+      {
+        "t": {
+          "zh": "關鍵基礎設施的戰災情境",
+          "en": "Wartime scenarios for critical infrastructure"
+        },
+        "d": {
+          "zh": "推演不同威脅下的損傷範圍、功能中斷與修復優先順序。",
+          "en": "Explore damage extent, loss of function and repair priorities under different threats."
+        }
+      },
+      {
+        "t": {
+          "zh": "園區與廠區的意外爆炸",
+          "en": "Accidental explosions at industrial sites"
+        },
+        "d": {
+          "zh": "科技園區、工業區、資料中心與能源中心的爆炸風險評估，涵蓋預防、監測與解決方案比較。",
+          "en": "Risk assessment for science parks, industrial zones, data centers and energy hubs, covering prevention, monitoring and comparison of mitigation options."
+        }
+      }
+    ],
+    "try": {
+      "zh": "試試看：在廠區圖上點一下設定爆炸位置，拖曳滑桿調整藥量。",
+      "en": "Try it: click the site map to place the explosion and drag the slider to change the charge."
+    },
+    "w": {
+      "zh": "TNT 當量",
+      "en": "TNT equivalent"
+    },
+    "cursor": {
+      "zh": "游標位置",
+      "en": "At cursor"
+    },
+    "dist": {
+      "zh": "距離",
+      "en": "Distance"
+    },
+    "ps": {
+      "zh": "入射超壓",
+      "en": "Incident overpressure"
+    },
+    "spl": {
+      "zh": "峰值聲壓級",
+      "en": "Peak sound pressure level"
+    },
+    "ear": {
+      "zh": "耳膜破裂門檻（35 kPa）距離",
+      "en": "Distance to eardrum-rupture threshold (35 kPa)"
+    },
+    "legend": {
+      "zh": "傷損門檻（常見文獻值）",
+      "en": "Damage and injury thresholds (commonly cited)"
+    },
+    "levels": [
+      {
+        "zh": "玻璃破裂 3.5 kPa",
+        "en": "Glass breakage 3.5 kPa"
+      },
+      {
+        "zh": "輕構造牆板損壞 14 kPa",
+        "en": "Light wall panels damaged 14 kPa"
+      },
+      {
+        "zh": "耳膜破裂門檻 35 kPa",
+        "en": "Eardrum rupture threshold 35 kPa"
+      },
+      {
+        "zh": "耳膜破裂約 50% 100 kPa",
+        "en": "About 50% eardrum rupture 100 kPa"
+      },
+      {
+        "zh": "肺損傷門檻 200 kPa",
+        "en": "Lung injury threshold 200 kPa"
+      }
+    ],
+    "note": {
+      "zh": "示意用途：地面爆炸，以 1.8 倍等效藥量的 Kinney–Graham 經驗式計算，未考慮建物遮蔽與反射。實際專案以三維數值模擬與現地資料為準。",
+      "en": "Illustrative only: surface burst from the Kinney–Graham relations with 1.8 × charge mass, ignoring shielding and reflection. Real projects use 3D simulation and site data."
+    },
+    "aria": {
+      "zh": "廠區平面圖上的爆炸超壓範圍互動示意",
+      "en": "Interactive map of blast overpressure ranges on a site plan"
+    }
+  },
+  "human": {
+    "eyebrow": {
+      "zh": "人體損傷與防護",
+      "en": "Human injury and protection"
+    },
+    "title": {
+      "zh": "爆震波通過頭部的幾毫秒內，腦組織發生了什麼",
+      "en": "What happens to the brain in the milliseconds a blast wave passes"
+    },
+    "lead": {
+      "zh": "結合生醫工程與防護工程，我們用人體有限元素模型把爆炸荷載轉換成可量化的傷害指標。",
+      "en": "Combining biomedical and protective engineering, we use finite-element human body models to turn blast loading into quantifiable injury metrics."
+    },
+    "items": [
+      {
+        "t": {
+          "zh": "爆炸性腦損傷評估",
+          "en": "Blast-induced brain injury"
+        },
+        "d": {
+          "zh": "以 GHBMC 人體模型計算爆震波下的顱內壓與腦組織應變，並建立壓力–衝量（P-I）傷害判定圖。",
+          "en": "GHBMC human body models to compute intracranial pressure and brain tissue strain under blast, and pressure–impulse (P-I) injury charts."
+        }
+      },
+      {
+        "t": {
+          "zh": "衝擊式噪音與聽力",
+          "en": "Impulse noise and hearing"
+        },
+        "d": {
+          "zh": "評估爆炸、射擊等衝擊式噪音的峰值聲壓與暴露量，判斷聽力受損風險與防護需求。",
+          "en": "Peak pressure and exposure from explosions and weapon firing, to judge hearing-damage risk and protection needs."
+        }
+      },
+      {
+        "t": {
+          "zh": "個人防護裝備",
+          "en": "Personal protective equipment"
+        },
+        "d": {
+          "zh": "分析頭盔與內襯在爆震波及衝擊下對頭頸部的防護效果。",
+          "en": "How helmets and liners protect the head and neck under blast and impact."
+        }
+      }
+    ],
+    "cap": {
+      "zh": "示意動畫：爆震波由側向通過頭部，色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
+      "en": "Illustrative animation: a blast wave passes the head from the side; colours show relative brain strain. Procedural model, not an analysis result."
+    },
+    "partner": {
+      "zh": "本主題與國防醫學大學等醫學團隊合作進行。",
+      "en": "This work is carried out with medical teams including the National Defense Medical University."
     }
   }
 }

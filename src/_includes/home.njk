@@ -4,7 +4,11 @@ isHome: true
 ---
 {%- set lp = '' if lang == 'zh' else 'en/' -%}
 <section class="hero" id="top">
-  {% pic root, "hero-blast", i18n.hero.photoCap | l(lang), "100vw", "hero__photo", true %}
+  <video class="hero__vid" autoplay muted loop playsinline preload="metadata" poster="{{ root }}assets/img/twin-still.jpg" aria-hidden="true" tabindex="-1">
+    <source src="{{ root }}assets/vid/twin-720.mp4" type="video/mp4" media="(max-width:900px)">
+    <source src="{{ root }}assets/vid/twin.mp4" type="video/mp4">
+  </video>
+  <div class="hero__scan" aria-hidden="true"></div>
   <div class="wrap hero__in">
     <div class="hero__copy">
       <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
@@ -73,29 +77,49 @@ isHome: true
   </div>
 </section>
 
-<section class="sim" aria-labelledby="sim-h">
-  <div class="wrap sim__in">
-    <div class="sim__txt">
-      <p class="eyebrow eyebrow--cyan">{{ i18n.sim.eyebrow | l(lang) }}</p>
-      <h2 id="sim-h">{{ i18n.sim.title | l(lang) }}</h2>
-      <p>{{ i18n.sim.lead | l(lang) }}</p>
+<section class="section twin" id="twin" aria-labelledby="twin-h">
+  <div class="wrap twin__in">
+    <div class="twin__txt">
+      <p class="eyebrow eyebrow--cyan">{{ i18n.twin.eyebrow | l(lang) }}</p>
+      <h2 id="twin-h">{{ i18n.twin.title | l(lang) }}</h2>
+      <p>{{ i18n.twin.lead | l(lang) }}</p>
+      <ul class="feat">{% for u in i18n.twin.uses %}<li><b>{{ u.t | l(lang) }}</b><span>{{ u.d | l(lang) }}</span></li>{% endfor %}</ul>
+      <p class="twin__try">{{ i18n.twin.try | l(lang) }}</p>
     </div>
-    <div class="sim__stage">
-      <canvas id="blast" data-wlabel="{{ i18n.sim.wlabel | l(lang) }}" role="img" aria-label="{{ i18n.sim.aria | l(lang) }}"></canvas>
-      <div class="hud" aria-hidden="true">
-        <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.sim.tag | l(lang) }}</span>
-        <span class="hud__row"><span>{{ i18n.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
-        <span class="hud__row"><span>{{ i18n.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
-        <span class="hud__row"><span>{{ i18n.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
-        <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.sim.legend | l(lang) }}</span></span>
+    <div class="console">
+      <div class="console__bar"><span class="hud__dot"></span><span>APSM-TWIN // SCENARIO</span>
+        <label class="console__w">{{ i18n.twin.w | l(lang) }} <input id="tw-w" type="range" min="10" max="1000" step="10" value="200"> <b><span id="tw-wv">200</span> kg</b></label>
       </div>
-      <button class="sim__btn" type="button" id="sim-toggle" aria-pressed="false" data-pause="{{ i18n.sim.pause | l(lang) }}" data-play="{{ i18n.sim.play | l(lang) }}">
-        <svg class="i-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 2h3v10H3zM8 2h3v10H8z" fill="currentColor"/></svg>
-        <svg class="i-play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 2l9 5-9 5z" fill="currentColor"/></svg>
-        <span class="sim__btn-l">{{ i18n.sim.pause | l(lang) }}</span>
-      </button>
+      <canvas id="twinmap" role="img" aria-label="{{ i18n.twin.aria | l(lang) }}"></canvas>
+      <div class="console__read">
+        <div><span>{{ i18n.twin.cursor | l(lang) }} · {{ i18n.twin.dist | l(lang) }}</span><b><span id="tw-d">—</span> m</b></div>
+        <div><span>{{ i18n.twin.ps | l(lang) }}</span><b><span id="tw-ps">—</span> kPa</b></div>
+        <div><span>{{ i18n.twin.spl | l(lang) }}</span><b><span id="tw-db">—</span> dB</b></div>
+        <div><span>{{ i18n.twin.ear | l(lang) }}</span><b>≈ <span id="tw-ear">—</span> m</b></div>
+      </div>
+      <div class="console__legend"><span class="console__lt">{{ i18n.twin.legend | l(lang) }}</span>
+        {% for lv in i18n.twin.levels %}<span class="lv lv--{{ loop.index }}">{{ lv | l(lang) }}</span>{% endfor %}
+      </div>
     </div>
-    <p class="sim__note">{{ i18n.sim.note | l(lang) }}</p>
+    <p class="sim__note">{{ i18n.twin.note | l(lang) }}</p>
+  </div>
+</section>
+
+<section class="section human" id="human" aria-labelledby="human-h">
+  <div class="wrap human__in">
+    <figure class="human__fig">
+      <video class="lazyvid" muted loop playsinline preload="none" poster="{{ root }}assets/img/head-still.jpg" aria-label="{{ i18n.human.cap | l(lang) }}">
+        <source src="{{ root }}assets/vid/head.mp4" type="video/mp4">
+      </video>
+      <figcaption>{{ i18n.human.cap | l(lang) }}</figcaption>
+    </figure>
+    <div class="human__txt">
+      <p class="eyebrow eyebrow--cyan">{{ i18n.human.eyebrow | l(lang) }}</p>
+      <h2 id="human-h">{{ i18n.human.title | l(lang) }}</h2>
+      <p>{{ i18n.human.lead | l(lang) }}</p>
+      <ul class="feat">{% for u in i18n.human.items %}<li><b>{{ u.t | l(lang) }}</b><span>{{ u.d | l(lang) }}</span></li>{% endfor %}</ul>
+      <p class="human__partner">{{ i18n.human.partner | l(lang) }}</p>
+    </div>
   </div>
 </section>
 
