@@ -1,6 +1,6 @@
 [
   {
-    "img": "assets/img/render-city.jpg",
+    "img": "render-city",
     "alt": {
       "zh": "城市街廓受 500 kg TNT 道路側爆炸的建物與地面峰值超壓分布 3D 示意圖",
       "en": "3D illustration of peak overpressure on buildings and ground from a 500 kg TNT roadside explosion"
@@ -11,7 +11,7 @@
     }
   },
   {
-    "img": "assets/img/render-slab.jpg",
+    "img": "render-slab",
     "alt": {
       "zh": "RC 版受接觸爆炸後的穿孔、背面剝落與降伏線損傷示意圖",
       "en": "Illustration of perforation, spalling and yield lines in an RC slab under contact explosion"
@@ -22,7 +22,7 @@
     }
   },
   {
-    "img": "assets/img/render-bess.jpg",
+    "img": "render-bess",
     "alt": {
       "zh": "儲能櫃熱失控爆炸與防爆牆遮蔽效果的超壓分布示意圖",
       "en": "Overpressure map showing a blast wall shielding buildings from a battery energy storage explosion"

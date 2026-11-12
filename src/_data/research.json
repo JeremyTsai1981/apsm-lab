@@ -21,10 +21,10 @@
     "id": "simulation",
     "title": { "zh": "爆炸模擬與試驗", "en": "Blast Simulation and Testing" },
     "desc": {
-      "zh": "以 LS-DYNA、ExDAM、BlastFoam 重現極端情境，再用縮尺與現地爆炸試驗驗證模型。",
-      "en": "Reproducing extreme events with LS-DYNA, ExDAM and BlastFoam, validated by scaled and field explosive tests."
+      "zh": "以 LS-DYNA、ExDAM、blastFoam 重現極端情境，再用縮尺與現地爆炸試驗驗證模型。",
+      "en": "Reproducing extreme events with LS-DYNA, ExDAM and blastFoam, validated by scaled and field explosive tests."
     },
-    "tags": "LS-DYNA · ExDAM · BlastFoam"
+    "tags": "LS-DYNA · ExDAM · blastFoam"
   },
   {
     "id": "repair",

@@ -1,6 +1,6 @@
 [
   {
-    "img": "assets/img/test-setup.jpg",
+    "img": "test-setup",
     "cap": {
       "zh": "接觸爆炸試驗架設：試體置於鋼架上，上方為炸藥",
       "en": "Contact explosion test setup: specimen on a steel frame with the charge on top"
@@ -8,7 +8,7 @@
     "wide": false
   },
   {
-    "img": "assets/img/test-slab.jpg",
+    "img": "test-slab",
     "cap": {
       "zh": "聚脲塗層混凝土版試體（試驗後）",
       "en": "Polyurea-coated concrete slab after testing"
@@ -16,7 +16,7 @@
     "wide": true
   },
   {
-    "img": "assets/img/test-specimens.jpg",
+    "img": "test-specimens",
     "cap": {
       "zh": "試驗後的 RC 與複合防護版試體",
       "en": "RC and composite protective panels after testing"
@@ -24,7 +24,7 @@
     "wide": false
   },
   {
-    "img": "assets/img/test-scan.jpg",
+    "img": "test-scan",
     "cap": {
       "zh": "以 3D 掃描量測爆坑尺寸",
       "en": "3D scanning of crater dimensions"

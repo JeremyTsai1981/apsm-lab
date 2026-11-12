@@ -1,5 +1,5 @@
-/* APSM 首頁主視覺：爆炸波傳遞與建築物反射（Kinney–Graham 經驗式即時計算，示意用）
-   W = 100 kg TNT，爆心離地 1 m，距建築物 15 m。 */
+/* APSM 首頁即時模擬：爆炸波傳遞與建築物反射（Kinney–Graham 經驗式即時計算，示意用）
+   地面爆炸 W = 100 kg TNT，以 1.8W 半球形爆炸波計入地面反射；距建築物 15 m。 */
 (function () {
   var cv = document.getElementById('blast');
   if (!cv || !cv.getContext) return;
@@ -9,7 +9,7 @@
   var hudPs = document.getElementById('hud-ps');
 
   // ---------- 物理 ----------
-  var PA = 101.325, A0 = 340, W = 100, W3 = Math.cbrt(W), B = 1.8;
+  var PA = 101.325, A0 = 340, W = 100, WE = 1.8 * W, W3 = Math.cbrt(WE), B = 1.8;
   function kgPs(Z) { // kPa
     return PA * 808 * (1 + Math.pow(Z / 4.5, 2)) /
       Math.sqrt((1 + Math.pow(Z / 0.048, 2)) * (1 + Math.pow(Z / 0.32, 2)) * (1 + Math.pow(Z / 1.35, 2)));
@@ -40,7 +40,7 @@
   }
 
   // ---------- 場景 ----------
-  var XC, YC = 1.0, XW, HB = 12, DB = 14, VW, VH, GROUND, S; // S = px per m (grid)
+  var XC, YC = 0, XW, HB = 12, DB = 14, VW, VH, GROUND, S; // S = px per m (grid)
   var gw, gh, img, data, off, octx;
   var LOGMAX = Math.log10(1 + 2500);
   var STOPS = [[0, 30, 60, 255], [0.25, 0, 190, 255], [0.5, 40, 230, 80], [0.72, 255, 235, 0], [1, 255, 40, 20]];
@@ -59,7 +59,7 @@
   function layout() {
     var r = cv.getBoundingClientRect();
     cssW = Math.max(1, r.width); cssH = Math.max(1, r.height);
-    dpr = Math.min(2, window.devicePixelRatio || 1);
+    dpr = Math.min(cssW < 700 ? 1.5 : 2, window.devicePixelRatio || 1);
     cv.width = Math.round(cssW * dpr); cv.height = Math.round(cssH * dpr);
     var mobile = cssW < 700;
     VW = mobile ? 34 : 50;
@@ -67,7 +67,7 @@
     XC = VW * (mobile ? 0.30 : 0.56);
     XW = XC + 15;
     GROUND = 0.16; // 地面在畫面底部 16%
-    gw = mobile ? 200 : 340; gh = Math.round(gw * cssH * (1 - 0.16) / cssW);
+    gw = mobile ? 150 : 320; gh = Math.round(gw * cssH * (1 - 0.16) / cssW);
     off = document.createElement('canvas'); off.width = gw; off.height = gh;
     octx = off.getContext('2d'); img = octx.createImageData(gw, gh); data = img.data;
   }
@@ -94,15 +94,14 @@
         var shadow = false;
         if (x > XW && y < HB) { var ya = YC + dy * (XW - XC) / dx; shadow = ya < HB; }
         var p1 = press(Math.sqrt(dx * dx + dy * dy), t);
-        var p2 = press(Math.sqrt(dx * dx + (y + YC) * (y + YC)), t);
-        p = shadow ? 0.3 * (p1 + p2) : p1 + p2;
+        p = shadow ? 0.3 * p1 : p1;
         if (x < XW) {
           var ex = x - xi, yh = YC + dy * (XW - xi) / ex;
           if (yh >= 0 && yh <= HB) {
             var Rw = Math.sqrt((XW - XC) * (XW - XC) + (yh - YC) * (yh - YC));
             var ps = tabPs[Math.min(NR - 1, (Rw / DR) | 0)];
             var k = Math.min(2.6, reflect(ps) / ps - 1);
-            p += k * (press(Math.sqrt(ex * ex + dy * dy), t) + press(Math.sqrt(ex * ex + (y + YC) * (y + YC)), t));
+            p += k * press(Math.sqrt(ex * ex + dy * dy), t);
           }
         }
         if (p > 1.5) {
@@ -119,8 +118,7 @@
   }
 
   function wallPressure(t) {
-    var pi = press(Math.sqrt(Math.pow(XW - XC, 2) + Math.pow(4 - YC, 2)), t) +
-             press(Math.sqrt(Math.pow(XW - XC, 2) + Math.pow(4 + YC, 2)), t);
+    var pi = press(Math.sqrt(Math.pow(XW - XC, 2) + Math.pow(1.5 - YC, 2)), t);
     return pi > 0 ? reflect(pi) : 0;
   }
 
@@ -184,7 +182,7 @@
     ctx.moveTo(sx(XC), yd); ctx.lineTo(sx(XW), yd); ctx.moveTo(sx(XC), yd - 5); ctx.lineTo(sx(XC), yd + 5); ctx.moveTo(sx(XW), yd - 5); ctx.lineTo(sx(XW), yd + 5); ctx.stroke();
     ctx.fillStyle = 'rgba(210,225,240,0.85)'; ctx.font = '12px "IBM Plex Mono", monospace'; ctx.textAlign = 'center';
     ctx.fillText('R = 15 m', (sx(XC) + sx(XW)) / 2, yd - 6);
-    ctx.textAlign = 'left'; ctx.fillText('W = 100 kg TNT', sx(XC) - 44, sy(0) + 38);
+    ctx.textAlign = 'left'; ctx.fillText(cv.dataset.wlabel || 'W = 100 kg TNT', sx(XC) - 44, sy(0) + 38);
     // HUD
     if (hudT) hudT.textContent = t.toFixed(1);
     if (hudP) hudP.textContent = Math.round(peakWall);
@@ -192,21 +190,39 @@
 
   var T_END = 115, SPEED = 15 /* ms 模擬 / 秒 */, HOLD = 1.2, start = null, raf = null, visible = true;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var paused = reduce, simT = 0, last = 0;
   function frame(now) {
-    if (start === null) start = now;
-    var s = (now - start) / 1000, t = s * SPEED;
-    if (t > T_END) { if (s > T_END / SPEED + HOLD) { start = now; peakWall = 0; t = 0; } else t = T_END; }
-    draw(t);
-    raf = visible ? requestAnimationFrame(frame) : null;
+    raf = null;
+    if (paused || !visible) return;
+    var minDt = cssW < 700 ? 40 : 0; // 手機約 25 fps，降低耗電
+    if (now - last >= minDt) {
+      if (start === null) start = now - simT / SPEED * 1000;
+      var s = (now - start) / 1000, t = s * SPEED;
+      if (t > T_END) { if (s > T_END / SPEED + HOLD) { start = now; peakWall = 0; t = 0; } else t = T_END; }
+      simT = t; last = now; draw(t);
+    }
+    raf = requestAnimationFrame(frame);
   }
-  function run() { if (!raf && visible && !reduce) raf = requestAnimationFrame(frame); }
+  function run() { if (!raf && visible && !paused) raf = requestAnimationFrame(frame); }
+  var btn = document.getElementById('sim-toggle');
+  function syncBtn() {
+    if (!btn) return;
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    var l = btn.querySelector('.sim__btn-l'); if (l) l.textContent = paused ? btn.dataset.play : btn.dataset.pause;
+    btn.classList.toggle('is-paused', paused);
+  }
+  if (btn) btn.addEventListener('click', function () {
+    paused = !paused; syncBtn();
+    if (!paused) { start = null; if (simT >= T_END) { simT = 0; peakWall = 0; } run(); }
+  });
+  syncBtn();
   layout();
   if (hudPs) hudPs.textContent = Math.round(kgPs(15 / W3));
-  if (reduce) { peakWall = 0; for (var tt = 0; tt <= 26; tt += 0.5) peakWall = Math.max(peakWall, wallPressure(tt)); draw(26); }
+  if (reduce) { peakWall = 0; for (var tt = 0; tt <= 26; tt += 0.5) peakWall = Math.max(peakWall, wallPressure(tt)); simT = 26; draw(26); }
   else run();
-  window.addEventListener('resize', function () { layout(); if (reduce) draw(26); });
+  window.addEventListener('resize', function () { layout(); draw(simT); });
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; if (visible) run(); }).observe(cv);
+    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; if (visible) { start = null; run(); } }).observe(cv);
   }
   document.addEventListener('visibilitychange', function () { visible = !document.hidden; if (visible) { start = null; run(); } });
 })();

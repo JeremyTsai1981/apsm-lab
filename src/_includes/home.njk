@@ -1,47 +1,75 @@
 ---
 layout: base.njk
+isHome: true
 ---
+{%- set lp = '' if lang == 'zh' else 'en/' -%}
 <section class="hero" id="top">
-  <img class="hero__photo" src="{{ root }}assets/img/hero-blast.jpg" alt="{{ i18n.hero.photoCap | l(lang) }}">
+  {% pic root, "hero-blast", i18n.hero.photoCap | l(lang), "100vw", "hero__photo", true %}
   <div class="wrap hero__in">
     <div class="hero__copy">
       <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
-      <h1>{{ i18n.hero.title | l(lang) | safe }}</h1>
+      <h1><span class="hero__lab">{{ i18n.hero.lab | l(lang) }}</span><span class="hero__title">{{ i18n.hero.title | l(lang) | safe }}</span></h1>
       <p class="hero__lead">{{ i18n.hero.lead | l(lang) }}</p>
       <div class="btns">
-        <a class="btn btn--orange" href="#join">{{ i18n.hero.ctaJoin | l(lang) }}</a>
-        <a class="btn btn--cyan-outline" href="#industry">{{ i18n.hero.ctaIndustry | l(lang) }}</a>
+        <a class="btn btn--orange" href="#join">{{ i18n.hero.ctaStudent | l(lang) }}</a>
+        <a class="btn btn--cyan-outline" href="{{ root }}{{ lp }}industry/index.html">{{ i18n.hero.ctaIndustry | l(lang) }}</a>
       </div>
     </div>
   </div>
-  <p class="hero__cap">{{ i18n.hero.photoCap | l(lang) }}</p>
+  <p class="hero__cap" aria-hidden="true">{{ i18n.hero.photoCap | l(lang) }}</p>
 </section>
 
-<section class="partners" aria-label="{{ i18n.partners.label | l(lang) }}">
-  <div class="wrap partners__in">
-    <span class="partners__lbl">{{ i18n.partners.label | l(lang) }}</span>
-    <ul class="partners__list">{% for p in partners %}<li>{{ p | l(lang) }}</li>{% endfor %}</ul>
+<section class="trust" aria-label="{{ i18n.trust.label | l(lang) }}">
+  <div class="wrap trust__in">
+    <div class="trust__partners">
+      <span class="trust__lbl">{{ i18n.trust.label | l(lang) }}</span>
+      <ul class="trust__list">{% for p in partners %}<li>{{ p | l(lang) }}</li>{% endfor %}</ul>
+    </div>
+    <dl class="trust__stats" aria-label="{{ i18n.trust.stats | l(lang) }}">
+      {% for s in stats %}<div class="tstat"><dt class="tstat__v">{{ s.value }}</dt><dd class="tstat__l">{{ s.label | l(lang) }}</dd></div>{% endfor %}
+    </dl>
   </div>
 </section>
 
-<section class="stats" aria-label="{{ 'Lab in numbers' if lang == 'en' else '實驗室數字' }}">
-  <div class="wrap stats__grid">
-    {% for s in stats %}
-    <div class="stat"><span class="stat__v">{{ s.value }}</span><span class="stat__l">{{ s.label | l(lang) }}</span></div>
-    {% endfor %}
+<section class="entry" aria-label="{{ i18n.entry.label | l(lang) }}">
+  <div class="wrap entry__grid">
+    <article class="door door--student">
+      <p class="door__tag">{{ i18n.entry.student.tag | l(lang) }}</p>
+      <h2>{{ i18n.entry.student.title | l(lang) }}</h2>
+      <ul class="door__list">{% for it in i18n.entry.student.items %}<li>{{ it | l(lang) }}</li>{% endfor %}</ul>
+      <a class="door__link" href="#join">{{ i18n.entry.student.link | l(lang) }} <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="door door--industry">
+      <p class="door__tag">{{ i18n.entry.industry.tag | l(lang) }}</p>
+      <h2>{{ i18n.entry.industry.title | l(lang) }}</h2>
+      <ul class="door__list">{% for it in i18n.entry.industry.items %}<li>{{ it | l(lang) }}</li>{% endfor %}</ul>
+      <a class="door__link" href="{{ root }}{{ lp }}industry/index.html">{{ i18n.entry.industry.link | l(lang) }} <span aria-hidden="true">→</span></a>
+    </article>
   </div>
 </section>
 
-<section class="section section--dark" aria-labelledby="hl-h">
+<section class="section section--dark" id="research" aria-labelledby="research-h">
   <div class="wrap">
-    <p class="eyebrow eyebrow--cyan">{{ i18n.highlights.eyebrow | l(lang) }}</p>
-    <h2 id="hl-h">{{ i18n.highlights.title | l(lang) }}</h2>
+    <div class="sechead sechead--dark">
+      <div><p class="eyebrow eyebrow--cyan">{{ i18n.research.eyebrow | l(lang) }}</p><h2 id="research-h">{{ i18n.research.title | l(lang) }}</h2></div>
+      <p class="sechead__lead">{{ i18n.research.lead | l(lang) }}</p>
+    </div>
     <div class="renders">
-      {% for h in highlights %}
-      <figure class="render{% if loop.first %} render--big{% endif %}"><img src="{{ root }}{{ h.img }}" alt="{{ h.alt | l(lang) }}" ><figcaption>{{ h.cap | l(lang) }}</figcaption></figure>
+      {% for hl in highlights %}
+      <figure class="render">{% pic root, hl.img, hl.alt | l(lang), "(min-width:1000px) 380px, (min-width:700px) 50vw, 100vw", "", false, lang %}<figcaption>{{ hl.cap | l(lang) }}</figcaption></figure>
       {% endfor %}
     </div>
-    <p class="renders__note">{{ i18n.highlights.note | l(lang) }}</p>
+    <p class="renders__note">{{ i18n.research.note | l(lang) }}</p>
+    <ol class="themes">
+      {% for r in research %}
+      <li class="theme" id="r-{{ r.id }}">
+        <span class="theme__num">0{{ loop.index }}</span>
+        <h3>{{ r.title | l(lang) }}</h3>
+        <p>{{ r.desc | l(lang) }}</p>
+        <p class="theme__tags">{{ r.tags }}</p>
+      </li>
+      {% endfor %}
+    </ol>
   </div>
 </section>
 
@@ -53,16 +81,21 @@ layout: base.njk
       <p>{{ i18n.sim.lead | l(lang) }}</p>
     </div>
     <div class="sim__stage">
-      <canvas id="blast" role="img" aria-label="{{ i18n.hero.sim.aria | l(lang) }}"></canvas>
+      <canvas id="blast" data-wlabel="{{ i18n.sim.wlabel | l(lang) }}" role="img" aria-label="{{ i18n.sim.aria | l(lang) }}"></canvas>
       <div class="hud" aria-hidden="true">
-        <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.hero.sim.tag | l(lang) }}</span>
-        <span class="hud__row"><span>{{ i18n.hero.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
-        <span class="hud__row"><span>{{ i18n.hero.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
-        <span class="hud__row"><span>{{ i18n.hero.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
-        <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.hero.sim.legend | l(lang) }}</span></span>
+        <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.sim.tag | l(lang) }}</span>
+        <span class="hud__row"><span>{{ i18n.sim.t | l(lang) }}</span><b><span id="hud-t">0.0</span> ms</b></span>
+        <span class="hud__row"><span>{{ i18n.sim.ps | l(lang) }}</span><b><span id="hud-ps">—</span> kPa</b></span>
+        <span class="hud__row"><span>{{ i18n.sim.pr | l(lang) }}</span><b><span id="hud-p">0</span> kPa</b></span>
+        <span class="legend"><span class="legend__bar"></span><span class="legend__ticks"><span>10</span><span>100</span><span>1000</span></span><span class="legend__lbl">{{ i18n.sim.legend | l(lang) }}</span></span>
       </div>
+      <button class="sim__btn" type="button" id="sim-toggle" aria-pressed="false" data-pause="{{ i18n.sim.pause | l(lang) }}" data-play="{{ i18n.sim.play | l(lang) }}">
+        <svg class="i-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 2h3v10H3zM8 2h3v10H8z" fill="currentColor"/></svg>
+        <svg class="i-play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 2l9 5-9 5z" fill="currentColor"/></svg>
+        <span class="sim__btn-l">{{ i18n.sim.pause | l(lang) }}</span>
+      </button>
     </div>
-    <p class="sim__note">{{ i18n.hero.sim.note | l(lang) }}</p>
+    <p class="sim__note">{{ i18n.sim.note | l(lang) }}</p>
   </div>
 </section>
 
@@ -72,76 +105,15 @@ layout: base.njk
     <h2 id="field-h">{{ i18n.field.title | l(lang) }}</h2>
     <div class="field">
       {% for f in fieldwork %}
-      <figure class="field__i{% if f.wide %} field__i--wide{% endif %}"><img src="{{ root }}{{ f.img }}" alt="{{ f.cap | l(lang) }}" ><figcaption>{{ f.cap | l(lang) }}</figcaption></figure>
+      <figure class="field__i{% if f.wide %} field__i--wide{% endif %}">{% pic root, f.img, f.cap | l(lang), ("(min-width:1000px) 520px, 100vw" if f.wide else "(min-width:1000px) 260px, (min-width:600px) 50vw, 100vw") %}<figcaption>{{ f.cap | l(lang) }}</figcaption></figure>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section section--alt" aria-labelledby="students-h">
+<section class="section section--alt" id="cases" aria-labelledby="cases-h">
   <div class="wrap">
-    <p class="eyebrow eyebrow--orange">{{ i18n.students.eyebrow | l(lang) }}</p>
-    <h2 id="students-h">{{ i18n.students.title | l(lang) }}</h2>
-    <div class="cards3">
-      {% for it in i18n.students.items %}
-      <div class="card">
-        <span class="card__num">0{{ loop.index }}</span>
-        <h3>{{ it.title | l(lang) }}</h3>
-        <p>{{ it.desc | l(lang) }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section" id="research" aria-labelledby="research-h">
-  <div class="wrap">
-    <div class="sechead">
-      <div><p class="eyebrow eyebrow--navy">{{ i18n.research.eyebrow | l(lang) }}</p><h2 id="research-h">{{ i18n.research.title | l(lang) }}</h2></div>
-      <p class="sechead__lead">{{ i18n.research.lead | l(lang) }}</p>
-    </div>
-    <ol class="themes">
-      {% for r in research %}
-      <li class="theme" id="r-{{ r.id }}">
-        <div class="theme__head"><span class="theme__num">0{{ loop.index }}</span><h3>{{ r.title | l(lang) }}</h3></div>
-        <div class="theme__body"><p>{{ r.desc | l(lang) }}</p><p class="theme__tags">{{ r.tags }}</p></div>
-      </li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-
-<section class="industry" id="industry" aria-labelledby="industry-h">
-  <div class="wrap">
-    <div class="industry__head">
-      <div><p class="eyebrow eyebrow--cyan">{{ i18n.industry.eyebrow | l(lang) }}</p><h2 id="industry-h">{{ i18n.industry.title | l(lang) }}</h2></div>
-      <p class="industry__lead">{{ i18n.industry.lead | l(lang) }}</p>
-    </div>
-    <div class="svc-grid">
-      {% for s in services %}
-      <div class="svc">
-        <h3>{{ s.title | l(lang) }}</h3>
-        <p>{{ s.desc | l(lang) }}</p>
-        <p class="svc__deliver">{{ s.deliver | l(lang) }}</p>
-      </div>
-      {% endfor %}
-    </div>
-    <h3 class="sectors__h">{{ i18n.industry.sectorsTitle | l(lang) }}</h3>
-    <div class="sectors">
-      {% for sc in i18n.industry.sectors %}
-      <div class="sector"><span class="sector__n">{{ sc.name | l(lang) }}</span><span class="sector__d">{{ sc.need | l(lang) }}</span></div>
-      {% endfor %}
-    </div>
-    <div class="industry__foot">
-      <div class="chips"><span class="chips__label">{{ i18n.standards.label | l(lang) }}</span>{% for it in i18n.standards.items %}<span class="chip">{{ it | l(lang) }}</span>{% endfor %}</div>
-      <a class="btn btn--cyan" href="mailto:{{ site.contact.email }}">{{ i18n.industry.cta | l(lang) }}</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="cases" aria-labelledby="cases-h">
-  <div class="wrap">
-    <div class="sechead"><div><p class="eyebrow eyebrow--navy">{{ i18n.cases.eyebrow | l(lang) }}</p><h2 id="cases-h">{{ i18n.cases.title | l(lang) }}</h2></div><a class="more" href="{{ site.links.dept }}">{{ i18n.cases.all | l(lang) }} →</a></div>
+    <div class="sechead"><div><p class="eyebrow eyebrow--navy">{{ i18n.cases.eyebrow | l(lang) }}</p><h2 id="cases-h">{{ i18n.cases.title | l(lang) }}</h2></div><a class="more" href="{{ root }}{{ lp }}industry/index.html">{{ i18n.cases.more | l(lang) }} →</a></div>
     <div class="cases">
       {% for c in cases %}
       <article class="case">
@@ -155,64 +127,73 @@ layout: base.njk
   </div>
 </section>
 
-<section class="section section--alt" id="team" aria-labelledby="team-h">
+<section class="section" id="team" aria-labelledby="team-h">
   <div class="wrap">
     <p class="eyebrow eyebrow--navy">{{ i18n.team.eyebrow | l(lang) }}</p>
     <div class="pi">
-      <div class="pi__photo" role="img" aria-label="{{ i18n.team.photo | l(lang) }}">{{ i18n.team.photo | l(lang) }}</div>
+      {% if site.pi.photo %}<img class="pi__photo" src="{{ root }}{{ site.pi.photo }}" alt="{{ site.pi.name | l(lang) }}" width="140" height="140" loading="lazy">{% else %}<div class="pi__mono" aria-hidden="true">YKT</div>{% endif %}
       <div class="pi__txt">
         <span class="pi__role">{{ i18n.team.pi | l(lang) }}</span>
         <h2 id="team-h">{{ site.pi.name | l(lang) }}</h2>
         <span class="pi__alt">{{ site.pi.nameAlt | l(lang) }}</span>
         <p>{{ site.pi.bio | l(lang) }}</p>
+        <p class="pi__award">★ {{ site.pi.award | l(lang) }}</p>
       </div>
     </div>
+    {% set pub = members | where("public", true) %}
+    {% if pub.length %}
     <h3 class="sub-h">{{ i18n.team.members | l(lang) }}</h3>
     <ul class="members">
-      {% for m in members %}
+      {% for m in pub %}
       <li class="member">
-        <div class="member__photo" aria-hidden="true"></div>
         <span class="member__name">{{ m.name | l(lang) }}</span>
         <span class="member__role">{{ m.role | l(lang) }}</span>
-        <span class="member__topic">{{ m.topic | l(lang) }}</span>
+        {% if m.topic | l(lang) %}<span class="member__topic">{{ m.topic | l(lang) }}</span>{% endif %}
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
   </div>
 </section>
 
-<section class="section" id="outputs">
-  <div class="wrap two">
+{% set realNews = news | notPlaceholder %}
+<section class="section section--alt" id="outputs" aria-labelledby="outputs-h">
+  <div class="wrap{% if realNews.length %} two{% endif %}">
     <div>
-      <h2>{{ i18n.outputs.title | l(lang) }}</h2>
+      <div class="sechead"><div><h2 id="outputs-h">{{ i18n.outputs.title | l(lang) }}</h2><p class="pubs__note">{{ i18n.outputs.corr | l(lang) }}</p></div><a class="more" href="{{ root }}{{ lp }}publications/index.html">{{ i18n.outputs.all | l(lang) }} →</a></div>
       <ul class="pubs">
-        {% for p in publications %}{% if p.selected %}
+        {% for p in publications | where("selected", true) %}
         <li class="pub">
-          {% if p.doi %}<a class="pub__t" href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}<span class="pub__t">{{ p.title }}</span>{% endif %}
-          <span class="pub__a">{{ p.authors }}</span>
-          <span class="pub__v">{{ p.venue }} · {{ p.year }}</span>
+          <a class="pub__t" href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>
+          <span class="pub__a">{{ p.authors | hiPI | safe }}</span>
+          <span class="pub__v"><i>{{ p.venue }}</i> · {{ p.year }} · <span class="pub__doi">doi:{{ p.doi }}</span></span>
         </li>
-        {% endif %}{% endfor %}
-      </ul>
-      <a class="more" href="{{ site.links.dept }}">{{ i18n.outputs.all | l(lang) }} →</a>
-    </div>
-    <div id="news">
-      <h2>{{ i18n.news.title | l(lang) }}</h2>
-      <ul class="news">
-        {% for n in news | take(3) %}
-        <li class="news__i{% if n.placeholder %} news__i--ph{% endif %}"><span class="news__d">{{ n.date or '—' }}</span><span>{{ n.title | l(lang) }}</span></li>
         {% endfor %}
       </ul>
     </div>
+    {% if realNews.length %}
+    <div id="news">
+      <h2>{{ i18n.news.title | l(lang) }}</h2>
+      <ul class="news">
+        {% for n in realNews | take(4) %}
+        <li class="news__i"><span class="news__d">{{ n.date }}</span><span>{{ n.title | l(lang) }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
   </div>
 </section>
 
-<section class="section" id="join">
+<section class="section" id="join" aria-labelledby="join-h">
   <div class="wrap">
     <div class="joinbox">
-      <div><h2>{{ i18n.join.title | l(lang) }}</h2><p>{{ i18n.join.lead | l(lang) }}</p></div>
+      <div>
+        <p class="joinbox__eyebrow">{{ i18n.join.eyebrow | l(lang) }}</p>
+        <h2 id="join-h">{{ i18n.join.title | l(lang) }}</h2>
+        <p>{{ i18n.join.lead | l(lang) }}</p>
+      </div>
       <div class="joinbox__act">
-        <a class="btn btn--white" href="mailto:{{ site.contact.email }}">{{ i18n.join.email | l(lang) }}</a>
+        <a class="btn btn--white" href="mailto:{{ site.contact.email }}?subject={{ i18n.join.subject | l(lang) | urlencode }}">{{ i18n.join.email | l(lang) }}</a>
         <span class="joinbox__mail">{{ site.contact.email }}</span>
       </div>
     </div>

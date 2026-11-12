@@ -1,0 +1,51 @@
+---
+layout: base.njk
+navKey: pubs
+---
+{%- set intl = publications | where("kind", "intl") -%}
+{%- set tw = publications | where("kind", "tw") -%}
+<section class="phead">
+  <div class="wrap">
+    <nav class="crumb" aria-label="breadcrumb"><a href="{{ root }}{{ '' if lang == 'zh' else 'en/' }}index.html">{{ i18n.nav.home | l(lang) }}</a> / <span>{{ i18n.nav.pubs | l(lang) }}</span></nav>
+    <h1>{{ i18n.pubs.title | l(lang) }}</h1>
+    <p class="phead__lead">{{ i18n.pubs.lead | l(lang) }}</p>
+    <p class="phead__meta">{{ i18n.pubs.intl | l(lang) }} {{ intl.length }} {{ i18n.pubs.count | l(lang) }} · {{ i18n.pubs.tw | l(lang) }} {{ tw.length }} {{ i18n.pubs.count | l(lang) }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <h2>{{ i18n.pubs.intl | l(lang) }}</h2>
+    {% for g in intl | byYear %}
+    <div class="yeargrp">
+      <h3 class="yeargrp__y">{{ g.year }}</h3>
+      <ol class="pubs">
+        {% for p in g.items %}
+        <li class="pub">
+          {% if p.doi %}<a class="pub__t" href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}<span class="pub__t">{{ p.title }}</span>{% endif %}
+          <span class="pub__a">{{ p.authors | hiPI | safe }}</span>
+          <span class="pub__v"><i>{{ p.venue }}</i>{% if p.doi %} · <span class="pub__doi">doi:{{ p.doi }}</span>{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+
+    <h2 class="h-gap">{{ i18n.pubs.tw | l(lang) }}</h2>
+    {% for g in tw | byYear %}
+    <div class="yeargrp">
+      <h3 class="yeargrp__y">{{ g.year }}</h3>
+      <ol class="pubs">
+        {% for p in g.items %}
+        <li class="pub" lang="zh-Hant">
+          <span class="pub__t">{{ p.title }}</span>
+          <span class="pub__a">{{ p.authors | hiPI | safe }}</span>
+          <span class="pub__v">{{ p.venue }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+    <p class="muted h-gap"><a href="{{ site.links.dept }}">{{ i18n.pubs.conf | l(lang) }}</a></p>
+  </div>
+</section>

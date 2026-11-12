@@ -1,0 +1,100 @@
+---
+layout: base.njk
+navKey: industry
+---
+{%- set mail = 'mailto:' + site.contact.email + '?subject=' + (i18n.ind.subject | l(lang) | urlencode) -%}
+<section class="phead phead--dark">
+  <div class="wrap">
+    <nav class="crumb" aria-label="breadcrumb"><a href="{{ root }}{{ '' if lang == 'zh' else 'en/' }}index.html">{{ i18n.nav.home | l(lang) }}</a> / <span>{{ i18n.nav.industry | l(lang) }}</span></nav>
+    <p class="eyebrow eyebrow--cyan">{{ i18n.ind.eyebrow | l(lang) }}</p>
+    <h1>{{ i18n.ind.title | l(lang) }}</h1>
+    <p class="phead__lead">{{ i18n.ind.lead | l(lang) }}</p>
+    <a class="btn btn--cyan" href="{{ mail }}">{{ i18n.ind.cta | l(lang) }}</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="svc-h">
+  <div class="wrap">
+    <h2 id="svc-h">{{ i18n.ind.services | l(lang) }}</h2>
+    <div class="svc-grid">
+      {% for s in services %}
+      <article class="svc">
+        <span class="svc__n">0{{ loop.index }}</span>
+        <h3>{{ s.title | l(lang) }}</h3>
+        <p>{{ s.desc | l(lang) }}</p>
+        <p class="svc__deliver">{{ s.deliver | l(lang) }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <h3 class="sub-h sub-h--gap">{{ i18n.ind.sectorsTitle | l(lang) }}</h3>
+    <div class="sectors">
+      {% for sc in i18n.ind.sectors %}
+      <div class="sector"><span class="sector__n">{{ sc.name | l(lang) }}</span><span class="sector__d">{{ sc.need | l(lang) }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="method-h">
+  <div class="wrap">
+    <h2 id="method-h">{{ i18n.ind.methodTitle | l(lang) }}</h2>
+    <dl class="method">
+      <div><dt>{{ i18n.standards.design | l(lang) }}</dt><dd>{% for it in i18n.standards.designItems %}<span class="chip">{{ it }}</span>{% endfor %}</dd></div>
+      <div><dt>{{ i18n.standards.tools | l(lang) }}</dt><dd>{% for it in i18n.standards.toolItems %}<span class="chip">{{ it }}</span>{% endfor %}</dd></div>
+      <div><dt>{{ i18n.standards.test | l(lang) }}</dt><dd>{% for it in i18n.standards.testItems %}<span class="chip">{{ it | l(lang) }}</span>{% endfor %}</dd></div>
+    </dl>
+
+    <h2 class="h-gap">{{ i18n.cases.title | l(lang) }}</h2>
+    <div class="cases">
+      {% for c in cases %}
+      <article class="case">
+        <span class="case__meta">{{ c.client | l(lang) }} · {{ c.years }}</span>
+        <h3>{{ c.title | l(lang) }}</h3>
+        <p>{{ c.desc | l(lang) }}</p>
+        <span class="case__role">{{ c.role | l(lang) }}</span>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="how-h">
+  <div class="wrap two">
+    <div>
+      <h2 id="how-h">{{ i18n.ind.modesTitle | l(lang) }}</h2>
+      <ul class="modes">
+        {% for m in i18n.ind.modes %}<li><b>{{ m.name | l(lang) }}</b><span>{{ m.desc | l(lang) }}</span></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2>{{ i18n.ind.stepsTitle | l(lang) }}</h2>
+      <ol class="steps">
+        {% for s in i18n.ind.steps %}<li><span class="steps__n">{{ loop.index }}</span>{{ s | l(lang) }}</li>{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="faq-h">
+  <div class="wrap two">
+    <div>
+      <h2 id="faq-h">{{ i18n.ind.faqTitle | l(lang) }}</h2>
+      <div class="faq">
+        {% for f in i18n.ind.faq %}
+        <details><summary>{{ f.q | l(lang) }}</summary><p>{{ f.a | l(lang) }}</p></details>
+        {% endfor %}
+      </div>
+      <h3 class="sub-h sub-h--gap">{{ i18n.ind.coiTitle | l(lang) }}</h3>
+      <p class="muted">{{ i18n.ind.coi | l(lang) }}</p>
+    </div>
+    <div class="prepbox">
+      <h2>{{ i18n.ind.prepTitle | l(lang) }}</h2>
+      <ul class="checks">
+        {% for p in i18n.ind.prep %}<li>{{ p | l(lang) }}</li>{% endfor %}
+      </ul>
+      <a class="btn btn--orange" href="{{ mail }}">{{ i18n.ind.cta | l(lang) }}</a>
+      <span class="prepbox__mail">{{ site.contact.email }} · {{ site.contact.phone }}</span>
+    </div>
+  </div>
+</section>
