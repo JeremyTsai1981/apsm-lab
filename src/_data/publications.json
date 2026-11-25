@@ -1,40 +1,319 @@
 [
-  { "year": 2026, "kind": "intl", "title": "Finite element analysis and experimental validation of soil-covered CFRC slabs subjected to blast loading", "authors": "Yeou-Fong Li, Jyun-Cheng Lai, Jin-Yuan Syu, Pei-Yao Hsu, Chih-Hong Huang, Ying-Kuan Tsai", "venue": "International Journal of Protective Structures", "doi": "10.1177/20414196261415909", "selected": true },
-  { "year": 2026, "kind": "intl", "title": "DEM-Based Investigation of Joint Effects on Projectile Penetration in Rock Mass", "authors": "Hoang-Khanh Le, Meng-Chia Weng, Hung-Hui Li, Ying-Kuan Tsai", "venue": "Rock Mechanics and Rock Engineering", "doi": "10.1007/s00603-025-05241-w" },
-  { "year": 2025, "kind": "intl", "title": "A study on explosive test and its finite-element analysis for the carbon fiber-reinforced concrete slab", "authors": "Yeou-Fong Li, Shi-Huan Hou, Jin-Yuan Syu, Pei-Yao Hsu, Chih-Hong Huang, Ying-Kuan Tsai*", "venue": "Composites Part C: Open Access, 100661", "doi": "" },
-  { "year": 2025, "kind": "intl", "title": "Investigating the Static and Dynamic Mechanical Properties of Fiber-Reinforced Concrete Incorporating Recycled Carbon Fiber and Modified Basic Oxygen Furnace Slag Aggregate", "authors": "Yeou-Fong Li, Hung-Sheng Lin, Jin-Yuan Syu, Wei-Hao Lee, Chih-Hong Huang, Ying-Kuan Tsai, Asia Shvarzman", "venue": "Recycling, 10(6), 206", "doi": "10.3390/recycling10060206" },
-  { "year": 2025, "kind": "intl", "title": "Quasi-Static and High Strain-Rate Behavior of Carbon Fiber Reinforced Modified BOFS Concrete", "authors": "Yeou-Fong Li, Chun-Wei Chien, Jin-Yuan Syu, Chih-Hong Huang, Wen-Shyong Kuo, Ying-Kuan Tsai", "venue": "Materials, 18(19), 4497", "doi": "10.3390/ma18194497" },
-  { "year": 2025, "kind": "intl", "title": "Experimental and finite-element investigation of hybrid carbon/kevlar fiber-reinforced concrete under high-strain-rate impact", "authors": "Yeou-Fong Li, Pei-Yao Hsu, Wei-Ting Lee, Jyun-Cheng Lai, Jin-Yuan Syu, Ying-Kuan Tsai", "venue": "International Journal of Protective Structures", "doi": "10.1177/20414196251395070" },
-  { "year": 2025, "kind": "intl", "title": "Static and Dynamic Mechanical Characteristics of 3D-Printed Anisotropic Basalt Fiber-Reinforced Cement Mortar", "authors": "Yeou-Fong Li, Yu-Fang Liang, Jin-Yuan Syu, Chih-Hong Huang, Ying-Kuan Tsai, Man-Hoi Lok", "venue": "Journal of Building Engineering, 111692", "doi": "" },
-  { "year": 2024, "kind": "intl", "title": "Experimental and Numerical Study on the Blast Resistant Performance of Geopolymer Concrete", "authors": "Jia-Wei Wu, Hao-Jhu Syu, Ying-Kuan Tsai, Yeou-Fong Li, Wei-Hao Lee, Chang-Yu Kuo, Chien-Chin Chen, Wan-Chun Lin, Yu-Wei Wang", "venue": "Key Engineering Materials", "doi": "" },
-  { "year": 2024, "kind": "intl", "title": "An Experimental Study on Electromagnetic Shielding Effectiveness and Impact Resistance of UHPC for Protective Facilities", "authors": "Chang-Yu Kuo, Ying-Kuan Tsai, Jo-Yen Nieh, Yi-Shiuan Tian", "venue": "Key Engineering Materials, 983, 87–95", "doi": "" },
-  { "year": 2023, "kind": "intl", "title": "Experimental and Numerical Investigation of the Mechanical Properties of a Fiber-Reinforced Geopolymer Mortar Blast Resistant Panel", "authors": "Chien-Chin Chen, Ying-Kuan Tsai*, Yu-Kai Lin, Pin-Hsuan Ho, Chang-Yu Kuo", "venue": "Polymers, 15(16), 3440", "doi": "10.3390/polym15163440", "selected": true },
-  { "year": 2023, "kind": "intl", "title": "Use of Geopolymer and Carbon Fiber-Reinforced Polymer for Repairing Reinforced Concrete Deck Soffit", "authors": "Yeou-Fong Li, Guo-Wei Hao, Jin-Yuan Syu, Bian-Yu Chen, Wei-Hao Lee, Ying-Kuan Tsai*", "venue": "Materials, 16(12), 4459", "doi": "10.3390/ma16124459", "selected": true },
-  { "year": 2023, "kind": "intl", "title": "Numerical study of a near-field explosion using arbitrary Lagrangian–Eulerian mapping technique", "authors": "Cheng-Wei Hung, Ying-Kuan Tsai*, Li-Kai Chien, Sheng-Jung Pi", "venue": "International Journal of Protective Structures, 15(2)", "doi": "10.1177/20414196231166067", "selected": true },
-  { "year": 2023, "kind": "intl", "title": "A study on mechanical behavior of Kevlar fiber reinforced concrete under static and high-strain rate loading", "authors": "Yeou-Fong Li, Yan-Ru Huang, Jin-Yuan Syu, Ying-Kuan Tsai*, Chih-Hong Huang", "venue": "International Journal of Protective Structures, 14(3), 407–437", "doi": "10.1177/20414196221118596" },
-  { "year": 2023, "kind": "intl", "title": "Comparing Mechanical Characterization of Carbon, Kevlar, and Hybrid-Fiber-Reinforced Concrete under Quasi-Static and Dynamic Loadings", "authors": "Yeou-Fong Li, Kun-Han Yang, Pei-Yao Hsu, Jin-Yuan Syu, Shea-Jue Wang, Wen-Shyong Kuo, Ying-Kuan Tsai", "venue": "Buildings, 13(8), 2044", "doi": "10.3390/buildings13082044" },
-  { "year": 2022, "kind": "intl", "title": "Investigation of the Blast-Resistance Performance of Geotextile-Reinforced Soil", "authors": "Shih-Chieh Tseng, Kuo-Hsin Yang*, Ying-Kuan Tsai, Fuchen Teng", "venue": "Geosynthetics International", "doi": "" },
-  { "year": 2022, "kind": "intl", "title": "Investigating the Mechanical Performance on Static and Shock Wave Loading of Aramid Fiber-Reinforced Concrete", "authors": "Yeou-Fong Li*, Hsin-Fu Wang, Jin-Yuan Syu, Gobinathan Kadagathur Ramanathan, Ying-Kuan Tsai", "venue": "Fibers, 10(10), 82", "doi": "10.3390/fib10100082" },
-  { "year": 2022, "kind": "intl", "title": "Mechanical behavior of different fiber lengths mix-proportions carbon fiber reinforced concrete subjected to static, impact, and blast loading", "authors": "Yeou-Fong Li, Gobinathan Kadagathur Ramanathan, Jin-Yuan Syu, Chih-Hong Huang, Ying-Kuan Tsai", "venue": "International Journal of Protective Structures", "doi": "" },
-  { "year": 2021, "kind": "intl", "title": "Hot deformation behavior and processing map of AZ61/SiC composites", "authors": "Murugan Subramani, Yu-Chih Tzeng, Li-Wei Tseng, Ying-Kuan Tsai, Gunng-Shinng Chen, Chen-Yuan Chung, Song-Jeng Huang", "venue": "Materials Today Communications, 29, 102861", "doi": "" },
-  { "year": 2021, "kind": "intl", "title": "Mechanical Properties of Aramid/Carbon Hybrid Fiber-Reinforced Concrete", "authors": "Yeou-Fong Li*, Hsin-Fu Wang, Jin-Yuan Syu, Gobinathan Kadagathur Ramanathan, Ying-Kuan Tsai, Man Hoi Lok", "venue": "Materials, 14(19), 5881", "doi": "10.3390/ma14195881" },
-  { "year": 2021, "kind": "intl", "title": "Numerical Study of Pressure Attenuation Effect on Tunnel Structures Subjected to Blast Loads", "authors": "Cheng-Wei Hung, Ying-Kuan Tsai, Tai-An Chen*, Hsin-Hung Lai, Pin-Wen Wu", "venue": "Applied Sciences, 11(12), 5646", "doi": "10.3390/app11125646" },
-  { "year": 2021, "kind": "intl", "title": "An Experimental Study on Mechanical Behaviors of Carbon Fiber and Microwave-Assisted Pyrolysis Recycled Carbon Fiber-Reinforced Concrete", "authors": "Yeou-Fong Li*, Jie-You Li, Gobinathan Kadagathur Ramanathan, Shu-Mei Chang, Ming-Yuan Shen, Ying-Kuan Tsai, Chih-Hong Huang", "venue": "Sustainability, 13, 6829", "doi": "10.3390/su13126829" },
-  { "year": 2021, "kind": "intl", "title": "Static and Dynamic Performances of Chopped Carbon-Fiber-Reinforced Mortar and Concrete Incorporated with Disparate Lengths", "authors": "Yeou-Fong Li, Kun-Fang Lee, Gobinathan Kadagathur Ramanathan, Ta-Wui Cheng, Chih-Hong Huang, Ying-Kuan Tsai", "venue": "Materials, 14(4), 972", "doi": "10.3390/ma14040972" },
-  { "year": 2020, "kind": "intl", "title": "A Constitutive Model of High-Early-Strength Cement with Perlite Powder as a Thermal-Insulating Material Confined by Carbon Fiber Reinforced Plastics at Elevated Temperatures", "authors": "Yeou-Fong Li, Wai-Keong Sio, Tzu-Hsien Yang, Ying-Kuan Tsai*", "venue": "Polymers, 12(10), 2369", "doi": "10.3390/polym12102369" },
-  { "year": 2020, "kind": "intl", "title": "Dynamic response of a physical anti-dip rock slope model revealed by shaking table tests", "authors": "Chi-Chieh Chen, Hung-Hui Li, Ya-Chu Chiu, Ying-Kuan Tsai", "venue": "Engineering Geology, 277, 105772", "doi": "" },
-  { "year": 2020, "kind": "intl", "title": "An Experimentally Validated Numerical Model for the Near-Field Explosion of an Ammunition Storage Magazine", "authors": "Cheng-Wei Hung, Ying-Kuan Tsai*, Tai-An Chen, Pin-Wen Wu", "venue": "Applied Sciences, 10(19), 6849", "doi": "10.3390/app10196849" },
-  { "year": 2020, "kind": "intl", "title": "A Compressive Peak Strength Model for CFRP-Confined Thermal Insulation Materials under Elevated Temperature", "authors": "Yeou-Fong Li, Wai-Keong Sio, Ying-Kuan Tsai*", "venue": "Materials, 13(1), 26", "doi": "10.3390/ma13010026" },
-  { "year": 2019, "kind": "intl", "title": "A Study on Improving the Mechanical Performance of Carbon-Fiber-Reinforced Cement", "authors": "Yeou-Fong Li, Tzu-Hsien Yang*, Chang-Yu Kuo, Ying-Kuan Tsai", "venue": "Materials, 12(17), 2715", "doi": "10.3390/ma12172715" },
-  { "year": 2019, "kind": "intl", "title": "Energy-Based Load-Impulse Diagrams with Multiple Failure Modes for Blast-Loaded Reinforced Concrete Structural Elements", "authors": "Ying-Kuan Tsai*, Ted Krauthammer", "venue": "Engineering Failure Analysis, 104, 830–843", "doi": "" },
-  { "year": 2017, "kind": "intl", "title": "Energy based load-impulse diagrams", "authors": "Ying-Kuan Tsai*, Ted Krauthammer", "venue": "Engineering Structures, 149, 64–77", "doi": "10.1016/j.engstruct.2016.10.042", "selected": true },
-
-  { "year": 2024, "kind": "tw", "title": "碳基材改良超高性能混凝土於防護工程之實驗開發與應用研究", "authors": "蔡營寬、聶若鹽、李有豐、郭長裕、田怡萱", "venue": "混凝土科技，18(4)，12–24", "doi": "" },
-  { "year": 2023, "kind": "tw", "title": "2022年俄烏城鎮戰戰場經營之研究—兼論我國地下掩體衰減層抗爆分析與應用", "authors": "曾世傑、楊國鑫、蔡營寬、温茂亨", "venue": "憲兵半年刊，第96期", "doi": "" },
-  { "year": 2022, "kind": "tw", "title": "後備部隊戰力防護之研究－以建構快速布放式抗爆震掩體為例", "authors": "曾世傑、楊國鑫、蔡營寬、林詳恩", "venue": "後備動員軍事雜誌半年刊，第105期", "doi": "" },
-  { "year": 2022, "kind": "tw", "title": "1945年硫磺島戰役日軍守備之研究－兼論不同土質條件衰減層抗爆效能", "authors": "曾世傑、楊國鑫、蔡營寬、王璽", "venue": "陸軍工兵半年刊，第160期", "doi": "" },
-  { "year": 2021, "kind": "tw", "title": "地下結構物抗爆震研究－以加勁土衰減爆震波壓力之數值分析", "authors": "曾世傑、楊國鑫、蔡營寬", "venue": "陸軍工兵半年刊，第159期", "doi": "" },
-  { "year": 2021, "kind": "tw", "title": "碳纖維水泥砂漿與碳纖維混凝土的力學行為與其工程應用", "authors": "李有豐、簡士傑、李坤芳、郭長裕、李傑祐、洪佳音、陳彥鈞、蔡營寬", "venue": "混凝土科技，15(4)，70–84", "doi": "" },
-  { "year": 2021, "kind": "tw", "title": "芳綸纖維混凝土靜態與動態力學行為研究", "authors": "李有豐、陳映儒、李岱嶸、陳博淵、王星富、陳彥鈞、蔡營寬", "venue": "混凝土科技，15(2)，13–24", "doi": "" },
-  { "year": 2020, "kind": "tw", "title": "無機聚合複合材料之抗衝擊力學性能試驗研究", "authors": "蔡營寬、李宏輝、劉宇倫、鄭大偉、李有豐、吳嘉偉", "venue": "土木水利，47(2)", "doi": "" }
+ {
+  "year": 2026,
+  "kind": "intl",
+  "title": "Enhancing Blast Resistance of Reinforced Concrete Slabs Using Polyurea Coatings: Experimental and Numerical Analysis under Contact Explosions",
+  "authors": "Ying-Kuan Tsai*, Wan-Chun Lin, Ming-Hsien Wu, Hao-Jhu Syu",
+  "venue": "Advances in Polymer Technology (accepted)",
+  "doi": ""
+ },
+ {
+  "year": 2026,
+  "kind": "intl",
+  "title": "Dynamic Impact Resistance and Energy Absorption Behavior of Polyurea-Coated Aluminum Foam Composite Structures under Drop-Weight Loading",
+  "authors": "Wan-Chun Lin, Ying-Kuan Tsai*",
+  "venue": "Polymer Testing (accepted)",
+  "doi": ""
+ },
+ {
+  "year": 2026,
+  "kind": "intl",
+  "title": "Finite element analysis and experimental validation of soil-covered CFRC slabs subjected to blast loading",
+  "authors": "Yeou-Fong Li, Jyun-Cheng Lai, Jin-Yuan Syu, Pei-Yao Hsu, Chih-Hong Huang, Ying-Kuan Tsai",
+  "venue": "International Journal of Protective Structures",
+  "doi": "10.1177/20414196261415909",
+  "selected": true
+ },
+ {
+  "year": 2026,
+  "kind": "intl",
+  "title": "DEM-Based Investigation of Joint Effects on Projectile Penetration in Rock Mass",
+  "authors": "Hoang-Khanh Le, Meng-Chia Weng, Hung-Hui Li, Ying-Kuan Tsai",
+  "venue": "Rock Mechanics and Rock Engineering",
+  "doi": "10.1007/s00603-025-05241-w"
+ },
+ {
+  "year": 2025,
+  "kind": "intl",
+  "title": "A study on explosive test and its finite-element analysis for the carbon fiber-reinforced concrete slab",
+  "authors": "Yeou-Fong Li, Shi-Huan Hou, Jin-Yuan Syu, Pei-Yao Hsu, Chih-Hong Huang, Ying-Kuan Tsai*",
+  "venue": "Composites Part C: Open Access, 100661",
+  "doi": ""
+ },
+ {
+  "year": 2025,
+  "kind": "intl",
+  "title": "Investigating the Static and Dynamic Mechanical Properties of Fiber-Reinforced Concrete Incorporating Recycled Carbon Fiber and Modified Basic Oxygen Furnace Slag Aggregate",
+  "authors": "Yeou-Fong Li, Hung-Sheng Lin, Jin-Yuan Syu, Wei-Hao Lee, Chih-Hong Huang, Ying-Kuan Tsai, Asia Shvarzman",
+  "venue": "Recycling, 10(6), 206",
+  "doi": "10.3390/recycling10060206"
+ },
+ {
+  "year": 2025,
+  "kind": "intl",
+  "title": "Quasi-Static and High Strain-Rate Behavior of Carbon Fiber Reinforced Modified BOFS Concrete",
+  "authors": "Yeou-Fong Li, Chun-Wei Chien, Jin-Yuan Syu, Chih-Hong Huang, Wen-Shyong Kuo, Ying-Kuan Tsai",
+  "venue": "Materials, 18(19), 4497",
+  "doi": "10.3390/ma18194497"
+ },
+ {
+  "year": 2025,
+  "kind": "intl",
+  "title": "Experimental and finite-element investigation of hybrid carbon/kevlar fiber-reinforced concrete under high-strain-rate impact",
+  "authors": "Yeou-Fong Li, Pei-Yao Hsu, Wei-Ting Lee, Jyun-Cheng Lai, Jin-Yuan Syu, Ying-Kuan Tsai",
+  "venue": "International Journal of Protective Structures",
+  "doi": "10.1177/20414196251395070"
+ },
+ {
+  "year": 2025,
+  "kind": "intl",
+  "title": "Static and Dynamic Mechanical Characteristics of 3D-Printed Anisotropic Basalt Fiber-Reinforced Cement Mortar",
+  "authors": "Yeou-Fong Li, Yu-Fang Liang, Jin-Yuan Syu, Chih-Hong Huang, Ying-Kuan Tsai, Man-Hoi Lok",
+  "venue": "Journal of Building Engineering, 111692",
+  "doi": ""
+ },
+ {
+  "year": 2024,
+  "kind": "intl",
+  "title": "Experimental and Numerical Study on the Blast Resistant Performance of Geopolymer Concrete",
+  "authors": "Jia-Wei Wu, Hao-Jhu Syu, Ying-Kuan Tsai, Yeou-Fong Li, Wei-Hao Lee, Chang-Yu Kuo, Chien-Chin Chen, Wan-Chun Lin, Yu-Wei Wang",
+  "venue": "Key Engineering Materials",
+  "doi": ""
+ },
+ {
+  "year": 2024,
+  "kind": "intl",
+  "title": "An Experimental Study on Electromagnetic Shielding Effectiveness and Impact Resistance of UHPC for Protective Facilities",
+  "authors": "Chang-Yu Kuo, Ying-Kuan Tsai, Jo-Yen Nieh, Yi-Shiuan Tian",
+  "venue": "Key Engineering Materials, 983, 87–95",
+  "doi": ""
+ },
+ {
+  "year": 2023,
+  "kind": "intl",
+  "title": "Experimental and Numerical Investigation of the Mechanical Properties of a Fiber-Reinforced Geopolymer Mortar Blast Resistant Panel",
+  "authors": "Chien-Chin Chen, Ying-Kuan Tsai*, Yu-Kai Lin, Pin-Hsuan Ho, Chang-Yu Kuo",
+  "venue": "Polymers, 15(16), 3440",
+  "doi": "10.3390/polym15163440",
+  "selected": true
+ },
+ {
+  "year": 2023,
+  "kind": "intl",
+  "title": "Use of Geopolymer and Carbon Fiber-Reinforced Polymer for Repairing Reinforced Concrete Deck Soffit",
+  "authors": "Yeou-Fong Li, Guo-Wei Hao, Jin-Yuan Syu, Bian-Yu Chen, Wei-Hao Lee, Ying-Kuan Tsai*",
+  "venue": "Materials, 16(12), 4459",
+  "doi": "10.3390/ma16124459",
+  "selected": true
+ },
+ {
+  "year": 2023,
+  "kind": "intl",
+  "title": "Numerical study of a near-field explosion using arbitrary Lagrangian–Eulerian mapping technique",
+  "authors": "Cheng-Wei Hung, Ying-Kuan Tsai*, Li-Kai Chien, Sheng-Jung Pi",
+  "venue": "International Journal of Protective Structures, 15(2)",
+  "doi": "10.1177/20414196231166067",
+  "selected": true
+ },
+ {
+  "year": 2023,
+  "kind": "intl",
+  "title": "A study on mechanical behavior of Kevlar fiber reinforced concrete under static and high-strain rate loading",
+  "authors": "Yeou-Fong Li, Yan-Ru Huang, Jin-Yuan Syu, Ying-Kuan Tsai*, Chih-Hong Huang",
+  "venue": "International Journal of Protective Structures, 14(3), 407–437",
+  "doi": "10.1177/20414196221118596"
+ },
+ {
+  "year": 2023,
+  "kind": "intl",
+  "title": "Comparing Mechanical Characterization of Carbon, Kevlar, and Hybrid-Fiber-Reinforced Concrete under Quasi-Static and Dynamic Loadings",
+  "authors": "Yeou-Fong Li, Kun-Han Yang, Pei-Yao Hsu, Jin-Yuan Syu, Shea-Jue Wang, Wen-Shyong Kuo, Ying-Kuan Tsai",
+  "venue": "Buildings, 13(8), 2044",
+  "doi": "10.3390/buildings13082044"
+ },
+ {
+  "year": 2022,
+  "kind": "intl",
+  "title": "Investigation of the Blast-Resistance Performance of Geotextile-Reinforced Soil",
+  "authors": "Shih-Chieh Tseng, Kuo-Hsin Yang*, Ying-Kuan Tsai, Fuchen Teng",
+  "venue": "Geosynthetics International",
+  "doi": ""
+ },
+ {
+  "year": 2022,
+  "kind": "intl",
+  "title": "Investigating the Mechanical Performance on Static and Shock Wave Loading of Aramid Fiber-Reinforced Concrete",
+  "authors": "Yeou-Fong Li*, Hsin-Fu Wang, Jin-Yuan Syu, Gobinathan Kadagathur Ramanathan, Ying-Kuan Tsai",
+  "venue": "Fibers, 10(10), 82",
+  "doi": "10.3390/fib10100082"
+ },
+ {
+  "year": 2022,
+  "kind": "intl",
+  "title": "Mechanical behavior of different fiber lengths mix-proportions carbon fiber reinforced concrete subjected to static, impact, and blast loading",
+  "authors": "Yeou-Fong Li, Gobinathan Kadagathur Ramanathan, Jin-Yuan Syu, Chih-Hong Huang, Ying-Kuan Tsai",
+  "venue": "International Journal of Protective Structures",
+  "doi": ""
+ },
+ {
+  "year": 2021,
+  "kind": "intl",
+  "title": "Hot deformation behavior and processing map of AZ61/SiC composites",
+  "authors": "Murugan Subramani, Yu-Chih Tzeng, Li-Wei Tseng, Ying-Kuan Tsai, Gunng-Shinng Chen, Chen-Yuan Chung, Song-Jeng Huang",
+  "venue": "Materials Today Communications, 29, 102861",
+  "doi": ""
+ },
+ {
+  "year": 2021,
+  "kind": "intl",
+  "title": "Mechanical Properties of Aramid/Carbon Hybrid Fiber-Reinforced Concrete",
+  "authors": "Yeou-Fong Li*, Hsin-Fu Wang, Jin-Yuan Syu, Gobinathan Kadagathur Ramanathan, Ying-Kuan Tsai, Man Hoi Lok",
+  "venue": "Materials, 14(19), 5881",
+  "doi": "10.3390/ma14195881"
+ },
+ {
+  "year": 2021,
+  "kind": "intl",
+  "title": "Numerical Study of Pressure Attenuation Effect on Tunnel Structures Subjected to Blast Loads",
+  "authors": "Cheng-Wei Hung, Ying-Kuan Tsai, Tai-An Chen*, Hsin-Hung Lai, Pin-Wen Wu",
+  "venue": "Applied Sciences, 11(12), 5646",
+  "doi": "10.3390/app11125646"
+ },
+ {
+  "year": 2021,
+  "kind": "intl",
+  "title": "An Experimental Study on Mechanical Behaviors of Carbon Fiber and Microwave-Assisted Pyrolysis Recycled Carbon Fiber-Reinforced Concrete",
+  "authors": "Yeou-Fong Li*, Jie-You Li, Gobinathan Kadagathur Ramanathan, Shu-Mei Chang, Ming-Yuan Shen, Ying-Kuan Tsai, Chih-Hong Huang",
+  "venue": "Sustainability, 13, 6829",
+  "doi": "10.3390/su13126829"
+ },
+ {
+  "year": 2021,
+  "kind": "intl",
+  "title": "Static and Dynamic Performances of Chopped Carbon-Fiber-Reinforced Mortar and Concrete Incorporated with Disparate Lengths",
+  "authors": "Yeou-Fong Li, Kun-Fang Lee, Gobinathan Kadagathur Ramanathan, Ta-Wui Cheng, Chih-Hong Huang, Ying-Kuan Tsai",
+  "venue": "Materials, 14(4), 972",
+  "doi": "10.3390/ma14040972"
+ },
+ {
+  "year": 2020,
+  "kind": "intl",
+  "title": "A Constitutive Model of High-Early-Strength Cement with Perlite Powder as a Thermal-Insulating Material Confined by Carbon Fiber Reinforced Plastics at Elevated Temperatures",
+  "authors": "Yeou-Fong Li, Wai-Keong Sio, Tzu-Hsien Yang, Ying-Kuan Tsai*",
+  "venue": "Polymers, 12(10), 2369",
+  "doi": "10.3390/polym12102369"
+ },
+ {
+  "year": 2020,
+  "kind": "intl",
+  "title": "Dynamic response of a physical anti-dip rock slope model revealed by shaking table tests",
+  "authors": "Chi-Chieh Chen, Hung-Hui Li, Ya-Chu Chiu, Ying-Kuan Tsai",
+  "venue": "Engineering Geology, 277, 105772",
+  "doi": ""
+ },
+ {
+  "year": 2020,
+  "kind": "intl",
+  "title": "An Experimentally Validated Numerical Model for the Near-Field Explosion of an Ammunition Storage Magazine",
+  "authors": "Cheng-Wei Hung, Ying-Kuan Tsai*, Tai-An Chen, Pin-Wen Wu",
+  "venue": "Applied Sciences, 10(19), 6849",
+  "doi": "10.3390/app10196849"
+ },
+ {
+  "year": 2020,
+  "kind": "intl",
+  "title": "A Compressive Peak Strength Model for CFRP-Confined Thermal Insulation Materials under Elevated Temperature",
+  "authors": "Yeou-Fong Li, Wai-Keong Sio, Ying-Kuan Tsai*",
+  "venue": "Materials, 13(1), 26",
+  "doi": "10.3390/ma13010026"
+ },
+ {
+  "year": 2019,
+  "kind": "intl",
+  "title": "A Study on Improving the Mechanical Performance of Carbon-Fiber-Reinforced Cement",
+  "authors": "Yeou-Fong Li, Tzu-Hsien Yang*, Chang-Yu Kuo, Ying-Kuan Tsai",
+  "venue": "Materials, 12(17), 2715",
+  "doi": "10.3390/ma12172715"
+ },
+ {
+  "year": 2019,
+  "kind": "intl",
+  "title": "Energy-Based Load-Impulse Diagrams with Multiple Failure Modes for Blast-Loaded Reinforced Concrete Structural Elements",
+  "authors": "Ying-Kuan Tsai*, Ted Krauthammer",
+  "venue": "Engineering Failure Analysis, 104, 830–843",
+  "doi": ""
+ },
+ {
+  "year": 2017,
+  "kind": "intl",
+  "title": "Energy based load-impulse diagrams",
+  "authors": "Ying-Kuan Tsai*, Ted Krauthammer",
+  "venue": "Engineering Structures, 149, 64–77",
+  "doi": "10.1016/j.engstruct.2016.10.042",
+  "selected": true
+ },
+ {
+  "year": 2024,
+  "kind": "tw",
+  "title": "碳基材改良超高性能混凝土於防護工程之實驗開發與應用研究",
+  "authors": "蔡營寬、聶若鹽、李有豐、郭長裕、田怡萱",
+  "venue": "混凝土科技，18(4)，12–24",
+  "doi": ""
+ },
+ {
+  "year": 2023,
+  "kind": "tw",
+  "title": "2022年俄烏城鎮戰戰場經營之研究—兼論我國地下掩體衰減層抗爆分析與應用",
+  "authors": "曾世傑、楊國鑫、蔡營寬、温茂亨",
+  "venue": "憲兵半年刊，第96期",
+  "doi": ""
+ },
+ {
+  "year": 2022,
+  "kind": "tw",
+  "title": "後備部隊戰力防護之研究－以建構快速布放式抗爆震掩體為例",
+  "authors": "曾世傑、楊國鑫、蔡營寬、林詳恩",
+  "venue": "後備動員軍事雜誌半年刊，第105期",
+  "doi": ""
+ },
+ {
+  "year": 2022,
+  "kind": "tw",
+  "title": "1945年硫磺島戰役日軍守備之研究－兼論不同土質條件衰減層抗爆效能",
+  "authors": "曾世傑、楊國鑫、蔡營寬、王璽",
+  "venue": "陸軍工兵半年刊，第160期",
+  "doi": ""
+ },
+ {
+  "year": 2021,
+  "kind": "tw",
+  "title": "地下結構物抗爆震研究－以加勁土衰減爆震波壓力之數值分析",
+  "authors": "曾世傑、楊國鑫、蔡營寬",
+  "venue": "陸軍工兵半年刊，第159期",
+  "doi": ""
+ },
+ {
+  "year": 2021,
+  "kind": "tw",
+  "title": "碳纖維水泥砂漿與碳纖維混凝土的力學行為與其工程應用",
+  "authors": "李有豐、簡士傑、李坤芳、郭長裕、李傑祐、洪佳音、陳彥鈞、蔡營寬",
+  "venue": "混凝土科技，15(4)，70–84",
+  "doi": ""
+ },
+ {
+  "year": 2021,
+  "kind": "tw",
+  "title": "芳綸纖維混凝土靜態與動態力學行為研究",
+  "authors": "李有豐、陳映儒、李岱嶸、陳博淵、王星富、陳彥鈞、蔡營寬",
+  "venue": "混凝土科技，15(2)，13–24",
+  "doi": ""
+ },
+ {
+  "year": 2020,
+  "kind": "tw",
+  "title": "無機聚合複合材料之抗衝擊力學性能試驗研究",
+  "authors": "蔡營寬、李宏輝、劉宇倫、鄭大偉、李有豐、吳嘉偉",
+  "venue": "土木水利，47(2)",
+  "doi": ""
+ }
 ]

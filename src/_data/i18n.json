@@ -213,12 +213,16 @@
   },
   "field": {
     "eyebrow": {
-      "zh": "試驗現場",
-      "en": "In the field"
+      "zh": "試驗與驗證",
+      "en": "Testing and validation"
     },
     "title": {
       "zh": "模擬結果，以試驗驗證",
       "en": "Simulations validated by testing"
+    },
+    "lead": {
+      "zh": "五類試驗能量，對應從材料、構件到人體的研究主題。",
+      "en": "Five testing capabilities, from materials and members to the human body."
     }
   },
   "cases": {
@@ -233,6 +237,10 @@
     "more": {
       "zh": "產學合作與技術服務",
       "en": "Industry services"
+    },
+    "recent": {
+      "zh": "執行中",
+      "en": "Ongoing"
     }
   },
   "team": {

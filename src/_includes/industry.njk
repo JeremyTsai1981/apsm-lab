@@ -49,7 +49,7 @@ navKey: industry
     <div class="cases">
       {% for c in cases %}
       <article class="case">
-        <span class="case__meta">{{ c.client | l(lang) }} · {{ c.years }}</span>
+        <span class="case__meta">{{ c.client | l(lang) }}{% if c.years %} · {{ c.years }}{% endif %}</span>
         <h3>{{ c.title | l(lang) }}</h3>
         <p>{{ c.desc | l(lang) }}</p>
         <span class="case__role">{{ c.role | l(lang) }}</span>

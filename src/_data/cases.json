@@ -1,26 +1,142 @@
 [
   {
-    "title": { "zh": "提升國軍抗炸掩體防護性能之數值模擬與試驗研究", "en": "Improving the blast protection of military shelters: simulation and testing" },
-    "client": { "zh": "國家中山科學研究院", "en": "NCSIST" },
-    "role": { "zh": "計畫主持人", "en": "Principal investigator" },
-    "years": "2022–2024",
-    "desc": { "zh": "以數值模擬搭配試驗，評估掩體在爆炸荷載下的防護性能並提出改善方向。", "en": "Combined simulation and testing to evaluate shelter performance under blast loading and propose improvements." },
-    "theme": "structures"
-  },
-  {
-    "title": { "zh": "戰時機場跑道緊急搶修技術與材料之研發", "en": "Rapid runway repair techniques and materials" },
-    "client": { "zh": "國防部先進科技研究計畫", "en": "MND Advanced Technology Program" },
-    "role": { "zh": "共同主持人", "en": "Co-principal investigator" },
-    "years": "2022–2023",
-    "desc": { "zh": "研提跑道快速搶修工法，並研發兼顧早期強度、施工性與耐久性的高早強無機聚合修補材料。", "en": "Developed rapid runway repair methods and high-early-strength geopolymer repair materials balancing early strength, workability and durability." },
+    "title": {
+      "zh": "軍事工程戰損評估及快速修復設計之可行性評估研究",
+      "en": "Feasibility study on damage assessment and rapid repair design for military engineering"
+    },
+    "client": {
+      "zh": "國家中山科學研究院",
+      "en": "NCSIST"
+    },
+    "role": {
+      "zh": "計畫主持人",
+      "en": "Principal investigator"
+    },
+    "years": "2026–2028",
+    "desc": {
+      "zh": "建立結構戰損評估方法與整合分析平台，並研發快速修復材料與工法。",
+      "en": "Develops structural damage assessment methods and an integrated analysis platform, with rapid repair materials and methods."
+    },
     "theme": "repair"
   },
   {
-    "title": { "zh": "預鑄纖維強化無機聚合物混凝土防爆版之研發", "en": "Precast fiber-reinforced geopolymer blast-resistant panels" },
-    "client": { "zh": "科技部產學合作計畫", "en": "MOST industry–academia project" },
-    "role": { "zh": "計畫主持人", "en": "Principal investigator" },
+    "title": {
+      "zh": "陸域設施建置評估暨先期鑽探案",
+      "en": "Land facility feasibility assessment and preliminary drilling"
+    },
+    "client": {
+      "zh": "海軍艦隊指揮部",
+      "en": "ROC Navy Fleet Command"
+    },
+    "role": {
+      "zh": "計畫主持人",
+      "en": "Principal investigator"
+    },
+    "years": "2026",
+    "desc": {
+      "zh": "地下防護設施的建置可行性評估，包含地質調查、防護結構初步規劃、造價與工期研析。",
+      "en": "Feasibility assessment of an underground protective facility, covering site investigation, preliminary protective design, cost and schedule."
+    },
+    "theme": "structures"
+  },
+  {
+    "title": {
+      "zh": "爆炸衝擊波引致人腦損傷數值模式應用研究",
+      "en": "Numerical modelling of blast-induced brain injury"
+    },
+    "client": {
+      "zh": "國防先進科技研究計畫（與國防醫學大學合作）",
+      "en": "Defense advanced technology program (with National Defense Medical University)"
+    },
+    "role": {
+      "zh": "子計畫主持人",
+      "en": "Sub-project PI"
+    },
+    "years": "2025–2027",
+    "desc": {
+      "zh": "「探討彈道與爆炸衝擊後頸椎與腦部損傷之綜合評估研究」之子計畫，以人體有限元素模型評估爆震波造成的腦部損傷。",
+      "en": "Sub-project of an integrated study on cervical spine and brain injury after ballistic and blast impact, using finite-element human body models to assess blast-induced brain injury."
+    },
+    "theme": "human"
+  },
+  {
+    "title": {
+      "zh": "國軍戰力保存之坑道式掩體結構防護研究",
+      "en": "Protective design of tunnel-type shelters for force preservation"
+    },
+    "client": {
+      "zh": "國防工業發展基金會",
+      "en": "Defense Industry Development Foundation"
+    },
+    "role": {
+      "zh": "計畫主持人",
+      "en": "Principal investigator"
+    },
+    "years": "",
+    "desc": {
+      "zh": "坑道式掩體在爆炸荷載下的結構防護性能分析與設計建議。",
+      "en": "Structural protection analysis and design recommendations for tunnel-type shelters under blast loading."
+    },
+    "theme": "structures"
+  },
+  {
+    "title": {
+      "zh": "提升國軍抗炸掩體防護性能之數值模擬與試驗研究",
+      "en": "Improving the blast protection of military shelters: simulation and testing"
+    },
+    "client": {
+      "zh": "國家中山科學研究院",
+      "en": "NCSIST"
+    },
+    "role": {
+      "zh": "計畫主持人",
+      "en": "Principal investigator"
+    },
+    "years": "2022–2024",
+    "desc": {
+      "zh": "以數值模擬搭配試驗，評估掩體在爆炸荷載下的防護性能並提出改善方向。",
+      "en": "Combined simulation and testing to evaluate shelter performance under blast loading and propose improvements."
+    },
+    "theme": "structures"
+  },
+  {
+    "title": {
+      "zh": "戰時機場跑道緊急搶修技術與材料之研發",
+      "en": "Rapid runway repair techniques and materials"
+    },
+    "client": {
+      "zh": "國防部先進科技研究計畫",
+      "en": "MND Advanced Technology Program"
+    },
+    "role": {
+      "zh": "共同主持人",
+      "en": "Co-principal investigator"
+    },
+    "years": "2022–2023",
+    "desc": {
+      "zh": "研提跑道快速搶修工法，並研發兼顧早期強度、施工性與耐久性的高早強無機聚合修補材料。",
+      "en": "Developed rapid runway repair methods and high-early-strength geopolymer repair materials balancing early strength, workability and durability."
+    },
+    "theme": "repair"
+  },
+  {
+    "title": {
+      "zh": "預鑄纖維強化無機聚合物混凝土防爆版之研發",
+      "en": "Precast fiber-reinforced geopolymer blast-resistant panels"
+    },
+    "client": {
+      "zh": "科技部產學合作計畫",
+      "en": "MOST industry–academia project"
+    },
+    "role": {
+      "zh": "計畫主持人",
+      "en": "Principal investigator"
+    },
     "years": "2020–2021",
-    "desc": { "zh": "與產業共同開發可預鑄的防爆版，並以試驗與數值分析驗證其抗爆性能。", "en": "Co-developed a precast blast-resistant panel with industry, validated by testing and numerical analysis." },
+    "desc": {
+      "zh": "與產業共同開發可預鑄的防爆版，並以試驗與數值分析驗證其抗爆性能。",
+      "en": "Co-developed a precast blast-resistant panel with industry, validated by testing and numerical analysis."
+    },
     "theme": "materials"
   }
 ]

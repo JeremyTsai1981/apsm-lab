@@ -1,34 +1,194 @@
 [
   {
-    "img": "test-setup",
-    "cap": {
-      "zh": "接觸爆炸試驗架設：試體置於鋼架上，上方為炸藥",
-      "en": "Contact explosion test setup: specimen on a steel frame with the charge on top"
+    "title": {
+      "zh": "材料動態力學試驗",
+      "en": "Dynamic material testing"
     },
-    "wide": false
+    "desc": {
+      "zh": "從準靜態、衝擊到爆炸等級的應變率，量測防護材料的強度與能量吸收特性，作為數值模型的材料參數來源。",
+      "en": "Strength and energy absorption of protective materials from quasi-static to impact and blast strain rates, supplying material parameters for numerical models."
+    },
+    "chips": [
+      "MTS 2500 kN",
+      "高速 MTS · 10⁻⁴–10⁰ s⁻¹",
+      "SHPB · 10⁰–10³ s⁻¹",
+      "落錘衝擊 9 m/s"
+    ],
+    "imgs": [
+      {
+        "img": "lab-shpb",
+        "cap": {
+          "zh": "分離式霍普金森壓桿（SHPB）",
+          "en": "Split Hopkinson pressure bar (SHPB)"
+        }
+      },
+      {
+        "img": "lab-hrmts",
+        "cap": {
+          "zh": "高應變率材料試驗機",
+          "en": "High-rate material testing machine"
+        }
+      },
+      {
+        "img": "lab-mts",
+        "cap": {
+          "zh": "圓柱試體壓縮試驗",
+          "en": "Cylinder compression test"
+        }
+      }
+    ]
   },
   {
-    "img": "test-slab",
-    "cap": {
-      "zh": "聚脲塗層混凝土版試體（試驗後）",
-      "en": "Polyurea-coated concrete slab after testing"
+    "title": {
+      "zh": "現地爆炸試驗",
+      "en": "Field explosive tests"
     },
-    "wide": true
+    "desc": {
+      "zh": "以 C4 等炸藥進行接觸與近距離爆炸試驗，量測壓力、加速度與位移，觀察 RC 版、複合防爆版與聚脲塗層試體的破壞模式。",
+      "en": "Contact and close-in tests with C4 and other explosives, measuring pressure, acceleration and displacement and recording failure modes of RC slabs, composite blast panels and polyurea-coated specimens."
+    },
+    "chips": [
+      "接觸爆炸",
+      "縮尺結構",
+      "壓力／加速度／位移量測"
+    ],
+    "imgs": [
+      {
+        "img": "lab-field",
+        "cap": {
+          "zh": "坑道內的防爆版爆炸試驗架設",
+          "en": "Blast panel test setup inside a tunnel"
+        }
+      },
+      {
+        "img": "test-setup",
+        "cap": {
+          "zh": "接觸爆炸試驗：試體置於鋼架上",
+          "en": "Contact explosion test: specimen on a steel frame"
+        }
+      },
+      {
+        "img": "test-slab",
+        "cap": {
+          "zh": "聚脲塗層混凝土版（試驗後）",
+          "en": "Polyurea-coated concrete slab after testing"
+        }
+      }
+    ]
   },
   {
-    "img": "test-specimens",
-    "cap": {
-      "zh": "試驗後的 RC 與複合防護版試體",
-      "en": "RC and composite protective panels after testing"
+    "title": {
+      "zh": "模擬與試驗對照",
+      "en": "Simulation against test"
     },
-    "wide": false
+    "desc": {
+      "zh": "以 LS-DYNA 建立含鋼筋的三維模型重現試驗，並用 3D 掃描量測爆坑與剝落範圍，逐項比對模擬結果。",
+      "en": "LS-DYNA models with explicit reinforcement reproduce each test; 3D scans of craters and spall are compared item by item with the simulation."
+    },
+    "chips": [
+      "LS-DYNA",
+      "3D 掃描",
+      "損傷範圍比對"
+    ],
+    "imgs": [
+      {
+        "img": "lab-mesh",
+        "cap": {
+          "zh": "RC 版接觸爆炸的有限元素模型",
+          "en": "Finite-element model of an RC slab under contact explosion"
+        }
+      },
+      {
+        "img": "test-scan",
+        "cap": {
+          "zh": "以 3D 掃描量測爆坑尺寸",
+          "en": "3D scan of crater dimensions"
+        }
+      },
+      {
+        "img": "lab-fea",
+        "cap": {
+          "zh": "複合防爆版受壓變形分析",
+          "en": "Deformation analysis of a composite blast panel"
+        }
+      }
+    ]
   },
   {
-    "img": "test-scan",
-    "cap": {
-      "zh": "以 3D 掃描量測爆坑尺寸",
-      "en": "3D scanning of crater dimensions"
+    "title": {
+      "zh": "聽力與人體防護試驗",
+      "en": "Hearing and human protection"
     },
-    "wide": false
+    "desc": {
+      "zh": "由 CT 影像建立耳道有限元素模型，分析衝擊式噪音在耳道內的聲壓傳遞；並以 3D 列印頭顱與柔性耳道模型搭配衝擊式噪音產生裝置實測驗證，作為聽力防護具設計的依據。",
+      "en": "Ear-canal finite-element models built from CT images analyse how impulse noise travels to the eardrum, validated with 3D-printed head and soft ear-canal models and an impulse-noise generator, to support hearing-protector design."
+    },
+    "chips": [
+      "耳道聲場模擬",
+      "3D 列印頭顱模型",
+      "衝擊式噪音產生裝置"
+    ],
+    "imgs": [
+      {
+        "img": "lab-head3d",
+        "cap": {
+          "zh": "3D 列印頭顱模型",
+          "en": "3D-printed head model"
+        }
+      },
+      {
+        "img": "lab-impulse",
+        "cap": {
+          "zh": "衝擊式噪音產生裝置與量測設備",
+          "en": "Impulse-noise generator and instrumentation"
+        }
+      },
+      {
+        "img": "lab-earfe",
+        "cap": {
+          "zh": "耳道內聲壓分布模擬",
+          "en": "Simulated sound pressure in the ear canal"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "zh": "多功能防護與修復材料",
+      "en": "Multifunctional and repair materials"
+    },
+    "desc": {
+      "zh": "石墨烯碳纖維混凝土的電磁屏蔽效能、無機聚合物混凝土的跑道搶修應用，以及纖維強化混凝土、複合防爆板與聚脲彈性體等防護材料的研發。",
+      "en": "Electromagnetic shielding of graphene-enhanced carbon-fibre concrete, geopolymer concrete for runway repair, and development of fibre-reinforced concrete, composite blast plates and polyurea elastomers."
+    },
+    "chips": [
+      "電磁屏蔽效能",
+      "跑道搶修",
+      "聚脲彈性體",
+      "無機聚合物"
+    ],
+    "imgs": [
+      {
+        "img": "lab-emi",
+        "cap": {
+          "zh": "電磁屏蔽效能量測",
+          "en": "Electromagnetic shielding measurement"
+        }
+      },
+      {
+        "img": "lab-scaled",
+        "cap": {
+          "zh": "縮尺防護結構試體",
+          "en": "Scaled protective structure specimen"
+        }
+      },
+      {
+        "img": "lab-runway",
+        "cap": {
+          "zh": "無機聚合物混凝土鋪面修補試驗",
+          "en": "Geopolymer concrete pavement repair trial"
+        }
+      }
+    ]
   }
 ]

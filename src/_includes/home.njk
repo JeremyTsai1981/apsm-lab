@@ -127,9 +127,14 @@ isHome: true
   <div class="wrap">
     <p class="eyebrow eyebrow--orange">{{ i18n.field.eyebrow | l(lang) }}</p>
     <h2 id="field-h">{{ i18n.field.title | l(lang) }}</h2>
-    <div class="field">
-      {% for f in fieldwork %}
-      <figure class="field__i{% if f.wide %} field__i--wide{% endif %}">{% pic root, f.img, f.cap | l(lang), ("(min-width:1000px) 520px, 100vw" if f.wide else "(min-width:1000px) 260px, (min-width:600px) 50vw, 100vw") %}<figcaption>{{ f.cap | l(lang) }}</figcaption></figure>
+    <p class="lab__lead">{{ i18n.field.lead | l(lang) }}</p>
+    <div class="labs">
+      {% for g in fieldwork %}
+      <article class="lab">
+        <div class="lab__txt"><span class="lab__n">0{{ loop.index }}</span><h3>{{ g.title | l(lang) }}</h3><p>{{ g.desc | l(lang) }}</p>
+          {% if lang == 'zh' %}<p class="lab__chips">{% for c in g.chips %}<span class="chip">{{ c }}</span>{% endfor %}</p>{% endif %}</div>
+        {% for f in g.imgs %}<figure class="lab__f">{% pic root, f.img, f.cap | l(lang), "(min-width:1000px) 260px, (min-width:600px) 33vw, 100vw" %}<figcaption>{{ f.cap | l(lang) }}</figcaption></figure>{% endfor %}
+      </article>
       {% endfor %}
     </div>
   </div>
@@ -141,7 +146,7 @@ isHome: true
     <div class="cases">
       {% for c in cases %}
       <article class="case">
-        <span class="case__meta">{{ c.client | l(lang) }} · {{ c.years }}</span>
+        <span class="case__meta">{{ c.client | l(lang) }}{% if c.years %} · {{ c.years }}{% endif %}</span>
         <h3>{{ c.title | l(lang) }}</h3>
         <p>{{ c.desc | l(lang) }}</p>
         <span class="case__role">{{ c.role | l(lang) }}</span>
