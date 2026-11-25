@@ -17,6 +17,16 @@
     new IntersectionObserver(function (es) { es[0].isIntersecting ? v.play().catch(function () {}) : v.pause(); }, { threshold: 0.25 }).observe(v);
   });
 
+  // 照片集燈箱
+  (function () {
+    var dlg = document.getElementById('lightbox'); if (!dlg || !dlg.showModal) return;
+    var items = [].slice.call(document.querySelectorAll('.masonry__i')), img = document.getElementById('lightbox-img'), cap = document.getElementById('lightbox-cap'), cur = 0;
+    function show(i) { cur = (i + items.length) % items.length; img.src = items[cur].dataset.full; img.alt = items[cur].dataset.cap; cap.textContent = items[cur].dataset.cap + '（' + (cur + 1) + ' / ' + items.length + '）'; }
+    items.forEach(function (b, i) { b.addEventListener('click', function () { show(i); dlg.showModal(); }); });
+    dlg.addEventListener('click', function (e) { var a = e.target.dataset && e.target.dataset.act; if (a === 'prev') show(cur - 1); else if (a === 'next') show(cur + 1); else if (a === 'close' || e.target === dlg) dlg.close(); });
+    dlg.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
+  })();
+
   var cv = document.getElementById('twinmap'); if (!cv) return;
   var ctx = cv.getContext('2d'), PA = 101.325;
   function kgPs(Z) { return PA * 808 * (1 + Math.pow(Z / 4.5, 2)) / Math.sqrt((1 + Math.pow(Z / 0.048, 2)) * (1 + Math.pow(Z / 0.32, 2)) * (1 + Math.pow(Z / 1.35, 2))); }

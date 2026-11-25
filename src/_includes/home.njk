@@ -192,6 +192,23 @@ isHome: true
   </div>
 </section>
 
+<section class="section section--alt" id="gallery" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--cyan">{{ i18n.gallery.eyebrow | l(lang) }}</p>
+    <h2 id="gallery-h">{{ i18n.gallery.title | l(lang) }}</h2>
+    <p class="lab__lead">{{ i18n.gallery.lead | l(lang) }}</p>
+    <div class="masonry">
+      {% for g in gallery %}<button type="button" class="masonry__i" data-full="{{ root }}assets/img/{{ g.img }}.jpg" data-cap="{{ g.cap | l(lang) }}">{% pic root, g.img, g.cap | l(lang), "(min-width:1000px) 280px, (min-width:600px) 33vw, 50vw" %}<span class="masonry__c">{{ g.cap | l(lang) }}</span></button>{% endfor %}
+    </div>
+  </div>
+  <dialog class="lightbox" id="lightbox" aria-label="{{ i18n.gallery.title | l(lang) }}">
+    <button type="button" class="lightbox__x" data-act="close" aria-label="{{ i18n.gallery.close | l(lang) }}">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--p" data-act="prev" aria-label="{{ i18n.gallery.prev | l(lang) }}">‹</button>
+    <figure><img alt="" id="lightbox-img"><figcaption id="lightbox-cap"></figcaption></figure>
+    <button type="button" class="lightbox__nav lightbox__nav--n" data-act="next" aria-label="{{ i18n.gallery.next | l(lang) }}">›</button>
+  </dialog>
+</section>
+
 {% set realNews = news | notPlaceholder %}
 <section class="section section--alt" id="outputs" aria-labelledby="outputs-h">
   <div class="wrap{% if realNews.length %} two{% endif %}">
