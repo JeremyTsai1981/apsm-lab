@@ -1,0 +1,277 @@
+[
+ {
+  "title": {
+   "zh": "軍事工程戰損評估及快速修復設計研究",
+   "en": "Damage assessment and rapid repair design for military engineering"
+  },
+  "sponsor": {
+   "zh": "國家中山科學研究院",
+   "en": "NCSIST"
+  },
+  "period": "2026/5–2028/4"
+ },
+ {
+  "title": {
+   "zh": "防護設施建置可行性評估與地質調查",
+   "en": "Feasibility assessment and site investigation for a protective facility"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2026/7–2026/12"
+ },
+ {
+  "title": {
+   "zh": "模擬月壤無機聚合建造材料之配比設計與環境耐久暨工法導向性能研究",
+   "en": "Mix design, durability and construction-oriented performance of lunar-regolith-simulant geopolymer"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2026/8–2027/7"
+ },
+ {
+  "title": {
+   "zh": "探討彈道與爆炸衝擊後頸椎與腦部損傷之綜合評估研究",
+   "en": "Integrated assessment of cervical spine and brain injury after ballistic and blast impact"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2025/1–2027/12"
+ },
+ {
+  "title": {
+   "zh": "國軍戰力保存之坑道式掩體結構防護研究",
+   "en": "Protective design of tunnel-type shelters for force preservation"
+  },
+  "sponsor": {
+   "zh": "國防工業發展基金會",
+   "en": "Defense Industry Development Foundation"
+  },
+  "period": "2024/2–2027/1"
+ },
+ {
+  "title": {
+   "zh": "新型戰傷救治材料生物降解鎂合金骨缺構件之研發與應用",
+   "en": "Biodegradable magnesium-alloy bone implants for combat casualty care"
+  },
+  "sponsor": {
+   "zh": "國防工業發展基金會",
+   "en": "Defense Industry Development Foundation"
+  },
+  "period": "2024/2–2027/2"
+ },
+ {
+  "title": {
+   "zh": "金屬空心球強化混凝土複合材料之動態抗壓性能研究",
+   "en": "Dynamic compressive behaviour of metallic-hollow-sphere reinforced concrete"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2024/8–2025/7"
+ },
+ {
+  "title": {
+   "zh": "土木空間跨學門計畫：多元感測器用於國家重點建物、橋梁及邊坡監測系統",
+   "en": "Multi-sensor monitoring of key buildings, bridges and slopes (cross-disciplinary program)"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2024/8–2025/7"
+ },
+ {
+  "title": {
+   "zh": "回收與常規碳纖維改質轉爐石混凝土之力學與電磁屏蔽性能研究",
+   "en": "Mechanical and EM-shielding performance of carbon-fibre modified BOF-slag concrete"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2024/8–2025/7"
+ },
+ {
+  "title": {
+   "zh": "新穎輕量化複合式抗爆材料與結構之開發",
+   "en": "Novel lightweight composite blast-resistant materials and structures"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2023/1–2025/12"
+ },
+ {
+  "title": {
+   "zh": "玄武岩纖維表面處理和玄武岩纖維混凝土之靜態與動態力學特性研究",
+   "en": "Surface treatment of basalt fibre and static/dynamic behaviour of basalt-fibre concrete"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2023/8–2024/7"
+ },
+ {
+  "title": {
+   "zh": "提升國軍抗炸掩體防護性能之數值模擬與試驗研究",
+   "en": "Improving the blast protection of military shelters: simulation and testing"
+  },
+  "sponsor": {
+   "zh": "國家中山科學研究院",
+   "en": "NCSIST"
+  },
+  "period": "2022/7–2024/6"
+ },
+ {
+  "title": {
+   "zh": "強化資通電軍通資站台電磁脈衝及結構安全防護之研究",
+   "en": "EMP and structural protection of communication stations"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2022/1–2024/12"
+ },
+ {
+  "title": {
+   "zh": "空軍新世代機堡防爆抗蝕性能提升之研究",
+   "en": "Blast and corrosion resistance of next-generation aircraft shelters"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2022/1–2024/12"
+ },
+ {
+  "title": {
+   "zh": "戰時機場跑道緊急搶修技術與材料之研發",
+   "en": "Rapid runway repair techniques and materials"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2022/1–2023/12"
+ },
+ {
+  "title": {
+   "zh": "各式飛彈對目標物戰損評估與參數建置研究",
+   "en": "Damage assessment and parameter database for missile effects on targets"
+  },
+  "sponsor": {
+   "zh": "國防部",
+   "en": "Ministry of National Defense"
+  },
+  "period": "2022/1–2023/12"
+ },
+ {
+  "title": {
+   "zh": "混合碳纖維/克維拉纖維混凝土於準靜態、中、高與超高應變率載荷下之力學行為研究",
+   "en": "Hybrid carbon/Kevlar fibre concrete from quasi-static to ultra-high strain rates"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2022/8–2023/7"
+ },
+ {
+  "title": {
+   "zh": "短纖克維拉混凝土靜態與動態力學行為之研究",
+   "en": "Static and dynamic behaviour of short Kevlar-fibre concrete"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2021/8–2022/7"
+ },
+ {
+  "title": {
+   "zh": "預鑄纖維強化無機聚合物混凝土防爆版之研發",
+   "en": "Precast fibre-reinforced geopolymer blast-resistant panels"
+  },
+  "sponsor": {
+   "zh": "國科會產學合作計畫",
+   "en": "NSTC industry–academia program"
+  },
+  "period": "2020/11–2021/10"
+ },
+ {
+  "title": {
+   "zh": "無機聚合混凝土抗炸試驗與數值模擬",
+   "en": "Blast tests and simulation of geopolymer concrete"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2019/8–2021/7"
+ },
+ {
+  "title": {
+   "zh": "戰車底盤模擬之參數設定與驗證研究",
+   "en": "Parameter calibration and validation for tank hull simulation"
+  },
+  "sponsor": {
+   "zh": "國家中山科學研究院",
+   "en": "NCSIST"
+  },
+  "period": "2019/3–2019/12"
+ },
+ {
+  "title": {
+   "zh": "國軍噪音作業場域之噪音量測與人員聽力檢測",
+   "en": "Noise measurement and hearing tests in military workplaces"
+  },
+  "sponsor": {
+   "zh": "國防工業發展基金會",
+   "en": "Defense Industry Development Foundation"
+  },
+  "period": "2018/8–2021/7"
+ },
+ {
+  "title": {
+   "zh": "高分子防爆塗料檢測分析及抗爆性能應用之研究",
+   "en": "Characterisation and blast performance of polymer protective coatings"
+  },
+  "sponsor": {
+   "zh": "國科會產學合作計畫",
+   "en": "NSTC industry–academia program"
+  },
+  "period": "2018/6–2019/5"
+ },
+ {
+  "title": {
+   "zh": "國軍防救災應用及營區監視系統建置研發",
+   "en": "Disaster-response applications and base monitoring systems"
+  },
+  "sponsor": {
+   "zh": "國防工業發展基金會",
+   "en": "Defense Industry Development Foundation"
+  },
+  "period": "2017/5–2019/12"
+ },
+ {
+  "title": {
+   "zh": "能量流方法應用於評估結構元件於爆炸荷載下破壞模式之研究",
+   "en": "Energy-flow method for failure modes of structural members under blast"
+  },
+  "sponsor": {
+   "zh": "國科會",
+   "en": "NSTC"
+  },
+  "period": "2017/8–2018/7"
+ }
+]

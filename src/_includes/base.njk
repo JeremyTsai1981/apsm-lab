@@ -69,6 +69,7 @@
     <nav id="site-nav" aria-label="{{ i18n.nav.menu | l(lang) }}" class="nav">
       <a href="{{ h }}#research">{{ i18n.nav.research | l(lang) }}</a>
       <a href="{{ root }}{{ lp }}publications/index.html"{% if navKey == 'pubs' %} aria-current="page"{% endif %}>{{ i18n.nav.pubs | l(lang) }}</a>
+      <a href="{{ root }}{{ lp }}projects/index.html"{% if navKey == 'proj' %} aria-current="page"{% endif %}>{{ i18n.nav.proj | l(lang) }}</a>
       <a href="{{ root }}{{ lp }}industry/index.html"{% if navKey == 'industry' %} aria-current="page"{% endif %}>{{ i18n.nav.industry | l(lang) }}</a>
       <a href="{{ h }}#team">{{ i18n.nav.team | l(lang) }}</a>
       <a class="nav__lang" href="{{ other }}" hreflang="{{ 'en' if lang == 'zh' else 'zh-Hant' }}" lang="{{ 'en' if lang == 'zh' else 'zh-Hant' }}">{{ i18n.nav.switch | l(lang) }}</a>

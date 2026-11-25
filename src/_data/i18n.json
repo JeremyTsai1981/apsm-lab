@@ -1,785 +1,847 @@
 {
-  "nav": {
-    "research": {
-      "zh": "研究",
-      "en": "Research"
-    },
-    "pubs": {
-      "zh": "著作",
-      "en": "Publications"
-    },
-    "industry": {
-      "zh": "產學合作",
-      "en": "Industry"
-    },
-    "team": {
-      "zh": "團隊",
-      "en": "Team"
-    },
-    "join": {
-      "zh": "加入我們",
-      "en": "Join us"
-    },
-    "switch": {
-      "zh": "EN",
-      "en": "中文"
-    },
-    "menu": {
-      "zh": "選單",
-      "en": "Menu"
-    },
-    "home": {
-      "zh": "首頁",
-      "en": "Home"
-    }
-  },
-  "hero": {
-    "eyebrow": {
-      "zh": "國立陽明交通大學 土木工程學系",
-      "en": "Department of Civil Engineering, NYCU"
-    },
-    "lab": {
-      "zh": "先進防護結構與材料實驗室 APSM Lab",
-      "en": "Advanced Protective Structures and Materials Lab (APSM)"
-    },
-    "title": {
-      "zh": "<span class=\"nw\">以模擬與數位孿生，</span><span class=\"nw\">預測並降低爆炸風險。</span>",
-      "en": "Predicting and reducing blast risk with simulation and digital twins."
-    },
-    "lead": {
-      "zh": "我們結合爆炸數值模擬、人體損傷分析、數位孿生與試驗驗證，為關鍵基礎設施、科技園區、資料中心與能源設施提供風險評估、防護設計與決策支援。",
-      "en": "We combine blast simulation, human injury analysis, digital twins and experimental validation to deliver risk assessment, protective design and decision support for critical infrastructure, science parks, data centers and energy facilities."
-    },
-    "ctaStudent": {
-      "zh": "我是學生：加入研究團隊",
-      "en": "Students: join the lab"
-    },
-    "ctaIndustry": {
-      "zh": "我是企業／機關：合作洽詢",
-      "en": "Industry and agencies: work with us"
-    },
-    "photoCap": {
-      "zh": "數位孿生情境示意動畫（實驗室自製）",
-      "en": "Digital-twin scenario animation (made by the lab)"
-    }
-  },
-  "trust": {
-    "label": {
-      "zh": "研究計畫委託與補助單位",
-      "en": "Research funded and commissioned by"
-    },
-    "stats": {
-      "zh": "實驗室數字",
-      "en": "Lab in numbers"
-    }
-  },
-  "entry": {
-    "label": {
-      "zh": "你是哪一種訪客？",
-      "en": "Who are you?"
-    },
-    "student": {
-      "tag": {
-        "zh": "給未來的研究生",
-        "en": "For future students"
-      },
-      "title": {
-        "zh": "在這裡，你會學模擬、做數位孿生，也做試驗",
-        "en": "Simulation, digital twins and real tests"
-      },
-      "items": [
-        {
-          "zh": "學習 LS-DYNA、人體有限元素模型與爆炸模擬，從建模到結果判讀",
-          "en": "Learn LS-DYNA, human body models and blast simulation, from modelling to interpreting results"
-        },
-        {
-          "zh": "參與數位孿生平台開發，結合程式、感測資料與工程分析",
-          "en": "Help build digital-twin platforms that combine code, sensor data and engineering analysis"
-        },
-        {
-          "zh": "題目來自國科會、國防與產業計畫，並以材料與爆炸試驗驗證",
-          "en": "Topics come from NSTC, defense and industry projects, validated by material and explosive tests"
-        }
-      ],
-      "link": {
-        "zh": "看研究生招募",
-        "en": "See openings"
-      }
-    },
-    "industry": {
-      "tag": {
-        "zh": "給企業、機關與顧問公司",
-        "en": "For industry, agencies and consultants"
-      },
-      "title": {
-        "zh": "把爆炸風險，變成可以計算、可以驗證的工程問題",
-        "en": "Turning blast risk into an engineering problem you can calculate and verify"
-      },
-      "items": [
-        {
-          "zh": "廠區、資料中心與能源設施的爆炸風險評估",
-          "en": "Explosion risk assessment for plants, data centers and energy sites"
-        },
-        {
-          "zh": "數位孿生平台：預防、監測與方案評估",
-          "en": "Digital-twin platforms for prevention, monitoring and option studies"
-        },
-        {
-          "zh": "抗爆設計檢核與防護材料驗證",
-          "en": "Blast design review and material qualification"
-        },
-        {
-          "zh": "工程審查、顧問與教育訓練",
-          "en": "Design review, consulting and training"
-        }
-      ],
-      "link": {
-        "zh": "看服務項目與合作流程",
-        "en": "Services and how we work"
-      }
-    }
-  },
+ "nav": {
   "research": {
-    "eyebrow": {
-      "zh": "研究",
-      "en": "Research"
-    },
-    "title": {
-      "zh": "從人體、設施到城市的爆炸防護研究",
-      "en": "Blast protection from the human body to facilities and cities"
-    },
-    "lead": {
-      "zh": "以數值模擬為核心，向上整合成數位孿生平台，向下以材料與爆炸試驗驗證。",
-      "en": "Numerical simulation at the core, integrated upward into digital-twin platforms and validated downward by material and explosive tests."
-    },
-    "note": {
-      "zh": "以上為實驗室自製的情境示意圖，以經驗式與程序化模型繪製，非特定專案成果。",
-      "en": "Illustrations made by the lab from empirical relations and procedural models; not results of a specific project."
-    }
-  },
-  "sim": {
-    "eyebrow": {
-      "zh": "即時模擬",
-      "en": "Live simulation"
-    },
-    "title": {
-      "zh": "爆炸波撞上建築物的那 30 毫秒",
-      "en": "The 30 milliseconds when a blast wave hits a building"
-    },
-    "lead": {
-      "zh": "下面的動畫在你的瀏覽器裡即時計算：100 kg TNT 在地面引爆、距建築物 15 m，入射波與牆面反射波的超壓場。這是抗爆設計評估的第一步。",
-      "en": "Computed live in your browser: incident and reflected overpressure from 100 kg of TNT detonated on the ground 15 m from a building, the first step of any blast design assessment."
-    },
-    "tag": {
-      "zh": "即時計算",
-      "en": "Live calculation"
-    },
-    "t": {
-      "zh": "模擬時間",
-      "en": "Time"
-    },
-    "ps": {
-      "zh": "入射超壓 P_so",
-      "en": "Incident P_so"
-    },
-    "pr": {
-      "zh": "牆面反射超壓 P_r",
-      "en": "Reflected P_r"
-    },
-    "legend": {
-      "zh": "超壓 (kPa)",
-      "en": "Overpressure (kPa)"
-    },
-    "pause": {
-      "zh": "暫停動畫",
-      "en": "Pause animation"
-    },
-    "play": {
-      "zh": "播放動畫",
-      "en": "Play animation"
-    },
-    "note": {
-      "zh": "地面爆炸：100 kg TNT，以 1.8 倍等效藥量的半球形爆炸波計算地面反射；距建築物 15 m。入射與反射超壓採 Kinney–Graham 經驗式（示意，未含繞射與 Mach 波細節）。",
-      "en": "Surface burst: 100 kg TNT, with ground reflection represented by a hemispherical blast of 1.8 × the charge mass; building at 15 m. Incident and reflected overpressure from the Kinney–Graham relations (illustrative; diffraction and Mach-stem details omitted)."
-    },
-    "aria": {
-      "zh": "爆炸波從爆心向外傳遞、撞擊建築物並反射的壓力場動畫",
-      "en": "Animation of a blast wave expanding from the charge, striking a building and reflecting"
-    },
-    "wlabel": {
-      "zh": "W = 100 kg TNT（地面）",
-      "en": "W = 100 kg TNT (surface)"
-    }
-  },
-  "field": {
-    "eyebrow": {
-      "zh": "試驗與驗證",
-      "en": "Testing and validation"
-    },
-    "title": {
-      "zh": "模擬結果，以試驗驗證",
-      "en": "Simulations validated by testing"
-    },
-    "lead": {
-      "zh": "五類試驗能量，對應從材料、構件到人體的研究主題。",
-      "en": "Five testing capabilities, from materials and members to the human body."
-    }
-  },
-  "cases": {
-    "eyebrow": {
-      "zh": "代表計畫",
-      "en": "Selected projects"
-    },
-    "title": {
-      "zh": "近年主持與參與的計畫",
-      "en": "Recent projects we led or co-led"
-    },
-    "more": {
-      "zh": "產學合作與技術服務",
-      "en": "Industry services"
-    },
-    "recent": {
-      "zh": "執行中",
-      "en": "Ongoing"
-    }
-  },
-  "team": {
-    "eyebrow": {
-      "zh": "團隊",
-      "en": "Team"
-    },
-    "pi": {
-      "zh": "主持人",
-      "en": "Principal Investigator"
-    },
-    "members": {
-      "zh": "研究團隊",
-      "en": "Lab members"
-    }
-  },
-  "outputs": {
-    "title": {
-      "zh": "代表著作",
-      "en": "Selected publications"
-    },
-    "all": {
-      "zh": "全部著作",
-      "en": "All publications"
-    },
-    "corr": {
-      "zh": "粗體為主持人，* 為通訊作者",
-      "en": "PI in bold; * corresponding author"
-    }
-  },
-  "news": {
-    "title": {
-      "zh": "最新消息",
-      "en": "News"
-    }
-  },
-  "join": {
-    "eyebrow": {
-      "zh": "研究生招募",
-      "en": "Openings"
-    },
-    "title": {
-      "zh": "想聊聊研究題目？",
-      "en": "Want to talk about a research topic?"
-    },
-    "lead": {
-      "zh": "歡迎大學部專題生、碩士班與博士班同學來信，或直接到工程二館 321 室找我們。來信請附上簡短自我介紹與有興趣的研究方向。",
-      "en": "Undergraduate, master's and Ph.D. applicants are welcome to email us or visit Room 321, Engineering Building II. Please include a short introduction and the topics that interest you."
-    },
-    "email": {
-      "zh": "寫信給老師",
-      "en": "Email Prof. Tsai"
-    },
-    "subject": {
-      "zh": "[研究生洽詢] 姓名／系級",
-      "en": "[Prospective student] Name / program"
-    }
-  },
-  "footer": {
-    "contact": {
-      "zh": "聯絡",
-      "en": "Contact"
-    },
-    "links": {
-      "zh": "相關連結",
-      "en": "Links"
-    },
-    "deptPage": {
-      "zh": "陽明交大土木系 教師頁",
-      "en": "NYCU faculty page"
-    }
-  },
-  "standards": {
-    "design": {
-      "zh": "常用設計規範",
-      "en": "Design criteria"
-    },
-    "designItems": [
-      "UFC 3-340-02",
-      "DoD 4145.26-M"
-    ],
-    "tools": {
-      "zh": "分析工具",
-      "en": "Analysis tools"
-    },
-    "toolItems": [
-      "LS-DYNA",
-      "BREEZE ExDAM",
-      "blastFoam"
-    ],
-    "test": {
-      "zh": "試驗",
-      "en": "Testing"
-    },
-    "testItems": [
-      {
-        "zh": "縮尺與現地爆炸試驗",
-        "en": "Scaled and field blast tests"
-      },
-      {
-        "zh": "衝擊與高應變率試驗",
-        "en": "Impact and high-strain-rate tests"
-      }
-    ]
-  },
-  "ind": {
-    "eyebrow": {
-      "zh": "產學合作與技術服務",
-      "en": "Industry and consulting"
-    },
-    "title": {
-      "zh": "把爆炸風險，變成可以計算、可以驗證的工程問題。",
-      "en": "Turning blast risk into an engineering problem you can calculate and verify."
-    },
-    "lead": {
-      "zh": "我們為政府機關、國防單位、工程顧問、科技廠與材料廠商，提供爆炸荷載評估、抗爆設計檢核、防護材料驗證與工程審查。所有合作皆透過國立陽明交通大學產學合作與技術服務機制簽約。",
-      "en": "We provide blast load assessment, blast design review, protective material qualification and engineering review for government agencies, defense organizations, engineering firms, tech plants and material manufacturers. All work is contracted through NYCU's industry collaboration and technical service programs."
-    },
-    "services": {
-      "zh": "服務項目",
-      "en": "Services"
-    },
-    "sectorsTitle": {
-      "zh": "依產業找到你需要的服務",
-      "en": "Find the service for your sector"
-    },
-    "sectors": [
-      {
-        "name": {
-          "zh": "政府與國防",
-          "en": "Government and defense"
-        },
-        "need": {
-          "zh": "設施防護設計審查、戰損評估與快速修復",
-          "en": "Protective design review, damage assessment and rapid repair"
-        }
-      },
-      {
-        "name": {
-          "zh": "工程顧問與營造",
-          "en": "Engineering firms and contractors"
-        },
-        "need": {
-          "zh": "抗爆設計檢核、補強方案與第三方審查",
-          "en": "Blast design checks, retrofit schemes and third-party review"
-        }
-      },
-      {
-        "name": {
-          "zh": "科技廠、能源與儲能",
-          "en": "Tech, energy and storage sites"
-        },
-        "need": {
-          "zh": "爆炸情境模擬、超壓分布與安全距離評估",
-          "en": "Explosion scenarios, overpressure maps and safety distances"
-        }
-      },
-      {
-        "name": {
-          "zh": "材料廠商",
-          "en": "Material manufacturers"
-        },
-        "need": {
-          "zh": "抗衝擊與抗爆性能驗證試驗",
-          "en": "Impact and blast performance tests"
-        }
-      }
-    ],
-    "methodTitle": {
-      "zh": "規範、工具與試驗",
-      "en": "Criteria, tools and testing"
-    },
-    "modesTitle": {
-      "zh": "合作方式",
-      "en": "Ways to work with us"
-    },
-    "modes": [
-      {
-        "name": {
-          "zh": "技術服務案",
-          "en": "Technical service"
-        },
-        "desc": {
-          "zh": "範疇明確、期程較短的評估、檢核或試驗，以技術服務契約辦理。",
-          "en": "Well-defined, shorter assessments, checks or tests under a technical service contract."
-        }
-      },
-      {
-        "name": {
-          "zh": "產學合作計畫",
-          "en": "Industry–academia project"
-        },
-        "desc": {
-          "zh": "與企業共同開發材料或工法，可搭配國科會產學合作計畫申請。",
-          "en": "Joint development of materials or methods, optionally with NSTC industry–academia funding."
-        }
-      },
-      {
-        "name": {
-          "zh": "委託研究",
-          "en": "Commissioned research"
-        },
-        "desc": {
-          "zh": "政府機關或法人委託之研究計畫，依委託單位規定辦理。",
-          "en": "Research commissioned by government agencies or institutes, under the sponsor's rules."
-        }
-      },
-      {
-        "name": {
-          "zh": "教育訓練",
-          "en": "Training"
-        },
-        "desc": {
-          "zh": "抗爆設計、爆炸模擬與防護工程的專業課程，可依單位需求規劃。",
-          "en": "Professional courses on blast design, simulation and protective engineering, tailored to your team."
-        }
-      }
-    ],
-    "stepsTitle": {
-      "zh": "合作流程",
-      "en": "How a project runs"
-    },
-    "steps": [
-      {
-        "zh": "來信說明需求",
-        "en": "Tell us what you need"
-      },
-      {
-        "zh": "討論範疇、提出工作項目與報價",
-        "en": "Agree on scope; we propose tasks and a quote"
-      },
-      {
-        "zh": "透過陽明交大簽約",
-        "en": "Sign through NYCU"
-      },
-      {
-        "zh": "執行與期中說明",
-        "en": "Execution and interim review"
-      },
-      {
-        "zh": "交付報告並說明結果",
-        "en": "Report delivery and briefing"
-      }
-    ],
-    "prepTitle": {
-      "zh": "來信時可以先提供",
-      "en": "Useful to include in your first email"
-    },
-    "prep": [
-      {
-        "zh": "設施或產品類型（可概述，不需提供機敏資料）",
-        "en": "Type of facility or product (a summary is enough; no sensitive data)"
-      },
-      {
-        "zh": "想評估的情境或威脅，例如爆炸源、藥量或距離範圍",
-        "en": "Scenario or threat of concern, e.g. source, charge size or distance range"
-      },
-      {
-        "zh": "目的：評估、設計檢核、材料驗證或審查",
-        "en": "Goal: assessment, design check, material qualification or review"
-      },
-      {
-        "zh": "業主要求或適用規範",
-        "en": "Owner requirements or applicable criteria"
-      },
-      {
-        "zh": "期望時程與預算範圍",
-        "en": "Expected schedule and budget range"
-      }
-    ],
-    "faqTitle": {
-      "zh": "常見問題",
-      "en": "FAQ"
-    },
-    "faq": [
-      {
-        "q": {
-          "zh": "可以先簽保密協議再提供資料嗎？",
-          "en": "Can we sign an NDA before sharing details?"
-        },
-        "a": {
-          "zh": "可以。保密協議依陽明交大產學合作程序辦理，簽署前只需提供概述。",
-          "en": "Yes. NDAs follow NYCU's industry collaboration procedures; a summary is all we need beforehand."
-        }
-      },
-      {
-        "q": {
-          "zh": "涉及國防或機敏設施的案子如何處理？",
-          "en": "How are defense or sensitive projects handled?"
-        },
-        "a": {
-          "zh": "依委託單位的資訊安全與人員管制規定執行；本網站不公開任何機敏內容。",
-          "en": "We follow the sponsor's information-security and personnel rules. Nothing sensitive is published on this site."
-        }
-      },
-      {
-        "q": {
-          "zh": "試驗報告可以對外引用嗎？",
-          "en": "Can test reports be cited externally?"
-        },
-        "a": {
-          "zh": "報告用途與引用方式在合約中約定。若您需要認證實驗室出具的報告，我們會在洽談時先說明並協助規劃。",
-          "en": "Use and citation are set out in the contract. If you need a report from an accredited laboratory, we will say so up front and help plan it."
-        }
-      },
-      {
-        "q": {
-          "zh": "費用如何估算？",
-          "en": "How is the fee estimated?"
-        },
-        "a": {
-          "zh": "依工作範疇、分析或試驗數量與期程估算，並依學校規定計入管理費。",
-          "en": "From the scope, number of analyses or tests and schedule, plus the university overhead required by NYCU rules."
-        }
-      }
-    ],
-    "coiTitle": {
-      "zh": "利益迴避",
-      "en": "Conflict of interest"
-    },
-    "coi": {
-      "zh": "主持人擔任設計審查委員的案件，不承接同一案的設計或顧問工作。",
-      "en": "When the PI serves as a design reviewer on a project, the lab does not take design or consulting work on that same project."
-    },
-    "cta": {
-      "zh": "寄信洽詢（開啟郵件程式）",
-      "en": "Email us (opens your mail app)"
-    },
-    "subject": {
-      "zh": "[產學合作洽詢] 單位名稱／需求概述",
-      "en": "[Industry inquiry] Organization / summary"
-    },
-    "pageTitle": {
-      "zh": "產學合作與技術服務｜APSM Lab 陽明交大",
-      "en": "Industry Services | APSM Lab, NYCU"
-    },
-    "pageDesc": {
-      "zh": "陽明交大先進防護結構與材料實驗室的產學合作與技術服務：爆炸荷載與安全距離評估、抗爆設計檢核、防護材料驗證、工程審查與教育訓練。",
-      "en": "Industry services from the APSM Lab at NYCU: blast load and safety distance assessment, blast design review, protective material qualification, engineering review and training."
-    }
+   "zh": "研究",
+   "en": "Research"
   },
   "pubs": {
-    "title": {
-      "zh": "著作",
-      "en": "Publications"
-    },
-    "lead": {
-      "zh": "依年份排列，粗體為主持人，* 為通訊作者。點選有 DOI 的題目可連到出版社頁面。",
-      "en": "By year. PI in bold; * marks the corresponding author. Titles with a DOI link to the publisher."
-    },
-    "intl": {
-      "zh": "國際期刊論文",
-      "en": "International journal papers"
-    },
-    "tw": {
-      "zh": "國內期刊與專業刊物",
-      "en": "Domestic journals and professional periodicals"
-    },
-    "count": {
-      "zh": "篇",
-      "en": "papers"
-    },
-    "conf": {
-      "zh": "另有研討會論文 17 篇，完整清單見系所教師頁。",
-      "en": "17 conference papers are listed on the department faculty page."
-    },
-    "pageTitle": {
-      "zh": "著作｜APSM Lab 陽明交大",
-      "en": "Publications | APSM Lab, NYCU"
-    },
-    "pageDesc": {
-      "zh": "陽明交大先進防護結構與材料實驗室（蔡營寬副教授）的期刊論文：抗爆結構、防護材料、爆炸模擬與試驗。",
-      "en": "Journal papers from the APSM Lab at NYCU (Prof. Ying-Kuan Tsai): blast-resistant structures, protective materials, blast simulation and testing."
-    }
+   "zh": "著作",
+   "en": "Publications"
   },
-  "notfound": {
-    "title": {
-      "zh": "找不到這個頁面",
-      "en": "Page not found"
-    },
-    "lead": {
-      "zh": "網址可能有誤，或頁面已經搬移。",
-      "en": "The address may be wrong, or the page has moved."
-    },
-    "back": {
-      "zh": "回到首頁",
-      "en": "Back to home"
-    }
+  "industry": {
+   "zh": "產學合作",
+   "en": "Industry"
   },
-  "twin": {
-    "eyebrow": {
-      "zh": "數位孿生",
-      "en": "Digital twin"
-    },
-    "title": {
-      "zh": "把廠區搬進電腦，在災害發生前先演練",
-      "en": "Rehearse the incident before it happens"
-    },
-    "lead": {
-      "zh": "我們正在開發結合設施模型、感測資料與爆炸模擬的數位孿生平台，用於兩類情境：",
-      "en": "We are developing digital-twin platforms that combine facility models, sensor data and blast simulation for two kinds of scenarios:"
-    },
-    "uses": [
-      {
-        "t": {
-          "zh": "關鍵基礎設施的戰災情境",
-          "en": "Wartime scenarios for critical infrastructure"
-        },
-        "d": {
-          "zh": "推演不同威脅下的損傷範圍、功能中斷與修復優先順序。",
-          "en": "Explore damage extent, loss of function and repair priorities under different threats."
-        }
-      },
-      {
-        "t": {
-          "zh": "園區與廠區的意外爆炸",
-          "en": "Accidental explosions at industrial sites"
-        },
-        "d": {
-          "zh": "科技園區、工業區、資料中心與能源中心的爆炸風險評估，涵蓋預防、監測與解決方案比較。",
-          "en": "Risk assessment for science parks, industrial zones, data centers and energy hubs, covering prevention, monitoring and comparison of mitigation options."
-        }
-      }
-    ],
-    "try": {
-      "zh": "試試看：在廠區圖上點一下設定爆炸位置，拖曳滑桿調整藥量。",
-      "en": "Try it: click the site map to place the explosion and drag the slider to change the charge."
-    },
-    "w": {
-      "zh": "TNT 當量",
-      "en": "TNT equivalent"
-    },
-    "cursor": {
-      "zh": "游標位置",
-      "en": "At cursor"
-    },
-    "dist": {
-      "zh": "距離",
-      "en": "Distance"
-    },
-    "ps": {
-      "zh": "入射超壓",
-      "en": "Incident overpressure"
-    },
-    "spl": {
-      "zh": "峰值聲壓級",
-      "en": "Peak sound pressure level"
-    },
-    "ear": {
-      "zh": "耳膜破裂門檻（35 kPa）距離",
-      "en": "Distance to eardrum-rupture threshold (35 kPa)"
-    },
-    "legend": {
-      "zh": "傷損門檻（常見文獻值）",
-      "en": "Damage and injury thresholds (commonly cited)"
-    },
-    "levels": [
-      {
-        "zh": "玻璃破裂 3.5 kPa",
-        "en": "Glass breakage 3.5 kPa"
-      },
-      {
-        "zh": "輕構造牆板損壞 14 kPa",
-        "en": "Light wall panels damaged 14 kPa"
-      },
-      {
-        "zh": "耳膜破裂門檻 35 kPa",
-        "en": "Eardrum rupture threshold 35 kPa"
-      },
-      {
-        "zh": "耳膜破裂約 50% 100 kPa",
-        "en": "About 50% eardrum rupture 100 kPa"
-      },
-      {
-        "zh": "肺損傷門檻 200 kPa",
-        "en": "Lung injury threshold 200 kPa"
-      }
-    ],
-    "note": {
-      "zh": "示意用途：地面爆炸，以 1.8 倍等效藥量的 Kinney–Graham 經驗式計算，未考慮建物遮蔽與反射。實際專案以三維數值模擬與現地資料為準。",
-      "en": "Illustrative only: surface burst from the Kinney–Graham relations with 1.8 × charge mass, ignoring shielding and reflection. Real projects use 3D simulation and site data."
-    },
-    "aria": {
-      "zh": "廠區平面圖上的爆炸超壓範圍互動示意",
-      "en": "Interactive map of blast overpressure ranges on a site plan"
-    }
+  "team": {
+   "zh": "團隊",
+   "en": "Team"
   },
-  "human": {
-    "eyebrow": {
-      "zh": "人體損傷與防護",
-      "en": "Human injury and protection"
-    },
-    "title": {
-      "zh": "爆震波通過頭部的幾毫秒內，腦組織發生了什麼",
-      "en": "What happens to the brain in the milliseconds a blast wave passes"
-    },
-    "lead": {
-      "zh": "結合生醫工程與防護工程，我們用人體有限元素模型把爆炸荷載轉換成可量化的傷害指標。",
-      "en": "Combining biomedical and protective engineering, we use finite-element human body models to turn blast loading into quantifiable injury metrics."
-    },
-    "items": [
-      {
-        "t": {
-          "zh": "爆炸性腦損傷評估",
-          "en": "Blast-induced brain injury"
-        },
-        "d": {
-          "zh": "以 GHBMC 人體模型計算爆震波下的顱內壓與腦組織應變，並建立壓力–衝量（P-I）傷害判定圖。",
-          "en": "GHBMC human body models to compute intracranial pressure and brain tissue strain under blast, and pressure–impulse (P-I) injury charts."
-        }
-      },
-      {
-        "t": {
-          "zh": "衝擊式噪音與聽力",
-          "en": "Impulse noise and hearing"
-        },
-        "d": {
-          "zh": "評估爆炸、射擊等衝擊式噪音的峰值聲壓與暴露量，判斷聽力受損風險與防護需求。",
-          "en": "Peak pressure and exposure from explosions and weapon firing, to judge hearing-damage risk and protection needs."
-        }
-      },
-      {
-        "t": {
-          "zh": "個人防護裝備",
-          "en": "Personal protective equipment"
-        },
-        "d": {
-          "zh": "分析頭盔與內襯在爆震波及衝擊下對頭頸部的防護效果。",
-          "en": "How helmets and liners protect the head and neck under blast and impact."
-        }
-      }
-    ],
-    "cap": {
-      "zh": "示意動畫：爆震波由側向通過頭部，色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
-      "en": "Illustrative animation: a blast wave passes the head from the side; colours show relative brain strain. Procedural model, not an analysis result."
-    },
-    "partner": {
-      "zh": "本主題與國防醫學大學等醫學團隊合作進行。",
-      "en": "This work is carried out with medical teams including the National Defense Medical University."
-    }
+  "join": {
+   "zh": "加入我們",
+   "en": "Join us"
+  },
+  "switch": {
+   "zh": "EN",
+   "en": "中文"
+  },
+  "menu": {
+   "zh": "選單",
+   "en": "Menu"
+  },
+  "home": {
+   "zh": "首頁",
+   "en": "Home"
+  },
+  "proj": {
+   "zh": "計畫",
+   "en": "Projects"
   }
+ },
+ "hero": {
+  "eyebrow": {
+   "zh": "國立陽明交通大學 土木工程學系",
+   "en": "Department of Civil Engineering, NYCU"
+  },
+  "lab": {
+   "zh": "先進防護結構與材料實驗室 APSM Lab",
+   "en": "Advanced Protective Structures and Materials Lab (APSM)"
+  },
+  "title": {
+   "zh": "<span class=\"nw\">以模擬與數位孿生，</span><span class=\"nw\">預測並降低爆炸風險。</span>",
+   "en": "Predicting and reducing blast risk with simulation and digital twins."
+  },
+  "lead": {
+   "zh": "我們結合爆炸數值模擬、人體損傷分析、數位孿生與試驗驗證，為關鍵基礎設施、科技園區、資料中心與能源設施提供風險評估、防護設計與決策支援。",
+   "en": "We combine blast simulation, human injury analysis, digital twins and experimental validation to deliver risk assessment, protective design and decision support for critical infrastructure, science parks, data centers and energy facilities."
+  },
+  "ctaStudent": {
+   "zh": "我是學生：加入研究團隊",
+   "en": "Students: join the lab"
+  },
+  "ctaIndustry": {
+   "zh": "我是企業／機關：合作洽詢",
+   "en": "Industry and agencies: work with us"
+  },
+  "photoCap": {
+   "zh": "數位孿生情境示意動畫（實驗室自製）",
+   "en": "Digital-twin scenario animation (made by the lab)"
+  }
+ },
+ "trust": {
+  "label": {
+   "zh": "研究計畫委託與補助單位",
+   "en": "Research funded and commissioned by"
+  },
+  "stats": {
+   "zh": "實驗室數字",
+   "en": "Lab in numbers"
+  }
+ },
+ "entry": {
+  "label": {
+   "zh": "你是哪一種訪客？",
+   "en": "Who are you?"
+  },
+  "student": {
+   "tag": {
+    "zh": "給未來的研究生",
+    "en": "For future students"
+   },
+   "title": {
+    "zh": "在這裡，你會學模擬、做數位孿生，也做試驗",
+    "en": "Simulation, digital twins and real tests"
+   },
+   "items": [
+    {
+     "zh": "學習 LS-DYNA、人體有限元素模型與爆炸模擬，從建模到結果判讀",
+     "en": "Learn LS-DYNA, human body models and blast simulation, from modelling to interpreting results"
+    },
+    {
+     "zh": "參與數位孿生平台開發，結合程式、感測資料與工程分析",
+     "en": "Help build digital-twin platforms that combine code, sensor data and engineering analysis"
+    },
+    {
+     "zh": "題目來自國科會、國防與產業計畫，並以材料與爆炸試驗驗證",
+     "en": "Topics come from NSTC, defense and industry projects, validated by material and explosive tests"
+    }
+   ],
+   "link": {
+    "zh": "看研究生招募",
+    "en": "See openings"
+   }
+  },
+  "industry": {
+   "tag": {
+    "zh": "給企業、機關與顧問公司",
+    "en": "For industry, agencies and consultants"
+   },
+   "title": {
+    "zh": "把爆炸風險，變成可以計算、可以驗證的工程問題",
+    "en": "Turning blast risk into an engineering problem you can calculate and verify"
+   },
+   "items": [
+    {
+     "zh": "廠區、資料中心與能源設施的爆炸風險評估",
+     "en": "Explosion risk assessment for plants, data centers and energy sites"
+    },
+    {
+     "zh": "數位孿生平台：預防、監測與方案評估",
+     "en": "Digital-twin platforms for prevention, monitoring and option studies"
+    },
+    {
+     "zh": "抗爆設計檢核與防護材料驗證",
+     "en": "Blast design review and material qualification"
+    },
+    {
+     "zh": "工程審查、顧問與教育訓練",
+     "en": "Design review, consulting and training"
+    }
+   ],
+   "link": {
+    "zh": "看服務項目與合作流程",
+    "en": "Services and how we work"
+   }
+  }
+ },
+ "research": {
+  "eyebrow": {
+   "zh": "研究",
+   "en": "Research"
+  },
+  "title": {
+   "zh": "從人體、設施到城市的爆炸防護研究",
+   "en": "Blast protection from the human body to facilities and cities"
+  },
+  "lead": {
+   "zh": "以數值模擬為核心，向上整合成數位孿生平台，向下以材料與爆炸試驗驗證。",
+   "en": "Numerical simulation at the core, integrated upward into digital-twin platforms and validated downward by material and explosive tests."
+  },
+  "note": {
+   "zh": "以上為實驗室自製的情境示意圖，以經驗式與程序化模型繪製，非特定專案成果。",
+   "en": "Illustrations made by the lab from empirical relations and procedural models; not results of a specific project."
+  }
+ },
+ "sim": {
+  "eyebrow": {
+   "zh": "即時模擬",
+   "en": "Live simulation"
+  },
+  "title": {
+   "zh": "爆炸波撞上建築物的那 30 毫秒",
+   "en": "The 30 milliseconds when a blast wave hits a building"
+  },
+  "lead": {
+   "zh": "下面的動畫在你的瀏覽器裡即時計算：100 kg TNT 在地面引爆、距建築物 15 m，入射波與牆面反射波的超壓場。這是抗爆設計評估的第一步。",
+   "en": "Computed live in your browser: incident and reflected overpressure from 100 kg of TNT detonated on the ground 15 m from a building, the first step of any blast design assessment."
+  },
+  "tag": {
+   "zh": "即時計算",
+   "en": "Live calculation"
+  },
+  "t": {
+   "zh": "模擬時間",
+   "en": "Time"
+  },
+  "ps": {
+   "zh": "入射超壓 P_so",
+   "en": "Incident P_so"
+  },
+  "pr": {
+   "zh": "牆面反射超壓 P_r",
+   "en": "Reflected P_r"
+  },
+  "legend": {
+   "zh": "超壓 (kPa)",
+   "en": "Overpressure (kPa)"
+  },
+  "pause": {
+   "zh": "暫停動畫",
+   "en": "Pause animation"
+  },
+  "play": {
+   "zh": "播放動畫",
+   "en": "Play animation"
+  },
+  "note": {
+   "zh": "地面爆炸：100 kg TNT，以 1.8 倍等效藥量的半球形爆炸波計算地面反射；距建築物 15 m。入射與反射超壓採 Kinney–Graham 經驗式（示意，未含繞射與 Mach 波細節）。",
+   "en": "Surface burst: 100 kg TNT, with ground reflection represented by a hemispherical blast of 1.8 × the charge mass; building at 15 m. Incident and reflected overpressure from the Kinney–Graham relations (illustrative; diffraction and Mach-stem details omitted)."
+  },
+  "aria": {
+   "zh": "爆炸波從爆心向外傳遞、撞擊建築物並反射的壓力場動畫",
+   "en": "Animation of a blast wave expanding from the charge, striking a building and reflecting"
+  },
+  "wlabel": {
+   "zh": "W = 100 kg TNT（地面）",
+   "en": "W = 100 kg TNT (surface)"
+  }
+ },
+ "field": {
+  "eyebrow": {
+   "zh": "試驗與驗證",
+   "en": "Testing and validation"
+  },
+  "title": {
+   "zh": "模擬結果，以試驗驗證",
+   "en": "Simulations validated by testing"
+  },
+  "lead": {
+   "zh": "五類試驗能量，對應從材料、構件到人體的研究主題。",
+   "en": "Five testing capabilities, from materials and members to the human body."
+  }
+ },
+ "cases": {
+  "eyebrow": {
+   "zh": "代表計畫",
+   "en": "Selected projects"
+  },
+  "title": {
+   "zh": "近年主持與參與的計畫",
+   "en": "Recent projects we led or co-led"
+  },
+  "more": {
+   "zh": "產學合作與技術服務",
+   "en": "Industry services"
+  },
+  "recent": {
+   "zh": "執行中",
+   "en": "Ongoing"
+  },
+  "all": {
+   "zh": "全部研究計畫",
+   "en": "All projects"
+  }
+ },
+ "team": {
+  "eyebrow": {
+   "zh": "團隊",
+   "en": "Team"
+  },
+  "pi": {
+   "zh": "主持人",
+   "en": "Principal Investigator"
+  },
+  "members": {
+   "zh": "研究團隊",
+   "en": "Lab members"
+  },
+  "alumni": {
+   "zh": "歷年畢業生與論文題目",
+   "en": "Alumni and thesis topics"
+  },
+  "year": {
+   "zh": "畢業年",
+   "en": "Year"
+  },
+  "name": {
+   "zh": "姓名",
+   "en": "Name"
+  },
+  "thesis": {
+   "zh": "論文題目",
+   "en": "Thesis topic"
+  },
+  "phd": {
+   "zh": "博士",
+   "en": "Ph.D."
+  },
+  "ms": {
+   "zh": "碩士",
+   "en": "M.S."
+  }
+ },
+ "outputs": {
+  "title": {
+   "zh": "代表著作",
+   "en": "Selected publications"
+  },
+  "all": {
+   "zh": "全部著作",
+   "en": "All publications"
+  },
+  "corr": {
+   "zh": "粗體為主持人，* 為通訊作者",
+   "en": "PI in bold; * corresponding author"
+  }
+ },
+ "news": {
+  "title": {
+   "zh": "最新消息",
+   "en": "News"
+  }
+ },
+ "join": {
+  "eyebrow": {
+   "zh": "研究生招募",
+   "en": "Openings"
+  },
+  "title": {
+   "zh": "想聊聊研究題目？",
+   "en": "Want to talk about a research topic?"
+  },
+  "lead": {
+   "zh": "歡迎大學部專題生、碩士班與博士班同學來信，或直接到工程二館 321 室找我們。來信請附上簡短自我介紹與有興趣的研究方向。",
+   "en": "Undergraduate, master's and Ph.D. applicants are welcome to email us or visit Room 321, Engineering Building II. Please include a short introduction and the topics that interest you."
+  },
+  "email": {
+   "zh": "寫信給老師",
+   "en": "Email Prof. Tsai"
+  },
+  "subject": {
+   "zh": "[研究生洽詢] 姓名／系級",
+   "en": "[Prospective student] Name / program"
+  }
+ },
+ "footer": {
+  "contact": {
+   "zh": "聯絡",
+   "en": "Contact"
+  },
+  "links": {
+   "zh": "相關連結",
+   "en": "Links"
+  },
+  "deptPage": {
+   "zh": "陽明交大土木系 教師頁",
+   "en": "NYCU faculty page"
+  }
+ },
+ "standards": {
+  "design": {
+   "zh": "常用設計規範",
+   "en": "Design criteria"
+  },
+  "designItems": [
+   "UFC 3-340-02",
+   "DoD 4145.26-M"
+  ],
+  "tools": {
+   "zh": "分析工具",
+   "en": "Analysis tools"
+  },
+  "toolItems": [
+   "LS-DYNA",
+   "BREEZE ExDAM",
+   "blastFoam"
+  ],
+  "test": {
+   "zh": "試驗",
+   "en": "Testing"
+  },
+  "testItems": [
+   {
+    "zh": "縮尺與現地爆炸試驗",
+    "en": "Scaled and field blast tests"
+   },
+   {
+    "zh": "衝擊與高應變率試驗",
+    "en": "Impact and high-strain-rate tests"
+   }
+  ]
+ },
+ "ind": {
+  "eyebrow": {
+   "zh": "產學合作與技術服務",
+   "en": "Industry and consulting"
+  },
+  "title": {
+   "zh": "把爆炸風險，變成可以計算、可以驗證的工程問題。",
+   "en": "Turning blast risk into an engineering problem you can calculate and verify."
+  },
+  "lead": {
+   "zh": "我們為政府機關、國防單位、工程顧問、科技廠與材料廠商，提供爆炸荷載評估、抗爆設計檢核、防護材料驗證與工程審查。所有合作皆透過國立陽明交通大學產學合作與技術服務機制簽約。",
+   "en": "We provide blast load assessment, blast design review, protective material qualification and engineering review for government agencies, defense organizations, engineering firms, tech plants and material manufacturers. All work is contracted through NYCU's industry collaboration and technical service programs."
+  },
+  "services": {
+   "zh": "服務項目",
+   "en": "Services"
+  },
+  "sectorsTitle": {
+   "zh": "依產業找到你需要的服務",
+   "en": "Find the service for your sector"
+  },
+  "sectors": [
+   {
+    "name": {
+     "zh": "政府與國防",
+     "en": "Government and defense"
+    },
+    "need": {
+     "zh": "設施防護設計審查、戰損評估與快速修復",
+     "en": "Protective design review, damage assessment and rapid repair"
+    }
+   },
+   {
+    "name": {
+     "zh": "工程顧問與營造",
+     "en": "Engineering firms and contractors"
+    },
+    "need": {
+     "zh": "抗爆設計檢核、補強方案與第三方審查",
+     "en": "Blast design checks, retrofit schemes and third-party review"
+    }
+   },
+   {
+    "name": {
+     "zh": "科技廠、能源與儲能",
+     "en": "Tech, energy and storage sites"
+    },
+    "need": {
+     "zh": "爆炸情境模擬、超壓分布與安全距離評估",
+     "en": "Explosion scenarios, overpressure maps and safety distances"
+    }
+   },
+   {
+    "name": {
+     "zh": "材料廠商",
+     "en": "Material manufacturers"
+    },
+    "need": {
+     "zh": "抗衝擊與抗爆性能驗證試驗",
+     "en": "Impact and blast performance tests"
+    }
+   }
+  ],
+  "methodTitle": {
+   "zh": "規範、工具與試驗",
+   "en": "Criteria, tools and testing"
+  },
+  "modesTitle": {
+   "zh": "合作方式",
+   "en": "Ways to work with us"
+  },
+  "modes": [
+   {
+    "name": {
+     "zh": "技術服務案",
+     "en": "Technical service"
+    },
+    "desc": {
+     "zh": "範疇明確、期程較短的評估、檢核或試驗，以技術服務契約辦理。",
+     "en": "Well-defined, shorter assessments, checks or tests under a technical service contract."
+    }
+   },
+   {
+    "name": {
+     "zh": "產學合作計畫",
+     "en": "Industry–academia project"
+    },
+    "desc": {
+     "zh": "與企業共同開發材料或工法，可搭配國科會產學合作計畫申請。",
+     "en": "Joint development of materials or methods, optionally with NSTC industry–academia funding."
+    }
+   },
+   {
+    "name": {
+     "zh": "委託研究",
+     "en": "Commissioned research"
+    },
+    "desc": {
+     "zh": "政府機關或法人委託之研究計畫，依委託單位規定辦理。",
+     "en": "Research commissioned by government agencies or institutes, under the sponsor's rules."
+    }
+   },
+   {
+    "name": {
+     "zh": "教育訓練",
+     "en": "Training"
+    },
+    "desc": {
+     "zh": "抗爆設計、爆炸模擬與防護工程的專業課程，可依單位需求規劃。",
+     "en": "Professional courses on blast design, simulation and protective engineering, tailored to your team."
+    }
+   }
+  ],
+  "stepsTitle": {
+   "zh": "合作流程",
+   "en": "How a project runs"
+  },
+  "steps": [
+   {
+    "zh": "來信說明需求",
+    "en": "Tell us what you need"
+   },
+   {
+    "zh": "討論範疇、提出工作項目與報價",
+    "en": "Agree on scope; we propose tasks and a quote"
+   },
+   {
+    "zh": "透過陽明交大簽約",
+    "en": "Sign through NYCU"
+   },
+   {
+    "zh": "執行與期中說明",
+    "en": "Execution and interim review"
+   },
+   {
+    "zh": "交付報告並說明結果",
+    "en": "Report delivery and briefing"
+   }
+  ],
+  "prepTitle": {
+   "zh": "來信時可以先提供",
+   "en": "Useful to include in your first email"
+  },
+  "prep": [
+   {
+    "zh": "設施或產品類型（可概述，不需提供機敏資料）",
+    "en": "Type of facility or product (a summary is enough; no sensitive data)"
+   },
+   {
+    "zh": "想評估的情境或威脅，例如爆炸源、藥量或距離範圍",
+    "en": "Scenario or threat of concern, e.g. source, charge size or distance range"
+   },
+   {
+    "zh": "目的：評估、設計檢核、材料驗證或審查",
+    "en": "Goal: assessment, design check, material qualification or review"
+   },
+   {
+    "zh": "業主要求或適用規範",
+    "en": "Owner requirements or applicable criteria"
+   },
+   {
+    "zh": "期望時程與預算範圍",
+    "en": "Expected schedule and budget range"
+   }
+  ],
+  "faqTitle": {
+   "zh": "常見問題",
+   "en": "FAQ"
+  },
+  "faq": [
+   {
+    "q": {
+     "zh": "可以先簽保密協議再提供資料嗎？",
+     "en": "Can we sign an NDA before sharing details?"
+    },
+    "a": {
+     "zh": "可以。保密協議依陽明交大產學合作程序辦理，簽署前只需提供概述。",
+     "en": "Yes. NDAs follow NYCU's industry collaboration procedures; a summary is all we need beforehand."
+    }
+   },
+   {
+    "q": {
+     "zh": "涉及國防或機敏設施的案子如何處理？",
+     "en": "How are defense or sensitive projects handled?"
+    },
+    "a": {
+     "zh": "依委託單位的資訊安全與人員管制規定執行；本網站不公開任何機敏內容。",
+     "en": "We follow the sponsor's information-security and personnel rules. Nothing sensitive is published on this site."
+    }
+   },
+   {
+    "q": {
+     "zh": "試驗報告可以對外引用嗎？",
+     "en": "Can test reports be cited externally?"
+    },
+    "a": {
+     "zh": "報告用途與引用方式在合約中約定。若您需要認證實驗室出具的報告，我們會在洽談時先說明並協助規劃。",
+     "en": "Use and citation are set out in the contract. If you need a report from an accredited laboratory, we will say so up front and help plan it."
+    }
+   },
+   {
+    "q": {
+     "zh": "費用如何估算？",
+     "en": "How is the fee estimated?"
+    },
+    "a": {
+     "zh": "依工作範疇、分析或試驗數量與期程估算，並依學校規定計入管理費。",
+     "en": "From the scope, number of analyses or tests and schedule, plus the university overhead required by NYCU rules."
+    }
+   }
+  ],
+  "coiTitle": {
+   "zh": "利益迴避",
+   "en": "Conflict of interest"
+  },
+  "coi": {
+   "zh": "主持人擔任設計審查委員的案件，不承接同一案的設計或顧問工作。",
+   "en": "When the PI serves as a design reviewer on a project, the lab does not take design or consulting work on that same project."
+  },
+  "cta": {
+   "zh": "寄信洽詢（開啟郵件程式）",
+   "en": "Email us (opens your mail app)"
+  },
+  "subject": {
+   "zh": "[產學合作洽詢] 單位名稱／需求概述",
+   "en": "[Industry inquiry] Organization / summary"
+  },
+  "pageTitle": {
+   "zh": "產學合作與技術服務｜APSM Lab 陽明交大",
+   "en": "Industry Services | APSM Lab, NYCU"
+  },
+  "pageDesc": {
+   "zh": "陽明交大先進防護結構與材料實驗室的產學合作與技術服務：爆炸荷載與安全距離評估、抗爆設計檢核、防護材料驗證、工程審查與教育訓練。",
+   "en": "Industry services from the APSM Lab at NYCU: blast load and safety distance assessment, blast design review, protective material qualification, engineering review and training."
+  }
+ },
+ "pubs": {
+  "title": {
+   "zh": "著作",
+   "en": "Publications"
+  },
+  "lead": {
+   "zh": "依年份排列，粗體為主持人，* 為通訊作者。點選有 DOI 的題目可連到出版社頁面。",
+   "en": "By year. PI in bold; * marks the corresponding author. Titles with a DOI link to the publisher."
+  },
+  "intl": {
+   "zh": "國際期刊論文",
+   "en": "International journal papers"
+  },
+  "tw": {
+   "zh": "國內期刊與專業刊物",
+   "en": "Domestic journals and professional periodicals"
+  },
+  "count": {
+   "zh": "篇",
+   "en": "papers"
+  },
+  "conf": {
+   "zh": "另有研討會論文 17 篇，完整清單見系所教師頁。",
+   "en": "17 conference papers are listed on the department faculty page."
+  },
+  "pageTitle": {
+   "zh": "著作｜APSM Lab 陽明交大",
+   "en": "Publications | APSM Lab, NYCU"
+  },
+  "pageDesc": {
+   "zh": "陽明交大先進防護結構與材料實驗室（蔡營寬副教授）的期刊論文：抗爆結構、防護材料、爆炸模擬與試驗。",
+   "en": "Journal papers from the APSM Lab at NYCU (Prof. Ying-Kuan Tsai): blast-resistant structures, protective materials, blast simulation and testing."
+  }
+ },
+ "notfound": {
+  "title": {
+   "zh": "找不到這個頁面",
+   "en": "Page not found"
+  },
+  "lead": {
+   "zh": "網址可能有誤，或頁面已經搬移。",
+   "en": "The address may be wrong, or the page has moved."
+  },
+  "back": {
+   "zh": "回到首頁",
+   "en": "Back to home"
+  }
+ },
+ "twin": {
+  "eyebrow": {
+   "zh": "數位孿生",
+   "en": "Digital twin"
+  },
+  "title": {
+   "zh": "把廠區搬進電腦，在災害發生前先演練",
+   "en": "Rehearse the incident before it happens"
+  },
+  "lead": {
+   "zh": "我們正在開發結合設施模型、感測資料與爆炸模擬的數位孿生平台，用於兩類情境：",
+   "en": "We are developing digital-twin platforms that combine facility models, sensor data and blast simulation for two kinds of scenarios:"
+  },
+  "uses": [
+   {
+    "t": {
+     "zh": "關鍵基礎設施的戰災情境",
+     "en": "Wartime scenarios for critical infrastructure"
+    },
+    "d": {
+     "zh": "推演不同威脅下的損傷範圍、功能中斷與修復優先順序。",
+     "en": "Explore damage extent, loss of function and repair priorities under different threats."
+    }
+   },
+   {
+    "t": {
+     "zh": "園區與廠區的意外爆炸",
+     "en": "Accidental explosions at industrial sites"
+    },
+    "d": {
+     "zh": "科技園區、工業區、資料中心與能源中心的爆炸風險評估，涵蓋預防、監測與解決方案比較。",
+     "en": "Risk assessment for science parks, industrial zones, data centers and energy hubs, covering prevention, monitoring and comparison of mitigation options."
+    }
+   }
+  ],
+  "try": {
+   "zh": "試試看：在廠區圖上點一下設定爆炸位置，拖曳滑桿調整藥量。",
+   "en": "Try it: click the site map to place the explosion and drag the slider to change the charge."
+  },
+  "w": {
+   "zh": "TNT 當量",
+   "en": "TNT equivalent"
+  },
+  "cursor": {
+   "zh": "游標位置",
+   "en": "At cursor"
+  },
+  "dist": {
+   "zh": "距離",
+   "en": "Distance"
+  },
+  "ps": {
+   "zh": "入射超壓",
+   "en": "Incident overpressure"
+  },
+  "spl": {
+   "zh": "峰值聲壓級",
+   "en": "Peak sound pressure level"
+  },
+  "ear": {
+   "zh": "耳膜破裂門檻（35 kPa）距離",
+   "en": "Distance to eardrum-rupture threshold (35 kPa)"
+  },
+  "legend": {
+   "zh": "傷損門檻（常見文獻值）",
+   "en": "Damage and injury thresholds (commonly cited)"
+  },
+  "levels": [
+   {
+    "zh": "玻璃破裂 3.5 kPa",
+    "en": "Glass breakage 3.5 kPa"
+   },
+   {
+    "zh": "輕構造牆板損壞 14 kPa",
+    "en": "Light wall panels damaged 14 kPa"
+   },
+   {
+    "zh": "耳膜破裂門檻 35 kPa",
+    "en": "Eardrum rupture threshold 35 kPa"
+   },
+   {
+    "zh": "耳膜破裂約 50% 100 kPa",
+    "en": "About 50% eardrum rupture 100 kPa"
+   },
+   {
+    "zh": "肺損傷門檻 200 kPa",
+    "en": "Lung injury threshold 200 kPa"
+   }
+  ],
+  "note": {
+   "zh": "示意用途：地面爆炸，以 1.8 倍等效藥量的 Kinney–Graham 經驗式計算，未考慮建物遮蔽與反射。實際專案以三維數值模擬與現地資料為準。",
+   "en": "Illustrative only: surface burst from the Kinney–Graham relations with 1.8 × charge mass, ignoring shielding and reflection. Real projects use 3D simulation and site data."
+  },
+  "aria": {
+   "zh": "廠區平面圖上的爆炸超壓範圍互動示意",
+   "en": "Interactive map of blast overpressure ranges on a site plan"
+  }
+ },
+ "human": {
+  "eyebrow": {
+   "zh": "人體損傷與防護",
+   "en": "Human injury and protection"
+  },
+  "title": {
+   "zh": "爆震波通過頭部的幾毫秒內，腦組織發生了什麼",
+   "en": "What happens to the brain in the milliseconds a blast wave passes"
+  },
+  "lead": {
+   "zh": "結合生醫工程與防護工程，我們用人體有限元素模型把爆炸荷載轉換成可量化的傷害指標。",
+   "en": "Combining biomedical and protective engineering, we use finite-element human body models to turn blast loading into quantifiable injury metrics."
+  },
+  "items": [
+   {
+    "t": {
+     "zh": "爆炸性腦損傷評估",
+     "en": "Blast-induced brain injury"
+    },
+    "d": {
+     "zh": "以 GHBMC 人體模型計算爆震波下的顱內壓與腦組織應變，並建立壓力–衝量（P-I）傷害判定圖。",
+     "en": "GHBMC human body models to compute intracranial pressure and brain tissue strain under blast, and pressure–impulse (P-I) injury charts."
+    }
+   },
+   {
+    "t": {
+     "zh": "衝擊式噪音與聽力",
+     "en": "Impulse noise and hearing"
+    },
+    "d": {
+     "zh": "評估爆炸、射擊等衝擊式噪音的峰值聲壓與暴露量，判斷聽力受損風險與防護需求。",
+     "en": "Peak pressure and exposure from explosions and weapon firing, to judge hearing-damage risk and protection needs."
+    }
+   },
+   {
+    "t": {
+     "zh": "個人防護裝備",
+     "en": "Personal protective equipment"
+    },
+    "d": {
+     "zh": "分析頭盔與內襯在爆震波及衝擊下對頭頸部的防護效果。",
+     "en": "How helmets and liners protect the head and neck under blast and impact."
+    }
+   }
+  ],
+  "cap": {
+   "zh": "示意動畫：爆震波由側向通過頭部，色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
+   "en": "Illustrative animation: a blast wave passes the head from the side; colours show relative brain strain. Procedural model, not an analysis result."
+  },
+  "partner": {
+   "zh": "本主題與國防醫學大學等醫學團隊合作進行。",
+   "en": "This work is carried out with medical teams including the National Defense Medical University."
+  }
+ },
+ "proj": {
+  "title": {
+   "zh": "研究計畫",
+   "en": "Research projects"
+  },
+  "lead": {
+   "zh": "主持與主要參與之計畫，依執行期間由新到舊排列。",
+   "en": "Projects led or substantially contributed to, newest first."
+  },
+  "c1": {
+   "zh": "計畫名稱",
+   "en": "Project"
+  },
+  "c2": {
+   "zh": "補助或委託機構",
+   "en": "Sponsor"
+  },
+  "c3": {
+   "zh": "執行期間",
+   "en": "Period"
+  },
+  "pageTitle": {
+   "zh": "研究計畫｜APSM Lab 陽明交大",
+   "en": "Research Projects | APSM Lab, NYCU"
+  },
+  "pageDesc": {
+   "zh": "陽明交大先進防護結構與材料實驗室歷年研究計畫：國科會、國防部、中科院與國防工業發展基金會。",
+   "en": "Research projects of the APSM Lab at NYCU, funded by NSTC, the Ministry of National Defense, NCSIST and the Defense Industry Development Foundation."
+  }
+ }
 }

@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-{%- for p in ["", "industry/", "publications/"] %}
+{%- for p in ["", "industry/", "publications/", "projects/"] %}
 {%- for l in ["", "en/"] %}
   <url><loc>{{ site.url }}/{{ l }}{{ p }}</loc><xhtml:link rel="alternate" hreflang="zh-Hant" href="{{ site.url }}/{{ p }}"/><xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/{{ p }}"/></url>
 {%- endfor %}

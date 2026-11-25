@@ -1,62 +1,92 @@
 [
-  {
-    "name": {
-      "zh": "尤致崴",
-      "en": ""
-    },
-    "role": {
-      "zh": "碩士生",
-      "en": "M.S. student"
-    },
-    "topic": {
-      "zh": "",
-      "en": ""
-    },
-    "public": false
+ {
+  "name": {
+   "zh": "郭長裕",
+   "en": "郭長裕"
   },
-  {
-    "name": {
-      "zh": "陳思臣",
-      "en": ""
-    },
-    "role": {
-      "zh": "碩士生",
-      "en": "M.S. student"
-    },
-    "topic": {
-      "zh": "",
-      "en": ""
-    },
-    "public": false
+  "role": {
+   "zh": "博士生",
+   "en": "Ph.D. student"
   },
-  {
-    "name": {
-      "zh": "蔡鴻邦",
-      "en": ""
-    },
-    "role": {
-      "zh": "碩士生",
-      "en": "M.S. student"
-    },
-    "topic": {
-      "zh": "",
-      "en": ""
-    },
-    "public": false
+  "topic": {
+   "zh": "",
+   "en": ""
   },
-  {
-    "name": {
-      "zh": "王琪心",
-      "en": ""
-    },
-    "role": {
-      "zh": "碩士生",
-      "en": "M.S. student"
-    },
-    "topic": {
-      "zh": "",
-      "en": ""
-    },
-    "public": false
-  }
+  "public": true
+ },
+ {
+  "name": {
+   "zh": "蔡鴻邦",
+   "en": "蔡鴻邦"
+  },
+  "role": {
+   "zh": "碩士生",
+   "en": "M.S. student"
+  },
+  "topic": {
+   "zh": "",
+   "en": ""
+  },
+  "public": true
+ },
+ {
+  "name": {
+   "zh": "尤致崴",
+   "en": "尤致崴"
+  },
+  "role": {
+   "zh": "碩士生",
+   "en": "M.S. student"
+  },
+  "topic": {
+   "zh": "",
+   "en": ""
+  },
+  "public": true
+ },
+ {
+  "name": {
+   "zh": "王琪心",
+   "en": "王琪心"
+  },
+  "role": {
+   "zh": "碩士生",
+   "en": "M.S. student"
+  },
+  "topic": {
+   "zh": "",
+   "en": ""
+  },
+  "public": true
+ },
+ {
+  "name": {
+   "zh": "陳思臣",
+   "en": "陳思臣"
+  },
+  "role": {
+   "zh": "碩士生",
+   "en": "M.S. student"
+  },
+  "topic": {
+   "zh": "",
+   "en": ""
+  },
+  "public": true
+ },
+ {
+  "name": {
+   "zh": "許哲斌",
+   "en": "許哲斌"
+  },
+  "role": {
+   "zh": "碩士生",
+   "en": "M.S. student"
+  },
+  "topic": {
+   "zh": "",
+   "en": ""
+  },
+  "public": true
+ }
 ]

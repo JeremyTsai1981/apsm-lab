@@ -1,47 +1,47 @@
 {
+ "name": {
+  "zh": "先進防護結構與材料實驗室",
+  "en": "Advanced Protective Structures and Materials Lab"
+ },
+ "short": "APSM Lab",
+ "dept": {
+  "zh": "國立陽明交通大學 土木工程學系",
+  "en": "Department of Civil Engineering, National Yang Ming Chiao Tung University"
+ },
+ "pi": {
   "name": {
-    "zh": "先進防護結構與材料實驗室",
-    "en": "Advanced Protective Structures and Materials Lab"
+   "zh": "蔡營寬 副教授",
+   "en": "Ying-Kuan (Jeremy) Tsai, Ph.D."
   },
-  "short": "APSM Lab",
-  "dept": {
-    "zh": "國立陽明交通大學 土木工程學系",
-    "en": "Department of Civil Engineering, National Yang Ming Chiao Tung University"
+  "nameAlt": {
+   "zh": "Ying-Kuan (Jeremy) Tsai, Ph.D.",
+   "en": "Associate Professor"
   },
-  "pi": {
-    "name": {
-      "zh": "蔡營寬 副教授",
-      "en": "Ying-Kuan (Jeremy) Tsai, Ph.D."
-    },
-    "nameAlt": {
-      "zh": "Ying-Kuan (Jeremy) Tsai, Ph.D.",
-      "en": "Associate Professor"
-    },
-    "bio": {
-      "zh": "美國佛羅里達大學結構工程博士。曾任國防大學理工學院教授兼軍事工程組組長、美國佛羅里達大學訪問學者，現任陽明交大土木系副教授暨土木結構大樓中心主任。",
-      "en": "Ph.D. in Structural Engineering, University of Florida. Formerly Professor and Head of the Military Engineering Division at the Chung Cheng Institute of Technology, National Defense University, and Visiting Scholar at the University of Florida. Now Associate Professor of Civil Engineering at NYCU."
-    },
-    "award": {
-      "zh": "國際防護結構設計與分析研討會（DAPS）最佳論文獎",
-      "en": "Best Paper Award, International Conference on Design and Analysis of Protective Structures (DAPS)"
-    }
+  "bio": {
+   "zh": "美國佛羅里達大學結構工程博士。曾任國防大學理工學院教授兼軍事工程組組長、美國佛羅里達大學訪問學者，現任陽明交大土木系副教授暨土木結構大樓中心主任。",
+   "en": "Ph.D. in Structural Engineering, University of Florida. Formerly Professor and Head of the Military Engineering Division at the Chung Cheng Institute of Technology, National Defense University, and Visiting Scholar at the University of Florida. Now Associate Professor of Civil Engineering at NYCU."
   },
-  "contact": {
-    "office": {
-      "zh": "光復校區 工程二館 321 室",
-      "en": "Room 321, Engineering Building II, Guangfu Campus"
-    },
-    "address": {
-      "zh": "300 新竹市大學路 1001 號",
-      "en": "1001 University Rd., Hsinchu 300, Taiwan"
-    },
-    "phone": "+886-3-571-2121 ext. 54939",
-    "email": "jeremytsai0406@nycu.edu.tw"
+  "award": {
+   "zh": "國際防護結構設計與分析研討會（DAPS）最佳論文獎",
+   "en": "Best Paper Award, International Conference on Design and Analysis of Protective Structures (DAPS)"
+  }
+ },
+ "contact": {
+  "office": {
+   "zh": "光復校區 工程二館 321 室",
+   "en": "Room 321, Engineering Building II, Guangfu Campus"
   },
-  "links": {
-    "dept": "https://ce.nycu.edu.tw/member/teachers/61",
-    "orcid": "",
-    "scholar": ""
+  "address": {
+   "zh": "300 新竹市大學路 1001 號",
+   "en": "1001 University Rd., Hsinchu 300, Taiwan"
   },
-  "url": ""
+  "phone": "+886-3-571-2121 ext. 54939",
+  "email": "jeremytsai0406@nycu.edu.tw"
+ },
+ "links": {
+  "dept": "https://ce.nycu.edu.tw/member/teachers/61",
+  "orcid": "https://orcid.org/0000-0001-7608-6910",
+  "scholar": "https://scholar.google.com/citations?user=48Fi0r0AAAAJ"
+ },
+ "url": ""
 }

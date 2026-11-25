@@ -142,9 +142,9 @@ isHome: true
 
 <section class="section section--alt" id="cases" aria-labelledby="cases-h">
   <div class="wrap">
-    <div class="sechead"><div><p class="eyebrow eyebrow--navy">{{ i18n.cases.eyebrow | l(lang) }}</p><h2 id="cases-h">{{ i18n.cases.title | l(lang) }}</h2></div><a class="more" href="{{ root }}{{ lp }}industry/index.html">{{ i18n.cases.more | l(lang) }} →</a></div>
+    <div class="sechead"><div><p class="eyebrow eyebrow--navy">{{ i18n.cases.eyebrow | l(lang) }}</p><h2 id="cases-h">{{ i18n.cases.title | l(lang) }}</h2></div><a class="more" href="{{ root }}{{ lp }}projects/index.html">{{ i18n.cases.all | l(lang) }} →</a></div>
     <div class="cases">
-      {% for c in cases %}
+      {% for c in cases | take(6) %}
       <article class="case">
         <span class="case__meta">{{ c.client | l(lang) }}{% if c.years %} · {{ c.years }}{% endif %}</span>
         <h3>{{ c.title | l(lang) }}</h3>
@@ -182,6 +182,13 @@ isHome: true
       {% endfor %}
     </ul>
     {% endif %}
+    <details class="alumni">
+      <summary>{{ i18n.team.alumni | l(lang) }}（{{ alumni.length }}）</summary>
+      <div class="tblwrap"><table class="tbl">
+        <thead><tr><th>{{ i18n.team.year | l(lang) }}</th><th>{{ i18n.team.name | l(lang) }}</th><th>{{ i18n.team.thesis | l(lang) }}</th></tr></thead>
+        <tbody>{% for a in alumni %}<tr><td>{{ a.year }}</td><td lang="zh-Hant">{{ a.name }}{% if a.deg %} <span class="tbl__deg">{{ (i18n.team.phd if a.deg == '博士' else i18n.team.ms) | l(lang) }}</span>{% endif %}</td><td lang="zh-Hant">{{ a.topic }}</td></tr>{% endfor %}</tbody>
+      </table></div>
+    </details>
   </div>
 </section>
 

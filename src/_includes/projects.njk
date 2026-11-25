@@ -1,0 +1,18 @@
+---
+layout: base.njk
+navKey: proj
+---
+<section class="phead">
+  <div class="wrap">
+    <nav class="crumb" aria-label="breadcrumb"><a href="{{ root }}{{ '' if lang == 'zh' else 'en/' }}index.html">{{ i18n.nav.home | l(lang) }}</a> / <span>{{ i18n.proj.title | l(lang) }}</span></nav>
+    <h1>{{ i18n.proj.title | l(lang) }}</h1>
+    <p class="phead__lead">{{ i18n.proj.lead | l(lang) }}</p>
+    <p class="phead__meta">{{ projects.length }} {{ '項' if lang == 'zh' else 'projects' }}</p>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap"><div class="tblwrap"><table class="tbl">
+    <thead><tr><th>{{ i18n.proj.c1 | l(lang) }}</th><th>{{ i18n.proj.c2 | l(lang) }}</th><th>{{ i18n.proj.c3 | l(lang) }}</th></tr></thead>
+    <tbody>{% for p in projects %}<tr><td>{{ p.title | l(lang) }}</td><td>{{ p.sponsor | l(lang) }}</td><td class="tbl__num">{{ p.period }}</td></tr>{% endfor %}</tbody>
+  </table></div></div>
+</section>

@@ -1,23 +1,23 @@
 [
-  {
-    "value": "30+",
-    "label": {
-      "zh": "篇期刊論文",
-      "en": "journal papers"
-    }
-  },
-  {
-    "value": "25+",
-    "label": {
-      "zh": "項國科會、國防與產學計畫",
-      "en": "funded research and industry projects"
-    }
-  },
-  {
-    "value": "100+",
-    "label": {
-      "zh": "件工程設計審查與技術諮詢",
-      "en": "engineering design reviews and consultations"
-    }
+ {
+  "value": "30+",
+  "label": {
+   "zh": "篇期刊論文",
+   "en": "journal papers"
   }
+ },
+ {
+  "value": "25+",
+  "label": {
+   "zh": "項國科會、國防與產學計畫",
+   "en": "funded research and industry projects"
+  }
+ },
+ {
+  "value": "100+",
+  "label": {
+   "zh": "件工程設計審查與技術諮詢（以軍事防護工程為主）",
+   "en": "engineering design reviews and consultations, mainly protective military works"
+  }
+ }
 ]
