@@ -29,6 +29,10 @@ python3 scripts/make_image.py 原始圖檔.jpg 檔名 600 1200
 
 會自動產生 WebP 多尺寸與 JPG 備援，並登記到 `src/_data/imgs.json`，之後在資料檔裡用「檔名」引用即可。
 
+## 新增照片集照片
+
+先用上面的指令加入圖片（建議寬度 `640 1600`），再到 `src/_data/gallery.json` 加一筆 `{ "img": "檔名", "cap": { "zh": "說明", "en": "Caption" } }`。照片集只放師生活動、研討會等照片。
+
 ## 正式上線前
 
 在 `site.json` 的 `url` 填入正式網址（例如 `https://apsm.example.edu.tw`，結尾不加斜線），canonical、hreflang 與 sitemap.xml 才會產生完整網址。

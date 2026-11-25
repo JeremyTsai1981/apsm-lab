@@ -197,7 +197,7 @@ isHome: true
     <p class="eyebrow eyebrow--cyan">{{ i18n.gallery.eyebrow | l(lang) }}</p>
     <h2 id="gallery-h">{{ i18n.gallery.title | l(lang) }}</h2>
     <p class="lab__lead">{{ i18n.gallery.lead | l(lang) }}</p>
-    <div class="masonry">
+    <div class="masonry{% if gallery.length < 5 %} masonry--few{% endif %}">
       {% for g in gallery %}<button type="button" class="masonry__i" data-full="{{ root }}assets/img/{{ g.img }}.jpg" data-cap="{{ g.cap | l(lang) }}">{% pic root, g.img, g.cap | l(lang), "(min-width:1000px) 280px, (min-width:600px) 33vw, 50vw" %}<span class="masonry__c">{{ g.cap | l(lang) }}</span></button>{% endfor %}
     </div>
   </div>
