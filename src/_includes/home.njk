@@ -12,7 +12,7 @@ isHome: true
   <div class="wrap hero__in">
     <div class="hero__copy">
       <p class="eyebrow eyebrow--cyan">{{ i18n.hero.eyebrow | l(lang) }}</p>
-      <h1><span class="hero__lab">{{ i18n.hero.lab | l(lang) }}</span><span class="hero__title">{{ i18n.hero.title | l(lang) | safe }}</span></h1>
+      <h1><span class="hero__lab">{{ i18n.hero.lab | l(lang) }}</span><span class="hero__title">{{ i18n.hero.title | l(lang) | safe }}</span><span class="hero__alt" lang="{{ 'en' if lang == 'zh' else 'zh-Hant' }}">{{ i18n.hero.titleAlt | l(lang) }}</span></h1>
       <p class="hero__lead">{{ i18n.hero.lead | l(lang) }}</p>
       <div class="btns">
         <a class="btn btn--orange" href="#join">{{ i18n.hero.ctaStudent | l(lang) }}</a>

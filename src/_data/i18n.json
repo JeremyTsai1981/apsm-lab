@@ -51,8 +51,8 @@
       "en": "Advanced Protective Structures and Materials Lab (APSM)"
     },
     "title": {
-      "zh": "<span class=\"nw\">以模擬與數位孿生，</span><span class=\"nw\">預測並降低爆炸風險。</span>",
-      "en": "Predicting and reducing blast risk with simulation and digital twins."
+      "zh": "<span class=\"nw\">以高擬真數值模擬與數位孿生技術，</span><span class=\"nw\">實現爆炸風險預測與工程防護最佳化。</span>",
+      "en": "Advancing Blast Risk Prediction and Protective Engineering Optimization through High-Fidelity Numerical Simulations and Digital Twin Technology."
     },
     "lead": {
       "zh": "我們結合爆炸數值模擬、人體損傷分析、數位孿生與試驗驗證，為關鍵基礎設施、科技園區、資料中心與能源設施提供風險評估、防護設計與決策支援。",
@@ -69,6 +69,10 @@
     "photoCap": {
       "zh": "數位孿生情境示意動畫（實驗室自製）",
       "en": "Digital-twin scenario animation (made by the lab)"
+    },
+    "titleAlt": {
+      "zh": "Advancing Blast Risk Prediction and Protective Engineering Optimization through High-Fidelity Numerical Simulations and Digital Twin Technology.",
+      "en": "以高擬真數值模擬與數位孿生技術，實現爆炸風險預測與工程防護最佳化。"
     }
   },
   "trust": {

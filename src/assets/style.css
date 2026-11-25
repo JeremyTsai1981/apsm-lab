@@ -417,3 +417,10 @@ h2{letter-spacing:.01em}
 .lightbox__x{top:16px;right:16px}.lightbox__nav--p{left:12px;top:50%;transform:translateY(-50%)}.lightbox__nav--n{right:12px;top:50%;transform:translateY(-50%)}
 .pi__photo{border:1px solid var(--cyan);box-shadow:0 0 24px rgba(63,193,217,.25)}
 @media(min-width:600px){.masonry--few{columns:2}}
+
+.hero__alt{font-family:var(--latin);font-size:clamp(15px,1.5vw,19px);font-weight:500;line-height:1.5;color:#9FF4FF;max-width:560px}
+.hero__alt[lang="zh-Hant"]{font-family:var(--sans)}
+.hero__title{font-size:clamp(26px,3.3vw,42px)}
+html[lang="en"] .hero__title{font-size:clamp(24px,2.9vw,36px)}
+@media(max-width:900px){.nw{white-space:normal}}
+.hero__copy{max-width:780px}.hero__lead,.hero__alt{max-width:600px}
