@@ -96,8 +96,8 @@
         "en": "For future students"
       },
       "title": {
-        "zh": "在這裡，你會學模擬、做數位孿生，也做試驗",
-        "en": "Simulation, digital twins and real tests"
+        "zh": "在這裡，你不僅學習先進模擬技術、建構數位孿生模型，更將透過實體試驗驗證理論，解決真實世界的工程挑戰",
+        "en": "Here you will learn advanced simulation, build digital twins, and validate theory through physical testing to solve real-world engineering challenges"
       },
       "items": [
         {
@@ -157,12 +157,12 @@
       "en": "Research"
     },
     "title": {
-      "zh": "從人體、設施到城市的爆炸防護研究",
-      "en": "Blast protection from the human body to facilities and cities"
+      "zh": "從人體、工程設施到城市的多尺度爆炸防護研究",
+      "en": "Multi-scale blast protection research, from the human body to engineered facilities and cities"
     },
     "lead": {
-      "zh": "以數值模擬為核心，向上整合成數位孿生平台，向下以材料與爆炸試驗驗證。",
-      "en": "Numerical simulation at the core, integrated upward into digital-twin platforms and validated downward by material and explosive tests."
+      "zh": "以高擬真數值模擬為核心，整合數位孿生技術與材料及爆炸試驗，建構從基礎材料特性、結構動態反應到系統風險評估的完整研究體系。",
+      "en": "With high-fidelity numerical simulation at the core, we integrate digital twin technology with material and explosive testing to build a complete research framework spanning material properties, structural dynamic response and system-level risk assessment."
     },
     "note": {
       "zh": "以上為實驗室自製的情境示意圖，以經驗式與程序化模型繪製，非特定專案成果。",
@@ -229,8 +229,8 @@
       "en": "Testing and validation"
     },
     "title": {
-      "zh": "模擬結果，以試驗驗證",
-      "en": "Simulations validated by testing"
+      "zh": "整合高擬真數值模擬與實體試驗，建立具科學實證基礎的研究體系",
+      "en": "Integrating high-fidelity simulation with physical testing for an evidence-based research framework"
     },
     "lead": {
       "zh": "五類試驗能量，對應從材料、構件到人體的研究主題。",
@@ -676,8 +676,8 @@
       "en": "Digital twin"
     },
     "title": {
-      "zh": "把廠區搬進電腦，在災害發生前先演練",
-      "en": "Rehearse the incident before it happens"
+      "zh": "以數位孿生建構虛擬廠區，實現災害情境模擬與風險預測",
+      "en": "Building virtual facilities with digital twins for disaster scenario simulation and risk prediction"
     },
     "lead": {
       "zh": "我們正在開發結合設施模型、感測資料與爆炸模擬的數位孿生平台，用於兩類情境：",
@@ -774,8 +774,8 @@
       "en": "Human injury and protection"
     },
     "title": {
-      "zh": "爆震波通過頭部的幾毫秒內，腦組織發生了什麼",
-      "en": "What happens to the brain in the milliseconds a blast wave passes"
+      "zh": "從毫秒尺度的爆震波作用，探索腦損傷機制與人體防護科技",
+      "en": "From millisecond-scale blast loading to brain injury mechanisms and human protection technology"
     },
     "lead": {
       "zh": "結合生醫工程與防護工程，我們用人體有限元素模型把爆炸荷載轉換成可量化的傷害指標。",

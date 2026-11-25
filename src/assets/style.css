@@ -424,3 +424,4 @@ h2{letter-spacing:.01em}
 html[lang="en"] .hero__title{font-size:clamp(24px,2.9vw,36px)}
 @media(max-width:900px){.nw{white-space:normal}}
 .hero__copy{max-width:780px}.hero__lead,.hero__alt{max-width:600px}
+.door h2{font-size:clamp(19px,1.9vw,23px);line-height:1.5}
