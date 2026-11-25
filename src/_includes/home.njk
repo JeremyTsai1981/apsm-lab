@@ -117,6 +117,11 @@ isHome: true
           <span class="hud__row"><span>{{ i18n.human.ui.coup | l(lang) }}</span><b><span id="h3-coup">0</span> %</b></span>
           <span class="hud__row"><span>{{ i18n.human.ui.contre | l(lang) }}</span><b><span id="h3-contre">0</span> %</b></span>
         </div>
+        <div class="viewer__legend" aria-hidden="true">
+          <span>{{ i18n.human.ui.legFem | l(lang) }}<br>{{ i18n.human.ui.legCfd | l(lang) }}</span>
+          <span class="fringe"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="fringe__t"><b>0</b><b>0.5</b><b>1.0</b></span>
+        </div>
       </div>
       <div class="viewer__bar">
         <div class="viewer__grp" role="group" aria-label="{{ i18n.human.ui.dir | l(lang) }}"><span class="viewer__lbl">{{ i18n.human.ui.dir | l(lang) }}</span>
@@ -124,6 +129,8 @@ isHome: true
         <div class="viewer__grp viewer__grp--t"><button type="button" id="h3-play" aria-pressed="false" data-play="{{ i18n.human.ui.play | l(lang) }}" data-pause="{{ i18n.human.ui.pause | l(lang) }}">{{ i18n.human.ui.pause | l(lang) }}</button>
           <input id="h3-t" type="range" min="0" max="999" value="440" aria-label="{{ i18n.human.ui.time | l(lang) }}"></div>
         <label class="viewer__chk"><input id="h3-shell" type="checkbox" checked> {{ i18n.human.ui.shell | l(lang) }}</label>
+        <label class="viewer__chk"><input id="h3-cut" type="checkbox" checked> {{ i18n.human.ui.cut | l(lang) }}</label>
+        <label class="viewer__chk"><input id="h3-cfd" type="checkbox" checked> {{ i18n.human.ui.cfd | l(lang) }}</label>
       </div>
       <figcaption>{{ i18n.human.cap | l(lang) }}</figcaption>
     </figure>

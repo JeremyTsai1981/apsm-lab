@@ -814,8 +814,8 @@
       }
     ],
     "cap": {
-      "zh": "互動示意：拖曳可旋轉模型，可切換爆震波方向並拖動時間軸；色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
-      "en": "Interactive illustration: drag to rotate, switch the blast direction and scrub the timeline; colours show relative brain strain. Procedural model, not an analysis result."
+      "zh": "互動示意：仿有限元素（FEM）與計算流體力學（CFD）後處理畫面。可拖曳旋轉、切換爆震波方向、拖動時間軸，並開關剖面與流場切面。模型、網格與數值皆為程式產生的示意，非 GHBMC 模型，也不是實際分析結果。",
+      "en": "Interactive illustration styled after finite-element (FEM) and CFD post-processing. Drag to rotate, switch the blast direction, scrub the timeline, and toggle the section and flow-field slice. The model, mesh and values are procedurally generated for illustration; this is not the GHBMC model or an analysis result."
     },
     "partner": {
       "zh": "本主題與國防醫學大學等醫學團隊合作進行。",
@@ -851,8 +851,8 @@
         "en": "Time"
       },
       "shell": {
-        "zh": "顯示頭部外殼",
-        "en": "Show head shell"
+        "zh": "頭皮與顱骨",
+        "en": "Scalp and skull"
       },
       "coup": {
         "zh": "迎波側相對壓力",
@@ -867,12 +867,28 @@
         "en": "Drag to rotate"
       },
       "tag": {
-        "zh": "即時 3D",
-        "en": "Live 3D"
+        "zh": "FEM／CFD 示意",
+        "en": "FEM / CFD illustration"
       },
       "aria": {
-        "zh": "可旋轉的頭部與腦部 3D 模型，顯示爆震波通過時的相對應變",
-        "en": "Rotatable 3D head and brain model showing relative strain as a blast wave passes"
+        "zh": "可旋轉的頭部有限元素示意模型：頭皮、顱骨與腦的剖面，以及爆震波通過時的流場與腦部相對應變",
+        "en": "Rotatable finite-element style head model with scalp, skull and brain section, showing the flow field and relative brain strain as a blast wave passes"
+      },
+      "cut": {
+        "zh": "矢狀剖面",
+        "en": "Sagittal cut"
+      },
+      "cfd": {
+        "zh": "流場切面",
+        "en": "Flow-field slice"
+      },
+      "legFem": {
+        "zh": "腦部相對應變（FEM）",
+        "en": "Relative brain strain (FEM)"
+      },
+      "legCfd": {
+        "zh": "空氣相對超壓（CFD）",
+        "en": "Relative air overpressure (CFD)"
       }
     }
   },
