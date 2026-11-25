@@ -457,3 +457,9 @@ html[lang="en"] .hero__title{font-size:clamp(24px,2.9vw,36px)}
 .fringe__t{display:flex;justify-content:space-between;width:190px}.fringe__t b{font-weight:400}
 @media(max-width:700px){.viewer__legend{right:10px;top:10px;font-size:9.5px}.fringe,.fringe__t{width:150px}.viewer__hud{left:10px;right:auto;bottom:10px}}
 .fringe i:nth-child(1){background:#0a42e0}.fringe i:nth-child(2){background:#057af0}.fringe i:nth-child(3){background:#00b2ff}.fringe i:nth-child(4){background:#0abfb3}.fringe i:nth-child(5){background:#14cb66}.fringe i:nth-child(6){background:#47d636}.fringe i:nth-child(7){background:#a3e021}.fringe i:nth-child(8){background:#ffeb0d}.fringe i:nth-child(9){background:#fa970d}.fringe i:nth-child(10){background:#f5430d}
+
+.realfig{grid-column:1/-1;margin:8px auto 0;max-width:940px;border:1px solid rgba(63,193,217,.4);border-radius:16px;overflow:hidden;background:#fff;position:relative}
+.realfig img{display:block;width:100%;height:auto;padding:14px 18px 6px}
+.realfig figcaption{background:#060C17;color:#B8C6D6;font-size:13px;padding:10px 14px;border-top:1px solid var(--line)}
+.realfig__tag{position:absolute;left:12px;top:12px;font:500 12px var(--mono);background:#0E1A2C;color:var(--cyan);border:1px solid rgba(63,193,217,.5);border-radius:999px;padding:3px 10px}
+.realfig__tag{position:static;display:inline-block;margin:12px 0 0 14px}

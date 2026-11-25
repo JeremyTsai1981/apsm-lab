@@ -141,6 +141,11 @@ isHome: true
       <ul class="feat">{% for u in i18n.human.items %}<li><b>{{ u.t | l(lang) }}</b><span>{{ u.d | l(lang) }}</span></li>{% endfor %}</ul>
       <p class="human__partner">{{ i18n.human.partner | l(lang) }}</p>
     </div>
+    <figure class="realfig">
+      <span class="realfig__tag">{{ i18n.human.real.tag | l(lang) }}</span>
+      {% pic root, "ghbmc-model", i18n.human.real.cap | l(lang), "(min-width:1000px) 900px, 100vw" %}
+      <figcaption>{{ i18n.human.real.cap | l(lang) }}</figcaption>
+    </figure>
   </div>
 </section>
 

@@ -890,6 +890,16 @@
         "zh": "空氣相對超壓（CFD）",
         "en": "Relative air overpressure (CFD)"
       }
+    },
+    "real": {
+      "tag": {
+        "zh": "實際分析模型",
+        "en": "Actual analysis model"
+      },
+      "cap": {
+        "zh": "本實驗室爆炸性腦損傷分析所用的 GHBMC 頭頸有限元素模型：(a) 正面受爆震波作用的頭頸模型；(b)、(c) 矢狀剖面與擷取反應的元素位置。",
+        "en": "The GHBMC head–neck finite-element model used in our blast-induced brain injury analyses: (a) head–neck model under anterior blast exposure; (b), (c) sagittal sections and the elements where responses are extracted."
+      }
     }
   },
   "proj": {
