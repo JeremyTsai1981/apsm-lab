@@ -814,12 +814,66 @@
       }
     ],
     "cap": {
-      "zh": "示意動畫：爆震波由側向通過頭部，色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
-      "en": "Illustrative animation: a blast wave passes the head from the side; colours show relative brain strain. Procedural model, not an analysis result."
+      "zh": "互動示意：拖曳可旋轉模型，可切換爆震波方向並拖動時間軸；色階代表腦部相對應變。程序化示意模型，非實際分析結果。",
+      "en": "Interactive illustration: drag to rotate, switch the blast direction and scrub the timeline; colours show relative brain strain. Procedural model, not an analysis result."
     },
     "partner": {
       "zh": "本主題與國防醫學大學等醫學團隊合作進行。",
       "en": "This work is carried out with medical teams including the National Defense Medical University."
+    },
+    "ui": {
+      "dir": {
+        "zh": "爆震波方向",
+        "en": "Blast direction"
+      },
+      "side": {
+        "zh": "側向",
+        "en": "Side"
+      },
+      "front": {
+        "zh": "正面",
+        "en": "Front"
+      },
+      "back": {
+        "zh": "後方",
+        "en": "Rear"
+      },
+      "play": {
+        "zh": "播放",
+        "en": "Play"
+      },
+      "pause": {
+        "zh": "暫停",
+        "en": "Pause"
+      },
+      "time": {
+        "zh": "時間",
+        "en": "Time"
+      },
+      "shell": {
+        "zh": "顯示頭部外殼",
+        "en": "Show head shell"
+      },
+      "coup": {
+        "zh": "迎波側相對壓力",
+        "en": "Coup-side relative pressure"
+      },
+      "contre": {
+        "zh": "對側相對壓力",
+        "en": "Contrecoup relative pressure"
+      },
+      "hint": {
+        "zh": "拖曳旋轉",
+        "en": "Drag to rotate"
+      },
+      "tag": {
+        "zh": "即時 3D",
+        "en": "Live 3D"
+      },
+      "aria": {
+        "zh": "可旋轉的頭部與腦部 3D 模型，顯示爆震波通過時的相對應變",
+        "en": "Rotatable 3D head and brain model showing relative strain as a blast wave passes"
+      }
     }
   },
   "proj": {

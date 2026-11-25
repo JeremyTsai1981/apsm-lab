@@ -27,6 +27,15 @@
     dlg.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
   })();
 
+  // 頭部 3D 互動模型：進入視窗且支援 WebGL 時才載入
+  (function () {
+    var hb = document.getElementById('head3d'); if (!hb || !('IntersectionObserver' in window)) return;
+    var ok = false; try { var c = document.createElement('canvas'); ok = !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) {}
+    if (!ok || !(window.HTMLScriptElement && HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) return;
+    var io2 = new IntersectionObserver(function (es) { if (!es[0].isIntersecting) return; io2.disconnect(); import(new URL(hb.dataset.src, document.baseURI).href).catch(function (e) { console.error(e); }); }, { rootMargin: '300px' });
+    io2.observe(hb);
+  })();
+
   var cv = document.getElementById('twinmap'); if (!cv) return;
   var ctx = cv.getContext('2d'), PA = 101.325;
   function kgPs(Z) { return PA * 808 * (1 + Math.pow(Z / 4.5, 2)) / Math.sqrt((1 + Math.pow(Z / 0.048, 2)) * (1 + Math.pow(Z / 0.32, 2)) * (1 + Math.pow(Z / 1.35, 2))); }

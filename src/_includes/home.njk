@@ -108,9 +108,23 @@ isHome: true
 <section class="section human" id="human" aria-labelledby="human-h">
   <div class="wrap human__in">
     <figure class="human__fig">
-      <video class="lazyvid" muted loop playsinline preload="none" poster="{{ root }}assets/img/head-still.jpg" aria-label="{{ i18n.human.cap | l(lang) }}">
-        <source src="{{ root }}assets/vid/head.mp4" type="video/mp4">
-      </video>
+      <script type="importmap">{"imports":{"three":"./{{ root }}assets/vendor/three/three.module.min.js","three/addons/":"./{{ root }}assets/vendor/three/"}}</script>
+      <div class="viewer" id="head3d" data-src="{{ root }}assets/head3d.js" data-aria="{{ i18n.human.ui.aria | l(lang) }}">
+        <img class="viewer__poster" src="{{ root }}assets/img/head-still.jpg" width="1280" height="720" alt="{{ i18n.human.ui.aria | l(lang) }}" loading="lazy">
+        <div class="viewer__hud" aria-hidden="true">
+          <span class="hud__tag"><span class="hud__dot"></span>{{ i18n.human.ui.tag | l(lang) }} · {{ i18n.human.ui.hint | l(lang) }}</span>
+          <span class="hud__row"><span>{{ i18n.human.ui.time | l(lang) }}</span><b><span id="h3-ms">0.0</span> ms</b></span>
+          <span class="hud__row"><span>{{ i18n.human.ui.coup | l(lang) }}</span><b><span id="h3-coup">0</span> %</b></span>
+          <span class="hud__row"><span>{{ i18n.human.ui.contre | l(lang) }}</span><b><span id="h3-contre">0</span> %</b></span>
+        </div>
+      </div>
+      <div class="viewer__bar">
+        <div class="viewer__grp" role="group" aria-label="{{ i18n.human.ui.dir | l(lang) }}"><span class="viewer__lbl">{{ i18n.human.ui.dir | l(lang) }}</span>
+          <button type="button" data-h3dir="side" aria-pressed="true">{{ i18n.human.ui.side | l(lang) }}</button><button type="button" data-h3dir="front" aria-pressed="false">{{ i18n.human.ui.front | l(lang) }}</button><button type="button" data-h3dir="back" aria-pressed="false">{{ i18n.human.ui.back | l(lang) }}</button></div>
+        <div class="viewer__grp viewer__grp--t"><button type="button" id="h3-play" aria-pressed="false" data-play="{{ i18n.human.ui.play | l(lang) }}" data-pause="{{ i18n.human.ui.pause | l(lang) }}">{{ i18n.human.ui.pause | l(lang) }}</button>
+          <input id="h3-t" type="range" min="0" max="999" value="440" aria-label="{{ i18n.human.ui.time | l(lang) }}"></div>
+        <label class="viewer__chk"><input id="h3-shell" type="checkbox" checked> {{ i18n.human.ui.shell | l(lang) }}</label>
+      </div>
       <figcaption>{{ i18n.human.cap | l(lang) }}</figcaption>
     </figure>
     <div class="human__txt">
