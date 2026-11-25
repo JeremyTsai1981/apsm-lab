@@ -447,3 +447,4 @@ html[lang="en"] .hero__title{font-size:clamp(24px,2.9vw,36px)}
 .viewer__hud{right:auto;left:12px;top:auto;bottom:12px;min-width:210px}
 @media(max-width:700px){.viewer__hud{right:auto;left:10px;top:auto;bottom:10px}}
 .pi__photo{width:clamp(180px,20vw,260px);height:clamp(180px,20vw,260px)}.pi{align-items:center;gap:36px}
+.pi__photo{width:clamp(200px,24vw,300px);height:auto;aspect-ratio:433/577;border-radius:18px}
