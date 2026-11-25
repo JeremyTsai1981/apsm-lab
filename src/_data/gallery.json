@@ -2,8 +2,241 @@
  {
   "img": "gal-001",
   "cap": {
-   "zh": "實驗室登山活動",
-   "en": "Lab hiking trip"
-  }
+   "zh": "獲獎與頒獎",
+   "en": "Awards"
+  },
+  "src": "IMG_4707"
+ },
+ {
+  "img": "gal-002",
+  "cap": {
+   "zh": "獲獎與頒獎",
+   "en": "Awards"
+  },
+  "src": "IMG_7084"
+ },
+ {
+  "img": "gal-003",
+  "cap": {
+   "zh": "獲獎與頒獎",
+   "en": "Awards"
+  },
+  "src": "IMG_9727"
+ },
+ {
+  "img": "gal-004",
+  "cap": {
+   "zh": "獲獎與頒獎",
+   "en": "Awards"
+  },
+  "src": "IMG_9729"
+ },
+ {
+  "img": "gal-005",
+  "cap": {
+   "zh": "獲獎與頒獎",
+   "en": "Awards"
+  },
+  "src": "IMG_7635"
+ },
+ {
+  "img": "gal-006",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_4874"
+ },
+ {
+  "img": "gal-007",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_5167"
+ },
+ {
+  "img": "gal-008",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_8467"
+ },
+ {
+  "img": "gal-009",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_8397"
+ },
+ {
+  "img": "gal-010",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_8477"
+ },
+ {
+  "img": "gal-011",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_8463"
+ },
+ {
+  "img": "gal-012",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_8464"
+ },
+ {
+  "img": "gal-013",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_2901"
+ },
+ {
+  "img": "gal-014",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_2902"
+ },
+ {
+  "img": "gal-015",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_5165"
+ },
+ {
+  "img": "gal-016",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_9731"
+ },
+ {
+  "img": "gal-017",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_5160"
+ },
+ {
+  "img": "gal-018",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_5161"
+ },
+ {
+  "img": "gal-019",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_9722"
+ },
+ {
+  "img": "gal-020",
+  "cap": {
+   "zh": "研討會與學術交流",
+   "en": "Conferences and academic exchange"
+  },
+  "src": "IMG_2909"
+ },
+ {
+  "img": "gal-021",
+  "cap": {
+   "zh": "學位口試",
+   "en": "Thesis defenses"
+  },
+  "src": "IMG_7293"
+ },
+ {
+  "img": "gal-022",
+  "cap": {
+   "zh": "學位口試",
+   "en": "Thesis defenses"
+  },
+  "src": "IMG_1098"
+ },
+ {
+  "img": "gal-023",
+  "cap": {
+   "zh": "會議與討論",
+   "en": "Meetings"
+  },
+  "src": "IMG_7616"
+ },
+ {
+  "img": "gal-024",
+  "cap": {
+   "zh": "會議與討論",
+   "en": "Meetings"
+  },
+  "src": "IMG_7612"
+ },
+ {
+  "img": "gal-025",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_7447"
+ },
+ {
+  "img": "gal-026",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_8640"
+ },
+ {
+  "img": "gal-027",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_3740"
+ },
+ {
+  "img": "gal-028",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_8702"
+ },
+ {
+  "img": "gal-029",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_5705"
+ },
+ {
+  "img": "gal-030",
+  "cap": {
+   "zh": "團隊聚會與活動",
+   "en": "Team life"
+  },
+  "src": "IMG_6878"
  }
 ]
